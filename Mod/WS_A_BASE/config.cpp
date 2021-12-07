@@ -524,6 +524,18 @@ class CfgWeapons
 			mass=40;
 		};
 	};
+	 class 180th_MTrooper_Uniform: SWLB_clone_uniform
+	{
+		displayName="[180th Base] Clone trooper uniform (Medusa Company)";
+		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="180th_MTrooper";
+			containerClass="Supply140";
+			mass=40;
+		};
+	};
 	class 180th_WTrooper_Uniform: SWLB_clone_uniform
 	{
 		displayName="[180th Base] Clone trooper uniform (weathered)";
@@ -1037,6 +1049,36 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 	        "WS_A_BASE\data\armor\180th_Trooper_Armor1.paa",
+			"WS_A_BASE\data\armor\180th_Trooper_Armor2.paa",
+		};
+		linkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_Trooper_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+		respawnLinkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_Trooper_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+	};
+		class 180th_MTrooper: SWLB_clone_base_P2
+	{
+		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
+        faction = "180thACA";
+		editorSubcategory="WS_180th_Armory_Base";
+		uniformclass="180th_MTrooper_Uniform";
+		hiddenSelectionsTextures[]=
+		{
+	        "WS_A_BASE\data\armor\180th_Trooper_Medusa_Armor1.paa",
 			"WS_A_BASE\data\armor\180th_Trooper_Armor2.paa",
 		};
 		linkedItems[]=

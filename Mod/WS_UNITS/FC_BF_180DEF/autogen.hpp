@@ -476,9 +476,9 @@ class CfgVehicles {
         magazines[] = {"JLTS_DC15A_mag","Laserbatteries","JLTS_DC15A_mag","Laserbatteries"};
         respawnMagazines[] = {"JLTS_DC15A_mag","Laserbatteries","JLTS_DC15A_mag","Laserbatteries"};
 
-        backpack = "180th_Medic_Backpack";
+        backpack = "180th_Clone_Medic_Backpack";
 
-        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15S","","","",{"JLTS_DC15A_mag",60},{},""},{},{},{"180th_Medic_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",8},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15S_mag",9,80}}},{"SWLB_clone_basic_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1}}},{"180th_Medic_Backpack",{{"adv_aceCPR_AED",1},{"ACE_surgicalKit",1},{"ACE_tourniquet",4},{"ACE_personalAidKit",1},{"ACE_morphine",10},{"ACE_epinephrine",10},{"ACE_quikclot",20},{"ACE_packingBandage",35},{"ACE_elasticBandage",35},{"ACE_splint",4},{"ACE_salineIV",2},{"ACE_salineIV_250",4},{"ACE_salineIV_500",4},{"ACE_fieldDressing",10}}},"180th_Medic_Helmet","OPTRE_HUD_w_Glasses",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","","ItemCompass","tf_microdagr",""}};
+        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15S","","","",{"JLTS_DC15A_mag",60},{},""},{},{},{"180th_Medic_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",8},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15S_mag",9,80}}},{"SWLB_clone_basic_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1}}},{"180th_Clone_Medic_Backpack",{{"adv_aceCPR_AED",1},{"ACE_surgicalKit",1},{"ACE_tourniquet",4},{"ACE_personalAidKit",1},{"ACE_morphine",10},{"ACE_epinephrine",10},{"ACE_quikclot",20},{"ACE_packingBandage",35},{"ACE_elasticBandage",35},{"ACE_splint",4},{"ACE_salineIV",2},{"ACE_salineIV_250",4},{"ACE_salineIV_500",4},{"ACE_fieldDressing",10}}},"180th_Medic_Helmet","OPTRE_HUD_w_Glasses",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","","ItemCompass","tf_microdagr",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -708,9 +708,9 @@ class CfgVehicles {
         magazines[] = {"JLTS_DC15A_mag","Laserbatteries","JLTS_DC15A_mag","Laserbatteries"};
         respawnMagazines[] = {"JLTS_DC15A_mag","Laserbatteries","JLTS_DC15A_mag","Laserbatteries"};
 
-        backpack = "180th_EOD_Backpack";
+        backpack = "180th_Clone_EOD_Backpack";
 
-        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15S","","","",{"JLTS_DC15A_mag",60},{},""},{},{},{"180th_EOD_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",8},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15S_mag",9,80}}},{"SWLB_clone_basic_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1}}},{"180th_EOD_Backpack",{{"ACE_DefusalKit",1},{"MineDetector",1},{"ACE_Clacker",1},{"3AS_DetPack",4,1},{"C7_Remote_Mag",2,1},{"RTX_RemoteMagazine",2,1},{"C12_Remote_Mag",1,1}}},"180th_EOD_Helmet","OPTRE_HUD_w_Glasses",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","","ItemCompass","tf_microdagr",""}};
+        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15S","","","",{"JLTS_DC15A_mag",60},{},""},{},{},{"180th_EOD_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",8},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15S_mag",9,80}}},{"SWLB_clone_basic_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1}}},{"180th_Clone_EOD_Backpack",{{"ACE_DefusalKit",1},{"MineDetector",1},{"ACE_Clacker",1},{"3AS_DetPack",4,1},{"C7_Remote_Mag",2,1},{"RTX_RemoteMagazine",2,1},{"C12_Remote_Mag",1,1}}},"180th_EOD_Helmet","OPTRE_HUD_w_Glasses",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","","ItemCompass","tf_microdagr",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -748,9 +748,9 @@ class CfgVehicles {
         magazines[] = {"JLTS_DC15A_mag","SWLW_rps6_mag","Laserbatteries","JLTS_DC15A_mag","Laserbatteries"};
         respawnMagazines[] = {"JLTS_DC15A_mag","SWLW_rps6_mag","Laserbatteries","JLTS_DC15A_mag","Laserbatteries"};
 
-        backpack = "180th_EOD_Backpack";
+        backpack = "180th_Clone_EOD_Backpack";
 
-        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15S","","","",{"JLTS_DC15A_mag",60},{},""},{"SWLW_RPS6","","","",{"SWLW_rps6_mag",1},{},""},{},{"180th_AT_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",5},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15S_mag",9,80}}},{"SWLB_clone_basic_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1}}},{"180th_EOD_Backpack",{{"SWLW_rps6_mag",6,1}}},"180th_Trooper_Helmet","OPTRE_HUD_w_Glasses",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","","ItemCompass","tf_microdagr",""}};
+        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15S","","","",{"JLTS_DC15A_mag",60},{},""},{"SWLW_RPS6","","","",{"SWLW_rps6_mag",1},{},""},{},{"180th_AT_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",5},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15S_mag",9,80}}},{"SWLB_clone_basic_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1}}},{"180th_Clone_EOD_Backpack",{{"SWLW_rps6_mag",6,1}}},"180th_Trooper_Helmet","OPTRE_HUD_w_Glasses",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","","ItemCompass","tf_microdagr",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -788,9 +788,9 @@ class CfgVehicles {
         magazines[] = {"JLTS_DC15A_mag","Laserbatteries","JLTS_DC15A_mag","Laserbatteries"};
         respawnMagazines[] = {"JLTS_DC15A_mag","Laserbatteries","JLTS_DC15A_mag","Laserbatteries"};
 
-        backpack = "180th_EOD_Backpack";
+        backpack = "180th_Clone_EOD_Backpack";
 
-        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15A_ugl_plastic","","","",{"JLTS_DC15A_mag",60},{},""},{},{},{"180th_GR_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",5},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15A_mag",9,60}}},{"SWLB_clone_basic_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1}}},{"180th_EOD_Backpack",{{"ACE_HuntIR_monitor",1},{"1Rnd_HE_Grenade_shell",15,1},{"ACE_HuntIR_M203",4,1},{"1Rnd_SmokeBlue_Grenade_shell",4,1},{"1Rnd_SmokeRed_Grenade_shell",4,1},{"1Rnd_SmokeGreen_Grenade_shell",4,1},{"1Rnd_Smoke_Grenade_shell",8,1},{"UGL_FlareWhite_F",4,1},{"UGL_FlareRed_F",4,1},{"1Rnd_SmokePurple_Grenade_shell",4,1},{"1Rnd_SmokeYellow_Grenade_shell",4,1},{"1Rnd_SmokeOrange_Grenade_shell",4,1}}},"180th_Trooper_Helmet","OPTRE_HUD_w_Glasses",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","","ItemCompass","tf_microdagr",""}};
+        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15A_ugl_plastic","","","",{"JLTS_DC15A_mag",60},{},""},{},{},{"180th_GR_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",5},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15A_mag",9,60}}},{"SWLB_clone_basic_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1}}},{"180th_Clone_EOD_Backpack",{{"ACE_HuntIR_monitor",1},{"1Rnd_HE_Grenade_shell",15,1},{"ACE_HuntIR_M203",4,1},{"1Rnd_SmokeBlue_Grenade_shell",4,1},{"1Rnd_SmokeRed_Grenade_shell",4,1},{"1Rnd_SmokeGreen_Grenade_shell",4,1},{"1Rnd_Smoke_Grenade_shell",8,1},{"UGL_FlareWhite_F",4,1},{"UGL_FlareRed_F",4,1},{"1Rnd_SmokePurple_Grenade_shell",4,1},{"1Rnd_SmokeYellow_Grenade_shell",4,1},{"1Rnd_SmokeOrange_Grenade_shell",4,1}}},"180th_Trooper_Helmet","OPTRE_HUD_w_Glasses",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","","ItemCompass","tf_microdagr",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -828,9 +828,9 @@ class CfgVehicles {
         magazines[] = {"JLTS_DC15A_mag","Laserbatteries","JLTS_DC15A_mag","Laserbatteries"};
         respawnMagazines[] = {"JLTS_DC15A_mag","Laserbatteries","JLTS_DC15A_mag","Laserbatteries"};
 
-        backpack = "180th_RTO_Backpack";
+        backpack = "180th_Clone_RTO_Backpack";
 
-        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15S","","","",{"JLTS_DC15A_mag",60},{},""},{},{},{"180th_SCT_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",8},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15S_mag",9,80}}},{"SWLB_clone_basic_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1}}},{"180th_RTO_Backpack",{}},"180th_JTAC_Helmet","OPTRE_HUD_w_Glasses",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","","ItemCompass","tf_microdagr",""}};
+        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15S","","","",{"JLTS_DC15A_mag",60},{},""},{},{},{"180th_SCT_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",8},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15S_mag",9,80}}},{"SWLB_clone_basic_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1}}},{"180th_Clone_RTO_Backpack",{}},"180th_JTAC_Helmet","OPTRE_HUD_w_Glasses",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","","ItemCompass","tf_microdagr",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -868,9 +868,9 @@ class CfgVehicles {
         magazines[] = {"JLTS_DC15A_mag","Laserbatteries","JLTS_DC15A_mag","Laserbatteries"};
         respawnMagazines[] = {"JLTS_DC15A_mag","Laserbatteries","JLTS_DC15A_mag","Laserbatteries"};
 
-        backpack = "180th_RTO_Backpack";
+        backpack = "180th_Clone_RTO_Backpack";
 
-        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15S","","","",{"JLTS_DC15A_mag",60},{},""},{},{},{"180th_SGT_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",5},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15S_mag",9,80}}},{"SWLB_clone_basic_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1}}},{"180th_RTO_Backpack",{}},"180th_SGT_Helmet","",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","","ItemCompass","tf_microdagr",""}};
+        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15S","","","",{"JLTS_DC15A_mag",60},{},""},{},{},{"180th_SGT_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",5},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15S_mag",9,80}}},{"SWLB_clone_basic_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1}}},{"180th_Clone_RTO_Backpack",{}},"180th_SGT_Helmet","",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","","ItemCompass","tf_microdagr",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -946,9 +946,9 @@ class CfgVehicles {
         magazines[] = {"JLTS_DC15A_mag","SWLW_plx1_at_mag","Laserbatteries","JLTS_DC15A_mag","Laserbatteries"};
         respawnMagazines[] = {"JLTS_DC15A_mag","SWLW_plx1_at_mag","Laserbatteries","JLTS_DC15A_mag","Laserbatteries"};
 
-        backpack = "180th_EOD_Backpack";
+        backpack = "180th_Clone_EOD_Backpack";
 
-        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15S","","","",{"JLTS_DC15A_mag",60},{},""},{"SWLW_PLX1","","","",{"SWLW_plx1_at_mag",3},{},""},{},{"180th_Trooper_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",8},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15S_mag",9,80}}},{"SWLB_clone_basic_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1}}},{"180th_EOD_Backpack",{{"SWLW_plx1_ap_mag",3,3},{"SWLW_plx1_at_mag",3,3}}},"180th_Trooper_Helmet","OPTRE_HUD_w_Glasses",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","","ItemCompass","tf_microdagr",""}};
+        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15S","","","",{"JLTS_DC15A_mag",60},{},""},{"SWLW_PLX1","","","",{"SWLW_plx1_at_mag",3},{},""},{},{"180th_Trooper_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",8},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15S_mag",9,80}}},{"SWLB_clone_basic_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1}}},{"180th_Clone_EOD_Backpack",{{"SWLW_plx1_ap_mag",3,3},{"SWLW_plx1_at_mag",3,3}}},"180th_Trooper_Helmet","OPTRE_HUD_w_Glasses",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","","ItemCompass","tf_microdagr",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1388,9 +1388,9 @@ class CfgVehicles {
         magazines[] = {"JLTS_DC15A_mag","JLTS_DC17SA_mag","Laserbatteries","JLTS_DC15A_mag","JLTS_DC17SA_mag","Laserbatteries"};
         respawnMagazines[] = {"JLTS_DC15A_mag","JLTS_DC17SA_mag","Laserbatteries","JLTS_DC15A_mag","JLTS_DC17SA_mag","Laserbatteries"};
 
-        backpack = "180th_Medic_Backpack";
+        backpack = "180th_Clone_Medic_Backpack";
 
-        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15S","","","",{"JLTS_DC15A_mag",60},{},""},{},{"JLTS_DC17SA","","","",{"JLTS_DC17SA_mag",20},{},""},{"180th_ARFM_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",8},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15S_mag",9,80}}},{"SWLB_clone_cfr_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1},{"JLTS_DC17SA_mag",3,20}}},{"180th_Medic_Backpack",{{"adv_aceCPR_AED",1},{"ACE_surgicalKit",1},{"ACE_tourniquet",4},{"ACE_personalAidKit",1},{"ACE_morphine",10},{"ACE_epinephrine",10},{"ACE_quikclot",20},{"ACE_packingBandage",35},{"ACE_elasticBandage",35},{"ACE_splint",4},{"ACE_salineIV",2},{"ACE_salineIV_250",4},{"ACE_salineIV_500",4},{"ACE_fieldDressing",10}}},"180th_ARF_Helmet","OPTRE_HUD_w_Glasses",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","","ItemCompass","tf_microdagr",""}};
+        ALiVE_orbatCreator_loadout[] = {{"JLTS_DC15S","","","",{"JLTS_DC15A_mag",60},{},""},{},{"JLTS_DC17SA","","","",{"JLTS_DC17SA_mag",20},{},""},{"180th_ARFM_Uniform",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",8},{"ACE_EntrenchingTool",1},{"ACE_epinephrine",4},{"ACE_morphine",2},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"ACE_Flashlight_XL50",1},{"ACE_MapTools",1},{"ACE_tourniquet",4},{"ACE_packingBandage",10},{"ACE_splint",1},{"JLTS_DC15S_mag",9,80}}},{"SWLB_clone_cfr_armor",{{"SWLW_beltGrenade_mag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Red",1,1},{"OPTRE_M2_Smoke_Blue",1,1},{"JLTS_DC17SA_mag",3,20}}},{"180th_Clone_Medic_Backpack",{{"adv_aceCPR_AED",1},{"ACE_surgicalKit",1},{"ACE_tourniquet",4},{"ACE_personalAidKit",1},{"ACE_morphine",10},{"ACE_epinephrine",10},{"ACE_quikclot",20},{"ACE_packingBandage",35},{"ACE_elasticBandage",35},{"ACE_splint",4},{"ACE_salineIV",2},{"ACE_salineIV_250",4},{"ACE_salineIV_500",4},{"ACE_fieldDressing",10}}},"180th_ARF_Helmet","OPTRE_HUD_w_Glasses",{"SWLB_clone_commander_binocular","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","","ItemCompass","tf_microdagr",""}};
 
 
         class EventHandlers : EventHandlers {

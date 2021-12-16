@@ -35,9 +35,7 @@ class CfgPatches {
         };
         weapons[] = {};
         requiredVersion = 1.62;
-        requiredAddons[] = {
-            ""
-        };
+        requiredAddons[] = {};
         author = "Wyvern Studios ";
         authors[] = {"Poop Mastwe Raccoon","Roach","Wallace"};
     };

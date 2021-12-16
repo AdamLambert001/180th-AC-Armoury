@@ -2124,7 +2124,7 @@ class CfgVehicles {
 
     };
 
-    class B_WAC_Advanced_Recon_Commando_01 : B_WAC_Clone_Lieutenant_01 {
+    class B_BWAC_Advanced_Recon_Commando_01 : B_WAC_Clone_Lieutenant_01 {
         author = "Amn. R. Ribbington";
         scope = 2;
         scopeCurator = 2;
@@ -2164,7 +2164,7 @@ class CfgVehicles {
 
     };
 
-    class B_WAC_Airborne_Trooper_01 : B_WAC_Senior_Clone_Trooper_01 {
+    class B_BWAC_Airborne_Trooper_01 : B_WAC_Senior_Clone_Trooper_01 {
         author = "Amn. R. Ribbington";
         scope = 2;
         scopeCurator = 2;
@@ -2202,7 +2202,7 @@ class CfgVehicles {
 
     };
 
-    class B_WAC_Biker_Advanced_Recon_Commando_01 : B_BWAC_Advanced_Recon_Commando_01 {
+    class B_BWAC_Biker_Advanced_Recon_Commando_01 : B_BWAC_Advanced_Recon_Commando_01 {
         author = "Amn. R. Ribbington";
         scope = 2;
         scopeCurator = 2;
@@ -2242,7 +2242,7 @@ class CfgVehicles {
 
     };
 
-    class B_WAC_Hazard_Trooper_01 : B_BWAC_Biker_Advanced_Recon_Commando_01 {
+    class B_BWAC_Hazard_Trooper_01 : B_BWAC_Biker_Advanced_Recon_Commando_01 {
         author = "Amn. R. Ribbington";
         scope = 2;
         scopeCurator = 2;

@@ -320,7 +320,7 @@ class CfgWeapons
 		displayName="[180th Customs] Clone trooper captain vest (Jerry)";
 		hiddenSelectionsTextures[]=
 		{
-			"\WS_A_CUSTOMS\data\vests\180th_Officer_ACC.paa"
+			"\WS_A_BASE\data\vests\180th_Officer_ACC.paa"
 		};
 	};
 	class 180th_Test_Armor: SWLB_clone_commander_armor

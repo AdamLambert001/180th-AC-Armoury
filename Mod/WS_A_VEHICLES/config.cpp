@@ -141,7 +141,9 @@ class CfgVehicles
 	class 180th_TX130: SWLG_tanks_tx130
 	{
 		displayName="[180th Kobold] TX-130 'Mozzie' Hover Tank";
-		faction="GrapeL";
+		faction="b_wac";
+		scope = 2;
+        scopeCurator = 2;
 		editorSubcategory="WS_Categ_180thGV";
 		hiddenSelections[]=
 		{
@@ -172,7 +174,9 @@ class CfgVehicles
 
 	class 180th_ATTE: 3as_ATTE_Base {
 		displayname="[180th Kobold] AT-TE 'Stompy' Walker";
-		faction = "GrapeL";
+		faction="b_wac";
+		scope = 2;
+        scopeCurator = 2;
 		editorSubcategory="WS_Categ_180thGV";
 		author="Raccoon";
 		hiddenselections[] = 
@@ -200,7 +204,7 @@ class CfgVehicles
 	class 180th_Z95_Racc: 3as_Z95_Republic
 	{
 		displayName="Z-95 Headhunter 'Reaver'";
-		faction = "GrapeL";
+		faction="b_wac";
 		editorSubcategory="WS_Categ_180thAV";
 		editorPreview="";
 		
@@ -221,7 +225,7 @@ class CfgVehicles
 	class 180th_Z95_Base: 3as_Z95_Republic
 	{
 		displayName="Z-95 Headhunter 'Chimera'";
-		faction = "GrapeL";
+		faction="b_wac";
 		editorSubcategory="WS_Categ_180thAV";
 		editorPreview="";
 		
@@ -238,27 +242,6 @@ class CfgVehicles
 			"3AS\3as_saber\data\glass\glass_ca"
 		};
 		crew = "180th_Pilot";
-	};
-	class 180th_Z95_Pey: 3as_Z95_Republic
-	{
-		displayName="Z-95 Headhunter 'Tiger-Shark'";
-		faction = "GrapeL";
-		editorSubcategory="WS_Categ_180thAV";
-		editorPreview="";
-		
-		hiddenselections[]=
-		{
-			"camo",
-			"camo1",
-			"camo2"
-		};
-		hiddenselectionstextures[]=
-		{
-			"WS_A_VEHICLES\Data\Starfighters\180th_Z95_HULL_PEY.paa",
-			"3AS\3as_Z95\Data\cockpit_co.paa",
-			"3AS\3as_saber\data\glass\glass_ca"
-		};
-		crew = "180th_Pey";
 	};
 	class RAC_Z95: 3as_Z95_Republic
 	{
@@ -286,7 +269,7 @@ class CfgVehicles
 		scope=2;
 		crew = "180th_Pilot";
 		side=1;
-		faction="GrapeL";
+		faction="b_wac";
 		editorSubcategory="WS_Categ_180thAV";
 		editorPreview="\3as\3as_arc170\images\3as_arc_170_blue.jpg";
 		hiddenselectionstextures[]=
@@ -303,7 +286,7 @@ class CfgVehicles
 		scope=2;
 		crew="180th_Raccoon";
 		side=1;
-		faction="GrapeL";
+		faction="b_wac";
 		editorSubcategory="WS_Categ_180thAV";
 		editorPreview="\3as\3as_arc170\images\3as_arc_170_blue.jpg";
 		hiddenselectionstextures[]=
@@ -315,163 +298,12 @@ class CfgVehicles
 		};
 	};
 
-	class 180th_Y_Wing_Racc: 3as_BTLB_Bomber {
-		displayName="BTL-B Y-Wing 'Huge Daddy' Bomber";
-		scope = 2;
-		crew="180th_Raccoon";
-		side=1;
-		faction="GrapeL";
-		editorSubcategory="WS_Categ_180thAV";
-		hiddenSelectionsTextures[]= {
-			"WS_A_VEHICLES\Data\Starfighters\180th_YWing_Chasis",
-			"3as\3as_btlb\data\detail_co.paa",
-			"3as\3as_btlb\data\interior_co.paa"//Interior
-		};
-	};
-
 	//--------------------------------------------------------Laat/i (the standard LAAT's)--------------------------------------------------------//
-		class 180th_Kroner_LAAT: lsd_heli_laati
-	{
-		displayname="LAAT/I Gunship (Kroner)";
-		faction = "GrapeL";
-		author="Raccoon";
-		editorSubcategory="WS_Categ_180thAV";
-		crew = "180th_Kroner";
-		hiddenselections[]=
-		{
-			"body",
-			"body_2",
-			"door_1",
-			"door_2",
-			"door_3",
-			"wings",
-			"missiles",
-			"cockpits",
-			"glass",
-			"clan",
-			"zasleh_l",
-			"zasleh_r",
-			"zasleh_b"
-		};
-		hiddenselectionstextures[]=
-		{
-				"WS_A_VEHICLES\Data\LAAT\180th_Kroner_Body.paa", 
-				"WS_A_VEHICLES\Data\LAAT\180th_Kroner_Body2.paa",
-				"WS_A_VEHICLES\Data\LAAT\180th_Kroner_door1.paa",
-				"WS_A_VEHICLES\Data\LAAT\180th_Kroner_door2.paa",
-				"WS_A_VEHICLES\Data\LAAT\180th_Kroner_door3.paa",
-				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"lsd_vehicles_heli\laati\data\missiles_co.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"WS_A_VEHICLES\Data\glass_ca.paa",
-				
-				
-		};
-		
-		class TextureSources
-        {
-            class base
-            {
-                displayname="Kroner_3rd_Reich";
-                author="Roach";
-                textures[]=
-                {
-				"WS_A_VEHICLES\Data\LAAT\180th_Kroner_Body.paa", 
-				"WS_A_VEHICLES\Data\LAAT\180th_Kroner_Body2.paa",
-				"WS_A_VEHICLES\Data\LAAT\180th_Kroner_door1.paa",
-				"WS_A_VEHICLES\Data\LAAT\180th_Kroner_door2.paa",
-				"WS_A_VEHICLES\Data\LAAT\180th_Kroner_door3.paa",
-				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"lsd_vehicles_heli\laati\data\missiles_co.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"WS_A_VEHICLES\Data\glass_ca.paa",
-                };
-                factions[]=
-                {
-                    "MA_Categ_Vic"
-                };
-            };
-
-        };
-        textureList[]=
-        {
-            "base",
-        };
-    };
-
-	class 180th_Pey_LAAT: lsd_heli_laati
-	{
-		displayname="LAAT/I Gunship (Pey)";
-		faction = "GrapeL";
-		author="Raccoon";
-		editorSubcategory="WS_Categ_180thAV";
-		crew = "180th_Pey";
-		hiddenselections[]=
-		{
-			"body",
-			"body_2",
-			"door_1",
-			"door_2",
-			"door_3",
-			"wings",
-			"missiles",
-			"cockpits",
-			"glass",
-			"clan",
-			"zasleh_l",
-			"zasleh_r",
-			"zasleh_b"
-		};
-		hiddenselectionstextures[]=
-		{
-				"WS_A_VEHICLES\Data\LAAT\180th_Pey_Body.paa", 
-				"WS_A_VEHICLES\Data\LAAT\180th_Pey_Body2.paa",
-				"WS_A_VEHICLES\Data\LAAT\180th_Pey_door1.paa", 
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"lsd_vehicles_heli\laati\data\missiles_co.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"WS_A_VEHICLES\Data\glass_ca.paa"
-				
-		};
-
-		class TextureSources
-        {
-            class base
-            {
-                displayname="We_do_a_lil_trollin";
-                author="Wallace";
-                textures[]=
-                {
-                "WS_A_VEHICLES\Data\LAAT\180th_Pey_Body.paa", 
-				"WS_A_VEHICLES\Data\LAAT\180th_Pey_Body2.paa",
-				"WS_A_VEHICLES\Data\LAAT\180th_Pey_door1.paa", 
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"lsd_vehicles_heli\laati\data\missiles_co.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"WS_A_VEHICLES\Data\glass_ca.paa"
-                };
-                factions[]=
-                {
-                    "MA_Categ_Vic"
-                };
-            };
-
-        };
-        textureList[]=
-        {
-            "base",
-        };
-    };
-	
 
 	class 180th_Pegasus_LAAT: lsd_heli_laati
 	{
 		displayname="LAAT/I Gunship (Pegasus)";
-		faction = "GrapeL";
+		faction="b_wac";
 		author="Raccoon";
 		editorSubcategory="WS_Categ_180thAV";
 		crew = "180th_Pilot";
@@ -535,81 +367,11 @@ class CfgVehicles
             "base",
         };
     };
-	
-
-	class 180th_Raccoon_LAAT: lsd_heli_laati
-	{
-		displayname="LAAT/I Gunship (Raccoon)";
-		faction = "GrapeL";
-		author="Raccoon";
-		editorSubcategory="WS_Categ_180thAV";
-		crew = "180th_Raccoon";
-		hiddenselections[]=
-		{
-			"body",
-			"body_2",
-			"door_1",
-			"door_2",
-			"door_3",
-			"wings",
-			"missiles",
-			"cockpits",
-			"glass",
-			"clan",
-			"zasleh_l",
-			"zasleh_r",
-			"zasleh_b"
-		};
-		hiddenselectionstextures[]=
-		{
-				"WS_A_VEHICLES\Data\LAAT\180_RacL_body1.paa", 
-				"WS_A_VEHICLES\Data\LAAT\180_RacL_body2.paa",
-				"WS_A_VEHICLES\Data\LAAT\180_RacL_door1.paa",
-				"WS_A_VEHICLES\Data\LAAT\180_RacL_door2.paa",
-				"WS_A_VEHICLES\Data\LAAT\180_RacL_door3.paa",
-				"WS_A_VEHICLES\Data\LAAT\180_RacL_wings.paa", 
-				"lsd_vehicles_heli\laati\data\missiles_co.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"
-				
-		};
-
-		class TextureSources
-        {
-            class base
-            {
-                displayname="Red Rocket";
-                author="Raccoon";
-                textures[]=
-                {
-				"WS_A_VEHICLES\Data\LAAT\180_RacL_body1.paa", 
-				"WS_A_VEHICLES\Data\LAAT\180_RacL_body2.paa",
-				"WS_A_VEHICLES\Data\LAAT\180_RacL_door1.paa",
-				"WS_A_VEHICLES\Data\LAAT\180_RacL_door2.paa",
-				"WS_A_VEHICLES\Data\LAAT\180_RacL_door3.paa",
-				"WS_A_VEHICLES\Data\LAAT\180_RacL_wings.paa", 
-				"lsd_vehicles_heli\laati\data\missiles_co.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"
-                };
-                factions[]=
-                {
-                    "MA_Categ_Vic"
-                };
-            };
-
-        };
-        textureList[]=
-        {
-            "base",
-        };
-    };
-	
 
 	class 180th_Huebert_LAAT: lsd_heli_laati			
 	{
 		displayname="LAAT/I Gunship (Huebert)";
-		faction = "GrapeL";
+		faction="b_wac";
 		author="Raccoon";
 		editorSubcategory="WS_Categ_180thAV";
 		crew = "180th_Pilot";
@@ -677,7 +439,7 @@ class CfgVehicles
 	class 180th_Melisande_LAAT: lsd_heli_laati
 	{
 		displayname="LAAT/I Gunship (Melisande)";
-		faction = "GrapeL";
+		faction="b_wac";
 		author="Raccoon";
 		editorSubcategory="WS_Categ_180thAV";
 		crew = "180th_Pilot";
@@ -804,7 +566,7 @@ class CfgVehicles
 		cost="3e+006";
 		crew="180th_Pilot";
 		displayname="[180th] LAAT/LE (Lightning-Bird)";
-		faction="GrapeL";
+		faction="b_wac";
 		vehicleclass="Helicopter";
 		scope=2;
 		side=1;
@@ -825,39 +587,6 @@ class CfgVehicles
 			libtextdesc="";
 		};
 	};
-    	class 180th_Pey_LAATle: 3AS_Patrol_LAAT_Base
-	{
-		_generalmacro="TCW_LAAT_i";
-		accuracy=5;
-		author="Raccoon";
-		availableforsupporttypes[]=
-		{
-			"CAS_Heli"
-		};
-		cost="3e+006";
-		crew="180th_Pey";
-		displayname="[180th] LAAT/LE (Stalker)";
-		faction="GrapeL";
-		vehicleclass="Helicopter";
-		scope=2;
-		side=1;
-		typicalcargo[]=
-		{
-			"3AS_Clone_P2_Pilot"
-		};
-		hiddenSelections[]=
-		{
-			"camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_VEHICLES\Data\LAAT_LE\180th_PEY_LAAT_LE.paa"
-		};
-		class Library
-		{
-			libtextdesc="";
-		};
-	};
     class 180th_Racc_LAATle: 3AS_Patrol_LAAT_Base
 	{
 		_generalmacro="TCW_LAAT_i";
@@ -870,7 +599,7 @@ class CfgVehicles
 		cost="3e+006";
 		crew="180th_Raccoon";
 		displayname="[180th] LAAT/LE (Reaper)";
-		faction="GrapeL";
+		faction="b_wac";
 		vehicleclass="Helicopter";
 		scope=2;
 		side=1;
@@ -2185,9 +1914,9 @@ class CfgVehicles
 	class 180th_ground_barc: 180th_barc_base
 	{
 		scope=2;
-		crew="SWLB_clone_recon_base_P2";
+		crew="180th_BARC";
 		side=1;
-		faction="GrapeL";
+		faction="b_wac";
 		displayName="[180th] BARC Speeder";
 		author="Raccoon";
 	};

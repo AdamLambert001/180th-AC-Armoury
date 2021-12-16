@@ -35,7 +35,7 @@ class CfgEditorSubcategories
 {
 	class WS_180th_Armory_Base
 	{
-		displayName="Wyvern Company";
+		displayName="Wyvern Company - Infantry";
 	};
 	
 
@@ -888,7 +888,7 @@ class CfgVehicles
 	};
     class 180th_Clone_EOD_Backpack: SWLB_clone_backpack_heavy
 	{
-		displayName="[180th Base] Clone trooper eod backpack";
+		displayName="[180th Base] Clone trooper EOD backpack";
 		hiddenSelectionsTextures[]=
 		{
 			"\WS_A_BASE\data\accessories\180th_EOD_Backpack.paa",
@@ -900,7 +900,7 @@ class CfgVehicles
 	};
 	class 180th_Clone_Medic_Backpack: SWLB_clone_backpack_medic
 	{
-		displayName="[180th Base] Clone trooper medic backpack";
+		displayName="[180th Base] Clone trooper Medic backpack";
 		hiddenSelectionsTextures[]=
 		{
 			"\WS_A_BASE\data\accessories\180th_Medic_Backpack.paa",
@@ -912,7 +912,7 @@ class CfgVehicles
 	};
 	class 180th_Clone_RTO_Backpack: SWLB_clone_backpack_RTO
 	{
-		displayName="[180th Base] Clone trooper rto backpack";
+		displayName="[180th Base] Clone trooper RTO backpack";
 		hiddenSelectionsTextures[]=
 		{
 			"\WS_A_BASE\data\accessories\180th_RTO_Backpack.paa",
@@ -924,7 +924,7 @@ class CfgVehicles
 	};
 	class 180th_RTO_Mini_Pack: SWLB_clone_backpack
 	{
-		displayName="[180th Base] Clone trooper rto mini pack";
+		displayName="[180th Base] Clone trooper RTO mini pack";
 		model="\SWLB_equipment\backpacks\SWLB_clone_RTO_mini_backpack.p3d";
 		hiddenSelections[]=
 		{
@@ -950,7 +950,7 @@ class CfgVehicles
 		author="Wyvern Studios";
 		scopecurator=2;
 		maximumload=200;
-		displayName="[180th Base] Clone trooper recon rto mini pack";
+		displayName="[180th Base] Clone trooper recon RTO mini pack";
 		model="\SWLB_CEE\data\SWLB_CEE_Recon_RTO_Backpack.p3d";
 		picture="\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_RTO_mini_backpack_ca.paa";
 		hiddenSelections[]=
@@ -1250,7 +1250,7 @@ class CfgVehicles
 			"SWLB_comlink"
 		};
 	};
-	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MOS 
+	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MOS penis
 	class 180th_Medic: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
@@ -1269,7 +1269,8 @@ class CfgVehicles
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
+			"SWLB_comlink",
+			"180th_Clone_Medic_Backpack"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1278,7 +1279,8 @@ class CfgVehicles
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
+			"SWLB_comlink",
+			"180th_Clone_Medic_Backpack"
 		};
 	};
 	class 180th_AT: SWLB_clone_base_P2
@@ -1299,7 +1301,8 @@ class CfgVehicles
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
+			"SWLB_comlink",
+			"180th_Clone_Backpack"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1308,7 +1311,8 @@ class CfgVehicles
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
+			"SWLB_comlink",
+			"180th_Clone_Backpack"
 		};
 	};
 	class 180th_AR: SWLB_clone_base_P2
@@ -1329,7 +1333,8 @@ class CfgVehicles
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
+			"SWLB_comlink",
+			"180th_Clone_Backpack"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1338,7 +1343,8 @@ class CfgVehicles
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
+			"SWLB_comlink",
+			"180th_Clone_Backpack"
 		};
 	};
 	class 180th_EOD: SWLB_clone_base_P2
@@ -1359,7 +1365,8 @@ class CfgVehicles
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
+			"SWLB_comlink",
+			"180th_Clone_EOD_Backpack"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1368,7 +1375,8 @@ class CfgVehicles
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
+			"SWLB_comlink",
+			"180th_Clone_EOD_Backpack"
 		};
 	};
 	class 180th_GR: SWLB_clone_base_P2
@@ -1389,7 +1397,8 @@ class CfgVehicles
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
+			"SWLB_comlink",
+			"180th_Clone_Backpack"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1510,7 +1519,8 @@ class CfgVehicles
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
+			"SWLB_comlink",
+			"180th_Clone_Medic_Backpack"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1519,7 +1529,8 @@ class CfgVehicles
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
+			"SWLB_comlink",
+			"180th_Clone_Medic_Backpack"
 		};
 	}; 
 	class 180th_ARC: SWLB_clone_base_P2
@@ -1600,7 +1611,8 @@ class CfgVehicles
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
+			"SWLB_comlink",
+			"180th_RTO_Mini_Pack"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1609,7 +1621,8 @@ class CfgVehicles
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
+			"SWLB_comlink",
+			"180th_RTO_Mini_Pack"
 		};
 	}; 
 	class 180th_Hazard: SWLB_clone_base_P2

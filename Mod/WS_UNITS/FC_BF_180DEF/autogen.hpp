@@ -221,7 +221,7 @@ class CfgGroups {
                     };
                 };
 
-                class b_bwac_infantry_airborne_squad {
+                class b_wac_infantry_airborne_squad {
                     name = "Airborne Squad";
                     side = 1;
                     faction = "B_WAC";
@@ -232,41 +232,41 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 1;
-                        vehicle = "B_BWAC_Airborne_Trooper_01";
+                        vehicle = "b_wac_Airborne_Trooper_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 1;
-                        vehicle = "B_BWAC_Airborne_Trooper_01";
+                        vehicle = "b_wac_Airborne_Trooper_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 1;
-                        vehicle = "B_BWAC_Airborne_Trooper_01";
+                        vehicle = "b_wac_Airborne_Trooper_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 1;
-                        vehicle = "B_BWAC_Airborne_Trooper_01";
+                        vehicle = "b_wac_Airborne_Trooper_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
                         side = 1;
-                        vehicle = "B_BWAC_Airborne_Trooper_01";
+                        vehicle = "b_wac_Airborne_Trooper_01";
                     };
                     class Unit5 {
                         position[] = {15,-15,0};
                         rank = "PRIVATE";
                         side = 1;
-                        vehicle = "B_BWAC_Airborne_Trooper_01";
+                        vehicle = "b_wac_Airborne_Trooper_01";
                     };
                 };
 
-                class b_bwac_infantry_command_team {
+                class b_wac_infantry_command_team {
                     name = "Command Team";
                     side = 1;
                     faction = "B_WAC";
@@ -299,7 +299,7 @@ class CfgGroups {
                     };
                 };
 
-                class b_bwac_infantry_clone_advanced_specialist_squad {
+                class b_wac_infantry_clone_advanced_specialist_squad {
                     name = "Clone Advanced Specialist Squad";
                     side = 1;
                     faction = "b_wac";
@@ -400,7 +400,7 @@ class CfgGroups {
                     };
                 };
 
-                class b_bwac_specops_arc_team {
+                class b_wac_specops_arc_team {
                     name = "ARC Team";
                     side = 1;
                     faction = "B_WAC";
@@ -411,29 +411,29 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "CAPTAIN";
                         side = 1;
-                        vehicle = "B_BWAC_Advanced_Recon_Commando_01";
+                        vehicle = "b_wac_Advanced_Recon_Commando_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "LIEUTENANT";
                         side = 1;
-                        vehicle = "B_BWAC_Advanced_Recon_Commando_01";
+                        vehicle = "b_wac_Advanced_Recon_Commando_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "SERGEANT";
                         side = 1;
-                        vehicle = "B_BWAC_Advanced_Recon_Commando_01";
+                        vehicle = "b_wac_Advanced_Recon_Commando_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "SERGEANT";
                         side = 1;
-                        vehicle = "B_BWAC_Advanced_Recon_Commando_01";
+                        vehicle = "b_wac_Advanced_Recon_Commando_01";
                     };
                 };
 
-                class b_bwac_specops_barc_fireteam {
+                class b_wac_specops_barc_fireteam {
                     name = "BARC Team";
                     side = 1;
                     faction = "B_WAC";
@@ -444,29 +444,29 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "LIEUTENANT";
                         side = 1;
-                        vehicle = "B_BWAC_Biker_Advanced_Recon_Commando_01";
+                        vehicle = "b_wac_Biker_Advanced_Recon_Commando_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "SERGEANT";
                         side = 1;
-                        vehicle = "B_BWAC_Biker_Advanced_Recon_Commando_01";
+                        vehicle = "b_wac_Biker_Advanced_Recon_Commando_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "CORPORAL";
                         side = 1;
-                        vehicle = "B_BWAC_Biker_Advanced_Recon_Commando_01";
+                        vehicle = "b_wac_Biker_Advanced_Recon_Commando_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "CORPORAL";
                         side = 1;
-                        vehicle = "B_BWAC_Biker_Advanced_Recon_Commando_01";
+                        vehicle = "b_wac_Biker_Advanced_Recon_Commando_01";
                     };
                 };
 
-                class b_bwac_specops_hazard_squad {
+                class b_wac_specops_hazard_squad {
                     name = "Hazard Squad";
                     side = 1;
                     faction = "B_WAC";
@@ -477,19 +477,19 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "LIEUTENANT";
                         side = 1;
-                        vehicle = "B_BWAC_Hazard_Trooper_01";
+                        vehicle = "b_wac_Hazard_Trooper_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "SERGEANT";
                         side = 1;
-                        vehicle = "B_BWAC_Hazard_Trooper_01";
+                        vehicle = "b_wac_Hazard_Trooper_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "CORPORAL";
                         side = 1;
-                        vehicle = "B_BWAC_Hazard_Trooper_01";
+                        vehicle = "b_wac_Hazard_Trooper_01";
                     };
                 };
 
@@ -531,7 +531,7 @@ class CfgGroups {
                     };
                 };
 
-                class b_bwac_motorized_barc_squad {
+                class b_wac_motorized_barc_squad {
                     name = "BARC Squad";
                     side = 1;
                     faction = "B_WAC";
@@ -584,7 +584,7 @@ class CfgGroups {
             class Armored {
                 name = "Armored";
 
-                class b_bwac_armored_stompy_squad {
+                class b_wac_armored_stompy_squad {
                     name = "Stompy Squad";
                     side = 1;
                     faction = "B_WAC";
@@ -620,7 +620,7 @@ class CfgGroups {
             class Air {
                 name = "Air";
 
-                class b_bwac_air_z95_squadron {
+                class b_wac_air_z95_squadron {
                     name = "Z-95 Squadron";
                     side = 1;
                     faction = "B_WAC";
@@ -653,7 +653,7 @@ class CfgGroups {
                     };
                 };
 
-                class b_bwac_air_laat_isquadron {
+                class b_wac_air_laat_isquadron {
                     name = "LAAT/i Squadron";
                     side = 1;
                     faction = "B_WAC";
@@ -680,7 +680,7 @@ class CfgGroups {
                     };
                 };
 
-                class b_bwac_air_arc_170_wing {
+                class b_wac_air_arc_170_wing {
                     name = "ARC-170 Wing";
                     side = 1;
                     faction = "B_WAC";
@@ -701,7 +701,7 @@ class CfgGroups {
                     };
                 };
 
-                class b_bwac_air_laat_le_squadron {
+                class b_wac_air_laat_le_squadron {
                     name = "LAAT/le Squadron";
                     side = 1;
                     faction = "B_WAC";
@@ -1592,17 +1592,17 @@ class CfgVehicles {
 
     };
 
-    class B_BWAC_LAAT_le_Lightning_Bird_01 : 180th_Spec_LAAT_OCimport_02 {
+    class b_wac_LAAT_le_Lightning_Bird_01 : 180th_Spec_LAAT_OCimport_02 {
         author = "Wyvern Studios ";
         scope = 2;
         scopeCurator = 2;
         displayName = "LAAT/le (Lightning Bird)";
         side = 1;
         faction = "B_WAC";
-        crew = "B_BWAC_Clone_Pilot_01";
+        crew = "b_wac_Clone_Pilot_01";
 
         class Turrets : Turrets {
-            class Copilot : Copilot { gunnerType = "B_BWAC_Clone_Pilot_01"; };
+            class Copilot : Copilot { gunnerType = "b_wac_Clone_Pilot_01"; };
         };
 
 
@@ -1621,7 +1621,7 @@ class CfgVehicles {
 
     };
 
-    class B_BWAC_ARC_170_180th_01 : 180th_arc_170_OCimport_02 {
+    class b_wac_ARC_170_180th_01 : 180th_arc_170_OCimport_02 {
         author = "Wyvern Studios ";
         scope = 2;
         scopeCurator = 2;
@@ -1916,7 +1916,7 @@ class CfgVehicles {
 
     };
 
-    class B_BWAC_Clone_Pilot_01 : B_WAC_Clone_Trooper_DC_15S_01 {
+    class b_wac_Clone_Pilot_01 : B_WAC_Clone_Trooper_DC_15S_01 {
         author = "Wyvern Studios ";
         scope = 2;
         scopeCurator = 2;
@@ -1954,7 +1954,7 @@ class CfgVehicles {
 
     };
 
-    class B_BWAC_Advanced_Recon_Commando_01 : B_WAC_Clone_Lieutenant_01 {
+    class b_wac_Advanced_Recon_Commando_01 : B_WAC_Clone_Lieutenant_01 {
         author = "Amn. R. Ribbington";
         scope = 2;
         scopeCurator = 2;
@@ -1994,7 +1994,7 @@ class CfgVehicles {
 
     };
 
-    class B_BWAC_Airborne_Trooper_01 : B_WAC_Senior_Clone_Trooper_01 {
+    class b_wac_Airborne_Trooper_01 : B_WAC_Senior_Clone_Trooper_01 {
         author = "Amn. R. Ribbington";
         scope = 2;
         scopeCurator = 2;
@@ -2032,7 +2032,7 @@ class CfgVehicles {
 
     };
 
-    class B_BWAC_Biker_Advanced_Recon_Commando_01 : B_BWAC_Advanced_Recon_Commando_01 {
+    class b_wac_Biker_Advanced_Recon_Commando_01 : b_wac_Advanced_Recon_Commando_01 {
         author = "Amn. R. Ribbington";
         scope = 2;
         scopeCurator = 2;
@@ -2072,7 +2072,7 @@ class CfgVehicles {
 
     };
 
-    class B_BWAC_Hazard_Trooper_01 : B_BWAC_Biker_Advanced_Recon_Commando_01 {
+    class b_wac_Hazard_Trooper_01 : b_wac_Biker_Advanced_Recon_Commando_01 {
         author = "Amn. R. Ribbington";
         scope = 2;
         scopeCurator = 2;
@@ -2114,7 +2114,6 @@ class CfgVehicles {
 
 };
 
-};
 
 //////////////////////////////////////////////////////////////////////////////////
 // Config Automatically Generated by ALiVE ORBAT Creator

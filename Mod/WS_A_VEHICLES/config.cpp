@@ -1914,7 +1914,7 @@ class CfgVehicles
 	class 180th_ground_barc: 180th_barc_base
 	{
 		scope=2;
-		crew="SWLB_clone_recon_base_P2";
+		crew="180th_BARC";
 		side=1;
 		faction="b_wac";
 		displayName="[180th] BARC Speeder";

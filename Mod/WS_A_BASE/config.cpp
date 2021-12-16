@@ -35,7 +35,7 @@ class CfgEditorSubcategories
 {
 	class WS_180th_Armory_Base
 	{
-		displayName="Wyvern Company";
+		displayName="Wyvern Company - Infantry";
 	};
 	
 

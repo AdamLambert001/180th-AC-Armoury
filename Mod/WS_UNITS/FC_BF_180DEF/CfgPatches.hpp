@@ -39,6 +39,6 @@ class CfgPatches {
             "B_WACG"
         };
         author = "Wyvern Studios ";
-        authors[] = {"Wyvern Studios "};
+        authors[] = {"Poop Mastwe Raccoon","Roach","Wallace"};
     };
 };

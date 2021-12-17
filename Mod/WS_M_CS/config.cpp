@@ -4,7 +4,7 @@ class CfgMods
     {
         name = "HS: Star Wars Combat Stims";
         author = "Rib/Roach";
-        picture = "\HSSW_CombatStims\data\logo.paa";
+        picture = "\WS_M_CS\data\logo.paa";
         hideName = "false";
         hidePicture = "false";
     };
@@ -41,7 +41,7 @@ class CfgWeapons
         category = "medication";
         scope = 2; 
         displayName = "Clone Combat Relief Stim";
-        picture = "\HSSW_CombatStims\data\clonebasestimulant.paa";
+        picture = "\WS_M_CS\data\clonebasestimulant.paa";
         model = "\MRC\JLTS\contraband\Drugs\stimulant.p3d"; //JLTS
         descriptionShort = "Inject into arm, for minimal pain relief";
         class ItemInfo: CBA_MiscItem_ItemInfo
@@ -55,7 +55,7 @@ class CfgWeapons
         };
 		hiddenSelectionsTextures[] = 
         {
-            "\HSSW_CombatStims\data\clonebasestimulant.paa"
+            "\WS_M_CS\data\clonebasestimulant.paa"
         };
     };
 
@@ -63,7 +63,7 @@ class CfgWeapons
     {
         displayName = "Clone Combat Adrenal Stim";
         model = "\MRC\JLTS\contraband\Drugs\stimulant.p3d"; //JLTS
-        picture = "\HSSW_CombatStims\data\cloneadrenstimulant.paa";
+        picture = "\WS_M_CS\data\cloneadrenstimulant.paa";
         descriptionShort = "Inject into arm, for some aim assist";
 
         hiddenSelections[] = 
@@ -72,7 +72,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "\HSSW_CombatStims\data\cloneadrenstimulant.paa"
+            "\WS_M_CS\data\cloneadrenstimulant.paa"
         };
     };
 
@@ -152,11 +152,11 @@ class CfgFncs
         {
             class fn_PainReduceGlobal 
             {
-                file = "\HSSW_CombatStims\fncs\fn_PainReduceGlobal.sqf";
+                file = "\WS_M_CS\fncs\fn_PainReduceGlobal.sqf";
             };
             class fn_PainReduceLocal 
             {
-                file = "\HSSW_CombatStims\fncs\fn_PainReduceLocal.sqf";
+                file = "\WS_M_CS\fncs\fn_PainReduceLocal.sqf";
             };
         };
         class ribAdren 

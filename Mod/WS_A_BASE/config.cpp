@@ -15,6 +15,9 @@ class CfgPatches
 		units[]=
 		{
 			"180th_Trooper",
+			"180th_Pilot",
+			"180th_Engineer",
+			"180th_BARC"
 		};
 		weapons[]=
 		{

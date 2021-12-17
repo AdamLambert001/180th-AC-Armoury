@@ -220,7 +220,7 @@ class CfgVehicles
 			"3AS\3as_Z95\Data\cockpit_co.paa",
 			"3AS\3as_saber\data\glass\glass_ca"
 		};
-		crew = "180th_Raccoon";
+		crew = "180th_Pilot";
 	};
 	class 180th_Z95_Base: 3as_Z95_Republic
 	{
@@ -284,7 +284,7 @@ class CfgVehicles
 	{
 		displayName="ARC-170 'Big Daddy'";
 		scope=2;
-		crew="180th_Raccoon";
+		crew="180th_Pilot";
 		side=1;
 		faction="b_wac";
 		editorSubcategory="WS_Categ_180thAV";
@@ -559,6 +559,7 @@ class CfgVehicles
 		_generalmacro="TCW_LAAT_i";
 		accuracy=5;
 		author="Raccoon";
+		editorSubcategory="WS_Categ_180thAV";
 		availableforsupporttypes[]=
 		{
 			"CAS_Heli"
@@ -592,12 +593,13 @@ class CfgVehicles
 		_generalmacro="TCW_LAAT_i";
 		accuracy=5;
 		author="Raccoon";
+		editorSubcategory="WS_Categ_180thAV";
 		availableforsupporttypes[]=
 		{
 			"CAS_Heli"
 		};
 		cost="3e+006";
-		crew="180th_Raccoon";
+		crew="180th_Pilot";
 		displayname="[180th] LAAT/LE (Reaper)";
 		faction="b_wac";
 		vehicleclass="Helicopter";

@@ -99,6 +99,15 @@ class CfgWeapons
 	    	"WS_A_CUSTOMS\data\helmets\180th_Jerry_Helmet.paa",
 		};
 	};
+	class 180th_Wallace_Pilot_Helmet: SWLB_clone_pilot_P2_helmet
+	{
+		displayName="[180th Customs] Clone pilot Helmet (Wallace)";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+	    	"WS_A_CUSTOMS\data\helmets\WPil.paa",
+		};
+	};
     class 180th_Paul_Helmet: SWLB_clone_P2_helmet
 	{
 		displayName="[180th Customs] Clone trooper helmet (Paul)";

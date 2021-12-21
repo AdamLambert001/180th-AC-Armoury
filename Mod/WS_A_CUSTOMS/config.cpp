@@ -177,15 +177,7 @@ class CfgWeapons
 	    	"WS_A_CUSTOMS\data\helmets\180th_Frost_Helmet.paa",
 		};
 	};
-    class 180th_Hawk_Helmet: SWLB_clone_P2_helmet
-	{
-		displayName="[180th Customs] Clone trooper helmet (Hawk)";
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_CUSTOMS\data\helmets\180th_Hawk_Helmet.paa"
-		};
-	};
-	   class 180th_Raccoon_INF_Helmet: SWLB_clone_P2_helmet
+	class 180th_Raccoon_INF_Helmet: SWLB_clone_P2_helmet
 	{
 		displayName="[180th Customs] Clone trooper helmet (Raccoon)";
 		hiddenSelectionsTextures[]=
@@ -446,18 +438,6 @@ class CfgWeapons
 		{
 			uniformModel="-";
 			uniformClass="180th_Icarus";
-			containerClass="Supply140";
-			mass=40;
-		};
-	};
-	class 180th_Hawk_Uniform: SWLB_clone_uniform
-	{
-		displayName="[180th Customs] Clone trooper uniform (Hawk)";
-		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="180th_Hawk";
 			containerClass="Supply140";
 			mass=40;
 		};
@@ -898,36 +878,6 @@ class CfgVehicles
 		{
 			"SWLB_clone_basic_armor",
 			"180th_Tom_Helmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"SWLB_comlink"
-		};
-	};
-	class 180th_Hawk: SWLB_clone_base_P2
-	{
-		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
-        faction = "180thACA";
-		editorSubcategory="WS_180th_Armory_Customs";
-		uniformclass="180th_Hawk_Uniform";
-		hiddenSelectionsTextures[]=
-		{
-	        "WS_A_CUSTOMS\data\armor\180th_Hawk_Armor1.paa",
-			"WS_A_CUSTOMS\data\armor\180th_Hawk_Armor2.paa",
-		};
-		linkedItems[]=
-		{
-			"SWLB_clone_basic_armor",
-			"180th_Hawk_Helmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"SWLB_comlink"
-		};
-		respawnLinkedItems[]=
-		{
-			"SWLB_clone_basic_armor",
-			"180th_Hawk_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",

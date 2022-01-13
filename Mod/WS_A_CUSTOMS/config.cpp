@@ -54,10 +54,10 @@ class CfgWeapons
 	class ls_blueforHelmet_base;
 	class HeadgearItem;
     class NVGoggles;
-    class 180th_Paul_NVVisor: NVGoggles
+    class 180th_Roach_NVVisor: NVGoggles
 	{
 		author="Wyvern Studios";
-		displayName="[180th Base] Clone NV Visor (Paul)";
+		displayName="[180th Customs] Clone NV Visor (Roach)";
 		modelOptics="\SWLB_clones\SWLB_clone_nvg_optic_dummy.p3d";
 		model="\SWLB_clones\swlb_clone_nvg_on.p3d";
 		hiddenSelections[]=
@@ -67,7 +67,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"WS_A_CUSTOMS\data\accessories\180th_Paul_NVG.paa" 
+			"WS_A_CUSTOMS\data\accessories\180th_Roach_NVG.paa" 
 		};
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
 		visionMode[]=
@@ -82,7 +82,7 @@ class CfgWeapons
 			type=616;
 			uniformModel="\SWLB_clones\swlb_clone_nvg_on.p3d";
 			modelOff="\SWLB_clones\swlb_clone_nvg_on.p3d";
-			mass=20;
+			mass=1;
 			hiddenSelections[]=
 			{
 				"camo1",
@@ -146,7 +146,7 @@ class CfgWeapons
 	};
     class 180th_Roach_Helmet: SWLB_clone_P2_helmet
 	{
-		displayName="[180th Customs] Clone trooper helme (Roach)";
+		displayName="[180th Customs] Clone trooper helmet (Roach)";
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_CUSTOMS\data\helmets\180th_Roach_Helmet.paa"
@@ -185,12 +185,12 @@ class CfgWeapons
 			"WS_A_CUSTOMS\data\helmets\180th_Raccoon_Helmet_I.paa"
 		};
 	};
-    class 180th_Fire_Helmet: SWLB_clone_P2_helmet
+    class 180th_Fire_Helmet: SWLB_P2_SpecOps_Helmet
 	{
-		displayName="[180th Customs] Clone trooper helmet (Fire)";
+		displayName="[180th Customs] Clone trooper JTAC helmet (Fire)";
 		hiddenSelectionsTextures[]=
 		{
-			"WS_A_CUSTOMS\data\helmets\180th_Fire_Helmet.paa"
+			"WS_A_CUSTOMS\data\helmets\180th_Fire_JTAC_Helmet.paa"
 		};
 	};
 	class 180th_Jamison_Helmet: SWLB_clone_P2_helmet
@@ -1018,7 +1018,7 @@ class CfgVehicles
 		linkedItems[]=
 		{
 			"SWLB_clone_basic_armor",
-			"180th_Fire_Helmet",
+			"180th_Fire_JTAC_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1027,7 +1027,7 @@ class CfgVehicles
 		respawnLinkedItems[]=
 		{
 			"SWLB_clone_basic_armor",
-			"180th_Fire_Helmet",
+			"180th_Fire_JTAC_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",

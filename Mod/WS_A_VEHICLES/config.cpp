@@ -98,6 +98,15 @@ class UniformSlotInfo
     linkProxy = "-"; 
 }; 
 
+class CfgWeapons
+{
+	class SWLG_TX130_cannon;
+	
+	class 180_TX130_Cannon: SWLG_TX130_cannon 
+	{
+		displayName = BARC Cannons Duel Shot;
+	};
+};
 
 
 class CfgVehicles 
@@ -165,7 +174,7 @@ class CfgVehicles
 		idleRpm=750;
 		maxOmega=300;
 		peakTorque=5000;
-		armor=980;
+		armor=950;
 		armorStructural=20;
 		damageResistance=0.04;
 		crewCrashProtection=0.005;
@@ -196,7 +205,7 @@ class CfgVehicles
 			"3as\3as_atte\data\atte_underpiping_co.paa" //underpipe
 		};
 
-		armor = 3400;
+		armor = 3300;
 		crew = "180th_Engineer";
 	};
 
@@ -637,13 +646,20 @@ class CfgVehicles
 		displayName="180thBARCSpeeder_base";
 		weapons[]=
 		{
-			"ls_speeder_AP"
+			"ls_speeder_AP",
+			"180_TX130_cannon"
 		};
 		magazines[]=
 		{
 			"ls_50Rnd_speederHE_belt",
 			"ls_50Rnd_speederHE_belt",
-			"ls_50Rnd_speederHE_belt"
+			"ls_50Rnd_speederHE_belt",
+			"ls_50Rnd_speederHE_belt",
+			"ls_50Rnd_speederHE_belt",
+			"ls_50Rnd_speederHE_belt",
+			"SWLG_TX130_cannon_mag",
+			"SWLG_TX130_cannon_mag",
+			"SWLG_TX130_cannon_mag"
 		};
 		memoryPointGun[]=
 		{
@@ -676,9 +692,9 @@ class CfgVehicles
 		turnCoef=2.5;
 		precision=10;
 		brakeDistance=3;
-		acceleration=20;
+		acceleration=35;
 		fireResistance=5;
-		armor=150;
+		armor=420;
 		cost=50000;
 		transportMaxBackpacks=3;
 		transportSoldier=0;
@@ -743,22 +759,22 @@ class CfgVehicles
 		{
 			class HitLFWheel: HitLFWheel
 			{
-				armor=0.125;
+				armor=1;
 				passThrough=0;
 			};
 			class HitLF2Wheel: HitLF2Wheel
 			{
-				armor=0.125;
+				armor=1;
 				passThrough=0;
 			};
 			class HitRFWheel: HitRFWheel
 			{
-				armor=0.125;
+				armor=1;
 				passThrough=0;
 			};
 			class HitRF2Wheel: HitRF2Wheel
 			{
-				armor=0.125;
+				armor=1;
 				passThrough=0;
 			};
 			class HitFuel
@@ -1649,17 +1665,17 @@ class CfgVehicles
 			};
 		};
 		thrustDelay=0;
-		engineStartSpeed=1.5;
-		brakeIdleSpeed=1.78;
-		maxSpeed=300;
-		fuelCapacity=30;
+		engineStartSpeed=1.8;
+		brakeIdleSpeed=2.5;
+		maxSpeed=420;
+		fuelCapacity=40;
 		wheelCircumference=2.277;
 		antiRollbarForceCoef=0;
 		antiRollbarForceLimit=0;
 		antiRollbarSpeedMin=0;
 		antiRollbarSpeedMax=0;
-		idleRpm=1000;
-		redRpm=7000;
+		idleRpm=800;
+		redRpm=8000;
 		class complexGearbox
 		{
 			GearboxRatios[]=
@@ -1720,10 +1736,10 @@ class CfgVehicles
 		rearBias=1.3;
 		centreBias=2.5;
 		clutchStrength=5;
-		minOmega=104.72;
-		maxOmega=733.03802;
-		enginePower=300;
-		peakTorque=450;
+		minOmega=83.775;
+		maxOmega=837.758;
+		enginePower=600;
+		peakTorque=480;
 		dampingRateFullThrottle=0.15000001;
 		dampingRateZeroThrottleClutchDisengaged=0.1;
 		dampingRateZeroThrottleClutchEngaged=0.2;
@@ -1731,14 +1747,14 @@ class CfgVehicles
 		normalSpeedForwardCoef=1;
 		torqueCurve[]=
 		{
-			{0.142857,0.533333},
-			{0.14,0.70999998},
-			{0.28999999,0.79000002},
-			{0.43000001,0.82999998},
+			{0.14,0.633333},
+			{0.182857,0.70999998},
+			{0.28999999,0.89000002},
+			{0.43000001,0.92999998},
 			{0.56999999,0.95999998},
 			{0.70999998,0.95999998},
-			{0.86000001,0.81999999},
-			{1,0.73333299}
+			{0.86000001,0.91999999},
+			{1,0.83333299}
 		};
 		changeGearMinEffectivity[]={0.94999999,0.15000001,0.89999998,0.89999998,0.89999998,0.89999998,0.89999998,0.80000001};
 		switchTime=0.31;
@@ -1920,6 +1936,6 @@ class CfgVehicles
 		side=1;
 		faction="b_wac";
 		displayName="[180th] BARC Speeder";
-		author="Raccoon";
+		author="Wyvern Studios";
 	};
 };

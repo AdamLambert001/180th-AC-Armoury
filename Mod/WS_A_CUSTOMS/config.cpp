@@ -105,7 +105,7 @@ class CfgWeapons
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-	    	"WS_A_CUSTOMS\data\helmets\WPil.paa",
+	    	"WS_A_CUSTOMS\data\helmets\180th_WallacePilot_Helmet.paa",
 		};
 	};
     class 180th_Paul_Helmet: SWLB_clone_P2_helmet

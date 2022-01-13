@@ -354,15 +354,15 @@ class CfgVehicles
                 author="Raccoon";
                 textures[]=
                 {
-				"WS_A_VEHICLES\Data\LAAT\180th_Pegasus_body1.paa", 
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"lsd_vehicles_heli\laati\data\missiles_co.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"WS_A_VEHICLES\Data\glass_ca.paa"
+				"WS_A_VEHICLES\Data\LAAT\180th_Pegasus_body1.paa", //0
+				"lsd_vehicles_heli\laati\data\body2_co.paa", //1
+				"lsd_vehicles_heli\laati\data\door1_co.paa", //2
+				"lsd_vehicles_heli\laati\data\door2_co.paa", //3
+				"lsd_vehicles_heli\laati\data\door3_co.paa", //4
+				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", //5
+				"lsd_vehicles_heli\laati\data\missiles_co.paa", //6
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa", //7
+				"WS_A_VEHICLES\Data\glass_ca.paa" //8
                 };
                 factions[]=
                 {

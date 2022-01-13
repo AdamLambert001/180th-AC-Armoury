@@ -45,11 +45,11 @@ class CfgFncs
         };
         class Adrenal
         {
-            file = "fncs\fn_adrenal.sqf";
+            file = "\fncs\fn_adrenal.sqf";
         };
         class UeedInc
         {
-            file = "fncs\fn_speed.sqf";
+            file = "\fncs\fn_speed.sqf";
         };
     };
 };
@@ -67,8 +67,8 @@ class CfgWeapons
         category = "medication";
         scope = 2; 
         displayName = "[CS] Relief Stim";
-        picture = "\RibsCombatStims\data\stimpain.paa";
-        logo = "\RibsCombatStims\data\stimpain.paa";
+        picture = "\WS_M_CS\data\stimpain.paa";
+        logo = "\WS_M_CS\data\stimpain.paa";
         model = "\MRC\JLTS\contraband\Drugs\stimulant.p3d"; //JLTS
         descriptionShort = "Inject into arm, for pain relief";
         class ItemInfo: CBA_MiscItem_ItemInfo
@@ -82,15 +82,15 @@ class CfgWeapons
         };
 		hiddenSelectionsTextures[] = 
         {
-            "\RibsCombatStims\data\clonebasestimulant.paa"
+            "\WS_M_CS\data\clonebasestimulant.paa"
         };
     };
 
     class StimAdrenal: StimRelief
     {
         displayName = "[CS] Adrenal Stim";
-        picture = "\RibsCombatStims\data\stimadre.paa";
-        logo = "\RibsCombatStims\data\stimadre.paa";
+        picture = "\WS_M_CS\data\stimadre.paa";
+        logo = "\WS_M_CS\data\stimadre.paa";
         descriptionShort = "Inject into arm, for adrenal";
 
         hiddenSelections[] = 
@@ -99,7 +99,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "\RibsCombatStims\data\cloneadrenstimulant.paa"
+            "\WS_M_CS\data\cloneadrenstimulant.paa"
         };
     };
 
@@ -107,15 +107,15 @@ class CfgWeapons
     {
         displayName = "[CS] Latheniol Stim";
         descriptionShort = "Inject into others to immediately kill";
-        picture = "\RibsCombatStims\data\stimlath.paa";
-        logo = "\RibsCombatStims\data\stimlath.paa";
+        picture = "\WS_M_CS\data\stimlath.paa";
+        logo = "\WS_M_CS\data\stimlath.paa";
         hiddenSelections[] = 
         {
             "camo1"
         };
         hiddenSelectionsTextures[] =
         {
-            "\RibsCombatStims\data\clonelathstimulant.paa";
+            "\WS_M_CS\data\clonelathstimulant.paa";
         };
     };
 
@@ -123,8 +123,8 @@ class CfgWeapons
     {
         displayName = "[CS] Cyano-Silicate Bacta";
         descriptionShort = "Spray to cauterise immediately";
-        picture = "\RibsCombatStims\data\bactaspray.paa";
-        logo = "\RibsCombatStims\data\bactaspray.paa";
+        picture = "\WS_M_CS\data\bactaspray.paa";
+        logo = "\WS_M_CS\data\bactaspray.paa";
         model = "";
         class ItemInfo: CBA_MiscItem_ItemInfo
         {
@@ -138,15 +138,15 @@ class CfgWeapons
     {
         displayName = "[CS] Simu'eed Stim";
         descriptionShort = "Inject to increase metabolism";
-        picture = "\RibsCombatStims\data\stimu'eed.paa";
-        logo = "\RibsCombatStims\data\stimu'eed.paa";
+        picture = "\WS_M_CS\data\stimu'eed.paa";
+        logo = "\WS_M_CS\data\stimu'eed.paa";
         hiddenSelections[] = 
         {
             "camo1"
         };
         hiddenSelectionsTextures[] =
         {
-            "\RibsCombatStims\data\cloneueedstimulant.paa";
+            "\WS_M_CS\data\cloneueedstimulant.paa";
         };
     };
 

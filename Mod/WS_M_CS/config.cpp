@@ -2,9 +2,8 @@ class CfgMods
 {
     class HS_CS_Mod
     {
-        name = "HS: Star Wars Combat Stims";
+        name = "HS: Combat Stims";
         author = "Rib/Roach";
-        picture = "\HSSW_CombatStims\data\logo.paa";
         hideName = "false";
         hidePicture = "false";
     };
@@ -17,7 +16,7 @@ class CfgPatches
         name = COMPONENT_NAME;
         author = "Rib/Roach";
         units[] = {};
-        weapons[] = {"StimRelief", "StimAdrenal"};
+        weapons[] = {"StimRelief", "StimAdrenal", "StimLatheniol","CyanoBacta","StimUeed"};
         magazines[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
@@ -28,6 +27,33 @@ class CfgPatches
         };
     };
 };
+
+class CfgFncs 
+{
+    class HS 
+    {
+        class HSP 
+        {
+            class PainReduction
+            {
+                file = "\fncs\fn_PainReduceGlobal.sqf";
+            };
+            class PainReductionLocal 
+            {
+                file = "\fncs\fn_PainReduceLocal.sqf";
+            };
+        };
+        class Adrenal
+        {
+            file = "\fncs\fn_adrenal.sqf";
+        };
+        class UeedInc
+        {
+            file = "\fncs\fn_speed.sqf";
+        };
+    };
+};
+
 
 class CfgWeapons 
 {
@@ -40,10 +66,11 @@ class CfgWeapons
         author = "Rib/Roach";
         category = "medication";
         scope = 2; 
-        displayName = "Clone Combat Relief Stim";
-        picture = "\HSSW_CombatStims\data\clonebasestimulant.paa";
+        displayName = "[CS] Relief Stim";
+        picture = "\WS_M_CS\data\stimpain.paa";
+        logo = "\WS_M_CS\data\stimpain.paa";
         model = "\MRC\JLTS\contraband\Drugs\stimulant.p3d"; //JLTS
-        descriptionShort = "Inject into arm, for minimal pain relief";
+        descriptionShort = "Inject into arm, for pain relief";
         class ItemInfo: CBA_MiscItem_ItemInfo
         {
             mass = 0.1;
@@ -55,16 +82,16 @@ class CfgWeapons
         };
 		hiddenSelectionsTextures[] = 
         {
-            "\HSSW_CombatStims\data\clonebasestimulant.paa"
+            "\WS_M_CS\data\clonebasestimulant.paa"
         };
     };
 
     class StimAdrenal: StimRelief
     {
-        displayName = "Clone Combat Adrenal Stim";
-        model = "\MRC\JLTS\contraband\Drugs\stimulant.p3d"; //JLTS
-        picture = "\HSSW_CombatStims\data\cloneadrenstimulant.paa";
-        descriptionShort = "Inject into arm, for some aim assist";
+        displayName = "[CS] Adrenal Stim";
+        picture = "\WS_M_CS\data\stimadre.paa";
+        logo = "\WS_M_CS\data\stimadre.paa";
+        descriptionShort = "Inject into arm, for adrenal";
 
         hiddenSelections[] = 
         {
@@ -72,36 +99,239 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "\HSSW_CombatStims\data\cloneadrenstimulant.paa"
+            "\WS_M_CS\data\cloneadrenstimulant.paa"
         };
     };
 
+    class StimLatheniol: StimRelief
+    {
+        displayName = "[CS] Latheniol Stim";
+        descriptionShort = "Inject into others to immediately kill";
+        picture = "\WS_M_CS\data\stimlath.paa";
+        logo = "\WS_M_CS\data\stimlath.paa";
+        hiddenSelections[] = 
+        {
+            "camo1"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "\WS_M_CS\data\clonelathstimulant.paa";
+        };
+    };
+
+    class CyanoBacta: StimRelief
+    {
+        displayName = "[CS] Cyano-Silicate Bacta";
+        descriptionShort = "Spray to cauterise immediately";
+        picture = "\WS_M_CS\data\bactaspray.paa";
+        logo = "\WS_M_CS\data\bactaspray.paa";
+        model = "";
+        class ItemInfo: CBA_MiscItem_ItemInfo
+        {
+            mass = 0.5;
+        };
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+    };
+
+    class StimUeed: StimRelief
+    {
+        displayName = "[CS] Simu'eed Stim";
+        descriptionShort = "Inject to increase metabolism";
+        picture = "\WS_M_CS\data\stimu'eed.paa";
+        logo = "\WS_M_CS\data\stimu'eed.paa";
+        hiddenSelections[] = 
+        {
+            "camo1"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "\WS_M_CS\data\cloneueedstimulant.paa";
+        };
+    };
 
 };
 
 
 class ACE_Medical_Treatment {
     
-    class Morphine;
+    class Morphine; /*extern*/
+
+    class Bandaging {
+        class ElasticBandage; /*extern*/
+
+        class HS_CSS: ElasticBandage 
+        {
+			class Abrasion {
+				effectiveness = 5;
+				reopeningChance = 0;
+				reopeningMinDelay = 900;
+				reopeningMaxDelay = 1600;
+			};
+
+			class AbrasionMinor: Abrasion {
+			};
+
+			class AbrasionMedium: Abrasion {
+				effectiveness = 4;
+				reopeningChance = 0;
+			};
+
+			class AbrasionLarge: Abrasion {
+				effectiveness = 3;
+				reopeningChance = 0;
+			};
+
+			class Avulsions: Abrasion {
+				effectiveness = 4;
+				reopeningChance = 0;
+				reopeningMinDelay = 900;
+				reopeningMaxDelay = 1600;
+			};
+
+			class AvulsionsMinor: Avulsions {
+				effectiveness = 3;
+			};
+
+			class AvulsionsMedium: Avulsions {
+				effectiveness = 2;
+			};
+
+			class AvulsionsLarge: Avulsions {
+				effectiveness = 2;
+				reopeningChance = 0;
+			};
+
+			class Contusion: Abrasion {
+				effectiveness = 3;
+				reopeningChance = 0;
+				reopeningMinDelay = 0;
+				reopeningMaxDelay = 0;
+			};
+
+			class ContusionMinor: Contusion {
+			};
+
+			class ContusionMedium: Contusion {
+			};
+
+			class ContusionLarge: Contusion {
+			};
+
+			class Crush: Abrasion {
+				effectiveness = 3;
+				reopeningChance = 0;
+				reopeningMinDelay = 700;
+				reopeningMaxDelay = 1100;
+			};
+
+			class CrushMinor: Crush {
+				reopeningChance = 0;
+			};
+
+			class CrushMedium: Crush {
+				effectiveness = 2;
+			};
+
+			class CrushLarge: Crush {
+				effectiveness = 1.750000;
+				reopeningChance = 0;
+			};
+
+			class Cut: Abrasion {
+				effectiveness = 6;
+				reopeningChance = 0;
+				reopeningMinDelay = 800;
+				reopeningMaxDelay = 1100;
+			};
+
+			class CutMinor: Cut {
+			};
+
+			class CutMedium: Cut {
+				effectiveness = 4;
+				reopeningChance = 0;
+			};
+
+			class CutLarge: Cut {
+				effectiveness = 3;
+				reopeningChance = 0;
+			};
+
+			class Laceration: Abrasion {
+				effectiveness = 3;
+				reopeningChance = 0;
+				reopeningMinDelay = 600;
+				reopeningMaxDelay = 2000;
+			};
+
+			class LacerationMinor: Laceration {
+			};
+
+			class LacerationMedium: Laceration {
+				effectiveness = 2;
+			};
+
+			class LacerationLarge: Laceration {
+				effectiveness = 1.500000;
+				reopeningChance = 0;
+			};
+
+			class velocityWound: Abrasion {
+				effectiveness = 3;
+				reopeningChance = 0;
+				reopeningMinDelay = 900;
+				reopeningMaxDelay = 2000;
+			};
+
+			class velocityWoundMinor: velocityWound {
+			};
+
+			class velocityWoundMedium: velocityWound {
+				effectiveness = 2;
+			};
+
+			class velocityWoundLarge: velocityWound {
+				effectiveness = 1.750000;
+			};
+
+			class punctureWound: Abrasion {
+				effectiveness = 3;
+				reopeningChance = 0;
+				reopeningMinDelay = 1000;
+				reopeningMaxDelay = 3000;
+			};
+
+			class punctureWoundMinor: punctureWound {
+			};
+
+			class punctureWoundMedium: punctureWound {
+				effectiveness = 2.500000;
+			};
+
+			class punctureWoundLarge: punctureWound {
+				effectiveness = 2;
+			};
+		};
+    };
 
     class Medication 
     {
-        class ribpain_CRS: Morphine 
+        class HSP_CRS: Morphine 
         {
             author = "Rib/Roach";
             hrIncreaseLow[] = {0};
             hrIncreaseNormal[] = {0};
             hrIncreaseHigh[] = {0};
-            painReduce = 0.4;
+            painReduce = 0.5;
             timeInSystem = 420;
             timeTillMaxEffect = 75;
             maxDose = 10;
             incompatibleMedication[] = {};
-            viscosityChange = 2;
+            viscosityChange = 5;
         };
-        class ribAdren_CAS: Morphine
+        class HSA_CAS: HSP_CRS
         {
-            author = "Rib - fuck you";
             hrIncreaseLow[] = {25};
             hrIncreaseNormal[] = {15};
             hrIncreaseHigh[] = {10};
@@ -110,60 +340,85 @@ class ACE_Medical_Treatment {
             timeTillMaxEffect = 15;
             maxDose = 4;
             incompatibleMedication[] = {"ACE_epinephrine"};
-            viscosityChange = 5;
+            viscosityChange = -10;
         };
+        class HS_CLS: HSP_CRS
+        {
+            hrIncreaseLow[] = {-90};
+            hrIncreaseNormal[] = {-60};
+            hrIncreaseHigh[] = {200};
+            painReduce = 1;
+            timeInSystem = 120;
+            timeTillMaxEffect = 80;
+            maxDose = 2;
+            viscosityChange = 60;
+            incompatibleMedication[] = {"StimAdrenal","StimRelief","ACE_morphine","ACE_epinephrine"};
+        };
+        class HSU_CSU: HSA_CAS
+        {
+            hrIncreaseLow[] = {60};
+            hrIncreaseNormal[] = {40};
+            hrIncreaseHigh[] = {60};
+            painReduce = 0;
+            timeInSystem = 240;
+            timeTillMaxEffect = 60;
+            maxDose = 2;
+            incompatibleMedication[] = {"StimAdrenal"};
+            viscosityChange = -20;
+        };
+
     };
 };
 
 
 class ACE_Medical_Treatment_Actions 
 {
-    class Morphine; /*Arma*/
-    class Epinephrine; /*Arma*/
+    class Morphine; /*ace*/
+    class ElasticBandage; /*ace*/
 
-    class ribpain_CRS: Morphine
+    class HSP_CRS: Morphine
     {
-        displayName = "Shoot a stim to relieve yourself";
+        displayName = "Inject Pain Relief";
         displayNameProgress = "Injecting Combat Stim... ... ...";
         allowedSelections[] = {"LeftArm","RightArm","LeftLeg","RightLeg"};
         items[] = {"StimRelief"};
+        callbackSuccess = "HS_fnc_PainReduction";
         treatmentTime = 3;
         category = "medication";
     };
-
-    class ribAdren_CAS: ribpain_CRS
+    class HSA_CAS: HSP_CRS
     {
-        displayName = "Time to Stimmy up";
+        displayName = "Inject Adrenal";
         displayNameProgress = "Injecting Adrenal Stim... ... ...";
-        allowedSelections[] = {"LeftArm","RightArm","LeftLeg","RightLeg"};
         items[] = {"StimAdrenal"};
-        treatmentTime = 3;
-        category = "medication";
+        callbackSuccess = "HS_fnc_Adrenal";
     };
-
-};
-
-
-class CfgFncs 
-{
-    class meds 
+    class HS_CLS: HSP_CRS
     {
-        class ribpain 
-        {
-            class fn_PainReduceGlobal 
-            {
-                file = "\HSSW_CombatStims\fncs\fn_PainReduceGlobal.sqf";
-            };
-            class fn_PainReduceLocal 
-            {
-                file = "\HSSW_CombatStims\fncs\fn_PainReduceLocal.sqf";
-            };
-        };
-        class ribAdren 
-        {
-            file = "fncs\fn_adrenal";
-        };
+        displayName = "Inject Latheniol";
+        displayNameProgress = "Euthanising the Patient, please wait up to 80 seconds before effect....";
+        items[] = {"StimLatheniol"};
+        callbackSuccess = "HS_fnc_PainReduction";
+        allowedSelections[] = {"Body"};
+        treatmentTime = 6;
     };
-};
+    class HS_CSS: ElasticBandage
+    {
+        displayName = "Spray Cyano Silicate Bacta";
+        displayNameProgress = "Cauterising wounds, disinfecting affected areas ";
+        items[] = {"CyanoBacta"};
+        callbackSuccess = "HS_fnc_PainReduction";
+        treatmentTime = 8;
+        //Look at "Uses"?
+    };
+    class HSU_CSU: HSP_CRS
+    {
+        displayName = "Inject StimUeed";
+        displayNameProgress = "Injecting StimUeed Stim, wait up to a minute for full affect... ... ...";
+        items[] = {"StimUeed"};
+        callbackSuccess = "HS_fnc_UeedInc";
+    };
 
+};
+//420 :)
 

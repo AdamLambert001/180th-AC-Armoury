@@ -2,7 +2,7 @@ class CfgPatches
 { 
   class WS_VIC
 	{
-		author="Raccoon";
+		author="Wyvern Studios";
 		requiredAddons[]=
 		{
 			"A3_Data_F",
@@ -49,13 +49,9 @@ class CfgPatches
 };
 class CfgEditorSubcategories
 {
-	class WS_Categ_180thAV
+	class WS_Categ_180thVC
 	{
-		displayName="Griffon Squadron (Assets)";
-	};
-	class WS_Categ_180thGV
-	{
-		displayName="Kobold Platoon (Assets)";
+		displayName="Manticore Company (Assets)";
 	};
 	class Rarefied_Air_CavalryV
 	{
@@ -153,7 +149,7 @@ class CfgVehicles
 		faction="b_wac";
 		scope = 2;
         scopeCurator = 2;
-		editorSubcategory="WS_Categ_180thGV";
+		editorSubcategory="WS_Categ_180thVC";
 		hiddenSelections[]=
 		{
 			"_hull",
@@ -186,8 +182,8 @@ class CfgVehicles
 		faction="b_wac";
 		scope = 2;
         scopeCurator = 2;
-		editorSubcategory="WS_Categ_180thGV";
-		author="Raccoon";
+		editorSubcategory="WS_Categ_180thVC";
+		author="Wyvern Studios";
 		hiddenselections[] = 
 		{
 			"camo1", //Hull
@@ -214,7 +210,7 @@ class CfgVehicles
 	{
 		displayName="Z-95 Headhunter 'Reaver'";
 		faction="b_wac";
-		editorSubcategory="WS_Categ_180thAV";
+		editorSubcategory="WS_Categ_180thVC";
 		editorPreview="";
 		
 		hiddenselections[]=
@@ -235,7 +231,7 @@ class CfgVehicles
 	{
 		displayName="Z-95 Headhunter 'Chimera'";
 		faction="b_wac";
-		editorSubcategory="WS_Categ_180thAV";
+		editorSubcategory="WS_Categ_180thVC";
 		editorPreview="";
 		
 		hiddenselections[]=
@@ -279,7 +275,7 @@ class CfgVehicles
 		crew = "180th_Pilot";
 		side=1;
 		faction="b_wac";
-		editorSubcategory="WS_Categ_180thAV";
+		editorSubcategory="WS_Categ_180thVC";
 		editorPreview="\3as\3as_arc170\images\3as_arc_170_blue.jpg";
 		hiddenselectionstextures[]=
 		{
@@ -296,7 +292,7 @@ class CfgVehicles
 		crew="180th_Pilot";
 		side=1;
 		faction="b_wac";
-		editorSubcategory="WS_Categ_180thAV";
+		editorSubcategory="WS_Categ_180thVC";
 		editorPreview="\3as\3as_arc170\images\3as_arc_170_blue.jpg";
 		hiddenselectionstextures[]=
 		{
@@ -313,8 +309,8 @@ class CfgVehicles
 	{
 		displayname="LAAT/I Gunship (Pegasus)";
 		faction="b_wac";
-		author="Raccoon";
-		editorSubcategory="WS_Categ_180thAV";
+		author="Wyvern Studios";
+		editorSubcategory="WS_Categ_180thVC";
 		crew = "180th_Pilot";
 		hiddenselections[]=
 		{
@@ -351,7 +347,7 @@ class CfgVehicles
             class base
             {
                 displayname="Pegasussy_Baka";
-                author="Raccoon";
+                author="Wyvern Studios";
                 textures[]=
                 {
 				"WS_A_VEHICLES\Data\LAAT\180th_Pegasus_body1.paa", //0
@@ -381,8 +377,8 @@ class CfgVehicles
 	{
 		displayname="LAAT/I Gunship (Huebert)";
 		faction="b_wac";
-		author="Raccoon";
-		editorSubcategory="WS_Categ_180thAV";
+		author="Wyvern Studios";
+		editorSubcategory="WS_Categ_180thVC";
 		crew = "180th_Pilot";
 		hiddenselections[]=
 		{
@@ -449,8 +445,8 @@ class CfgVehicles
 	{
 		displayname="LAAT/I Gunship (Melisande)";
 		faction="b_wac";
-		author="Raccoon";
-		editorSubcategory="WS_Categ_180thAV";
+		author="Wyvern Studios";
+		editorSubcategory="WS_Categ_180thVC";
 		crew = "180th_Pilot";
 		hiddenselections[]=
 		{
@@ -487,7 +483,7 @@ class CfgVehicles
             class base
             {
                 displayname="MelChiTing";
-                author="Raccoon";
+                author="Wyvern Studios";
                 textures[]=
                 {
                 "WS_A_VEHICLES\Data\LAAT\180_MelL_body1.paa", 
@@ -536,7 +532,7 @@ class CfgVehicles
             class base
             {
                 displayname="I_NEED_A_MEDIC_BAG";
-                author="Raccoon";
+                author="Wyvern Studios";
                 textures[]=
                 {
 				"WS_A_VEHICLES\Data\LAAT\180th_PegasusM_body1.paa", 
@@ -567,8 +563,8 @@ class CfgVehicles
 	{
 		_generalmacro="TCW_LAAT_i";
 		accuracy=5;
-		author="Raccoon";
-		editorSubcategory="WS_Categ_180thAV";
+		author="Wyvern Studios";
+		editorSubcategory="WS_Categ_180thVC";
 		availableforsupporttypes[]=
 		{
 			"CAS_Heli"
@@ -601,8 +597,8 @@ class CfgVehicles
 	{
 		_generalmacro="TCW_LAAT_i";
 		accuracy=5;
-		author="Raccoon";
-		editorSubcategory="WS_Categ_180thAV";
+		author="Wyvern Studios";
+		editorSubcategory="WS_Categ_180thVC";
 		availableforsupporttypes[]=
 		{
 			"CAS_Heli"
@@ -640,7 +636,7 @@ class CfgVehicles
 		model="\ls_vehicles_ground\barc\ls_ground_barc";
 		editorpreview="\ls_vehicles_ground\_ui\editorPreviews\image_barc.jpg";
 		Icon="\ls_vehicles_ground\_ui\icons\barc_icon.paa";
-		editorSubcategory="WS_Categ_180thGV";
+		editorSubcategory="WS_Categ_180thVC";
 		selectionBrakeLights="brzdove svetlo";
 		selectionBrackLights="zadni svetlo";
 		displayName="180thBARCSpeeder_base";

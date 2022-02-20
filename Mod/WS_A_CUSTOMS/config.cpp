@@ -281,6 +281,14 @@ class CfgWeapons
 			"WS_A_CUSTOMS\data\helmets\180th_Wallace_Helmet.paa"
 		};
 	};
+	class 180th_Sniper_Helmet: SWLB_clone_P2_helmet
+	{
+		displayName="[180th Customs] Clone trooper helmet (Sniper)";
+		hiddenSelectionsTextures[]=
+		{
+			"WS_A_CUSTOMS\data\helmets\180th_Sniper_Helmet.paa"
+		};
+	};
     class 180th_Grape_Helmet: SWLB_clone_P2_helmet
 	{
 		displayName="Grape Man Helmet";
@@ -402,7 +410,7 @@ class CfgWeapons
 		{
 			uniformModel="-";
 			uniformClass="180th_Roach";
-			containerClass="Supply140";
+			containerClass="Supply180";
 			mass=40;
 		};
 	};

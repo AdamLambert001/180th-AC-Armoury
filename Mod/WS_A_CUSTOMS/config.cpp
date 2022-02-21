@@ -289,6 +289,14 @@ class CfgWeapons
 			"WS_A_CUSTOMS\data\helmets\180th_Sniper_Helmet.paa"
 		};
 	};
+	class 180th_Krieg_Helmet: SWLB_clone_P2_helmet
+	{
+		displayName="[180th Customs] Clone trooper helmet (Krieg)";
+		hiddenSelectionsTextures[]=
+		{
+			"WS_A_CUSTOMS\data\helmets\180th_Krieg_Man_Helmet.paa"
+		};
+	};
     class 180th_Grape_Helmet: SWLB_clone_P2_helmet
 	{
 		displayName="Grape Man Helmet";
@@ -297,6 +305,7 @@ class CfgWeapons
 			"WS_A_CUSTOMS\data\helmets\180th_Grape_Man_Helmet.paa"
 		};
 	};
+	
 	
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DETACHMENT 
 	 class 180th_Delta_Helmet: SWLB_clone_eng_helmet
@@ -615,6 +624,18 @@ class CfgWeapons
 		{
 			uniformModel="-";
 			uniformClass="180th_Abor";
+			containerClass="Supply140";
+			mass=40;
+		};
+	};
+	class 180th_Krieg_Uniform: SWLB_clone_uniform
+	{
+		displayName="[180th Customs] Clone trooper uniform (Krieg)";
+		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="180th_Krieg";
 			containerClass="Supply140";
 			mass=40;
 		};
@@ -1336,6 +1357,36 @@ class CfgVehicles
 		{
 			"SWLB_clone_basic_armor",
 			"180th_Hoplite_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+	};
+	class 180th_Krieg: SWLB_clone_base_P2
+	{
+		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
+        faction = "180thACA";
+		editorSubcategory="WS_180th_Armory_Customs";
+		uniformclass="180th_Krieg_Uniform";
+		hiddenSelectionsTextures[]=
+		{
+	        "WS_A_CUSTOMS\data\armor\180th_Krieg_Armor1.paa",
+			"WS_A_CUSTOMS\data\armor\180th_Krieg_Armor2.paa",
+		};
+		linkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_Krieg_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+		respawnLinkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_Krieg_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",

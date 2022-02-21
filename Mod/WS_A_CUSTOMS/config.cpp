@@ -294,7 +294,7 @@ class CfgWeapons
 		displayName="[180th Customs] Clone trooper helmet (Krieg)";
 		hiddenSelectionsTextures[]=
 		{
-			"WS_A_CUSTOMS\data\helmets\180th_Krieg_Man_Helmet.paa"
+			"WS_A_CUSTOMS\data\helmets\180th_Krieg_Helmet.paa"
 		};
 	};
     class 180th_Grape_Helmet: SWLB_clone_P2_helmet

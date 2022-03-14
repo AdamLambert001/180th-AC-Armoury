@@ -2,7 +2,7 @@ class CfgPatches
 { 
   class WS_VIC
 	{
-		author="Raccoon";
+		author="Wyvern Studios";
 		requiredAddons[]=
 		{
 			"A3_Data_F",
@@ -49,13 +49,9 @@ class CfgPatches
 };
 class CfgEditorSubcategories
 {
-	class WS_Categ_180thAV
+	class WS_Categ_180thVC
 	{
-		displayName="Griffon Squadron (Assets)";
-	};
-	class WS_Categ_180thGV
-	{
-		displayName="Kobold Platoon (Assets)";
+		displayName="Manticore Company (Assets)";
 	};
 	class Rarefied_Air_CavalryV
 	{
@@ -98,6 +94,15 @@ class UniformSlotInfo
     linkProxy = "-"; 
 }; 
 
+class CfgWeapons
+{
+	class SWLG_TX130_cannon;
+	
+	class 180_TX130_Cannon: SWLG_TX130_cannon 
+	{
+		displayName = BARC Cannons Duel Shot;
+	};
+};
 
 
 class CfgVehicles 
@@ -140,11 +145,11 @@ class CfgVehicles
 
 	class 180th_TX130: SWLG_tanks_tx130
 	{
-		displayName="[180th Kobold] TX-130 'Mozzie' Hover Tank";
+		displayName="[180th Minotaur] TX-130 'Mozzie' Hover Tank";
 		faction="b_wac";
 		scope = 2;
         scopeCurator = 2;
-		editorSubcategory="WS_Categ_180thGV";
+		editorSubcategory="WS_Categ_180thVC";
 		hiddenSelections[]=
 		{
 			"_hull",
@@ -165,7 +170,7 @@ class CfgVehicles
 		idleRpm=750;
 		maxOmega=300;
 		peakTorque=5000;
-		armor=980;
+		armor=950;
 		armorStructural=20;
 		damageResistance=0.04;
 		crewCrashProtection=0.005;
@@ -173,12 +178,12 @@ class CfgVehicles
 	};
 
 	class 180th_ATTE: 3as_ATTE_Base {
-		displayname="[180th Kobold] AT-TE 'Stompy' Walker";
+		displayname="[180th Minotaur] AT-TE 'Stompy' Walker";
 		faction="b_wac";
 		scope = 2;
         scopeCurator = 2;
-		editorSubcategory="WS_Categ_180thGV";
-		author="Raccoon";
+		editorSubcategory="WS_Categ_180thVC";
+		author="Wyvern Studios";
 		hiddenselections[] = 
 		{
 			"camo1", //Hull
@@ -196,7 +201,7 @@ class CfgVehicles
 			"3as\3as_atte\data\atte_underpiping_co.paa" //underpipe
 		};
 
-		armor = 3400;
+		armor = 3300;
 		crew = "180th_Engineer";
 	};
 
@@ -205,7 +210,7 @@ class CfgVehicles
 	{
 		displayName="Z-95 Headhunter 'Reaver'";
 		faction="b_wac";
-		editorSubcategory="WS_Categ_180thAV";
+		editorSubcategory="WS_Categ_180thVC";
 		editorPreview="";
 		
 		hiddenselections[]=
@@ -220,13 +225,13 @@ class CfgVehicles
 			"3AS\3as_Z95\Data\cockpit_co.paa",
 			"3AS\3as_saber\data\glass\glass_ca"
 		};
-		crew = "180th_Raccoon";
+		crew = "180th_Pilot";
 	};
 	class 180th_Z95_Base: 3as_Z95_Republic
 	{
-		displayName="Z-95 Headhunter 'Chimera'";
+		displayName="[180th Chimera] Z-95 Headhunter";
 		faction="b_wac";
-		editorSubcategory="WS_Categ_180thAV";
+		editorSubcategory="WS_Categ_180thVC";
 		editorPreview="";
 		
 		hiddenselections[]=
@@ -270,7 +275,7 @@ class CfgVehicles
 		crew = "180th_Pilot";
 		side=1;
 		faction="b_wac";
-		editorSubcategory="WS_Categ_180thAV";
+		editorSubcategory="WS_Categ_180thVC";
 		editorPreview="\3as\3as_arc170\images\3as_arc_170_blue.jpg";
 		hiddenselectionstextures[]=
 		{
@@ -284,10 +289,10 @@ class CfgVehicles
 	{
 		displayName="ARC-170 'Big Daddy'";
 		scope=2;
-		crew="180th_Raccoon";
+		crew="180th_Pilot";
 		side=1;
 		faction="b_wac";
-		editorSubcategory="WS_Categ_180thAV";
+		editorSubcategory="WS_Categ_180thVC";
 		editorPreview="\3as\3as_arc170\images\3as_arc_170_blue.jpg";
 		hiddenselectionstextures[]=
 		{
@@ -302,10 +307,10 @@ class CfgVehicles
 
 	class 180th_Pegasus_LAAT: lsd_heli_laati
 	{
-		displayname="LAAT/I Gunship (Pegasus)";
+		displayname="[180th Pegasus] LAAT/I Gunship";
 		faction="b_wac";
-		author="Raccoon";
-		editorSubcategory="WS_Categ_180thAV";
+		author="Wyvern Studios";
+		editorSubcategory="WS_Categ_180thVC";
 		crew = "180th_Pilot";
 		hiddenselections[]=
 		{
@@ -342,18 +347,18 @@ class CfgVehicles
             class base
             {
                 displayname="Pegasussy_Baka";
-                author="Raccoon";
+                author="Wyvern Studios";
                 textures[]=
                 {
-				"WS_A_VEHICLES\Data\LAAT\180th_Pegasus_body1.paa", 
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"lsd_vehicles_heli\laati\data\missiles_co.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"WS_A_VEHICLES\Data\glass_ca.paa"
+				"WS_A_VEHICLES\Data\LAAT\180th_Pegasus_body1.paa", //0
+				"lsd_vehicles_heli\laati\data\body2_co.paa", //1
+				"lsd_vehicles_heli\laati\data\door1_co.paa", //2
+				"lsd_vehicles_heli\laati\data\door2_co.paa", //3
+				"lsd_vehicles_heli\laati\data\door3_co.paa", //4
+				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", //5
+				"lsd_vehicles_heli\laati\data\missiles_co.paa", //6
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa", //7
+				"WS_A_VEHICLES\Data\glass_ca.paa" //8
                 };
                 factions[]=
                 {
@@ -372,8 +377,8 @@ class CfgVehicles
 	{
 		displayname="LAAT/I Gunship (Huebert)";
 		faction="b_wac";
-		author="Raccoon";
-		editorSubcategory="WS_Categ_180thAV";
+		author="Wyvern Studios";
+		editorSubcategory="WS_Categ_180thVC";
 		crew = "180th_Pilot";
 		hiddenselections[]=
 		{
@@ -440,8 +445,8 @@ class CfgVehicles
 	{
 		displayname="LAAT/I Gunship (Melisande)";
 		faction="b_wac";
-		author="Raccoon";
-		editorSubcategory="WS_Categ_180thAV";
+		author="Wyvern Studios";
+		editorSubcategory="WS_Categ_180thVC";
 		crew = "180th_Pilot";
 		hiddenselections[]=
 		{
@@ -478,7 +483,7 @@ class CfgVehicles
             class base
             {
                 displayname="MelChiTing";
-                author="Raccoon";
+                author="Wyvern Studios";
                 textures[]=
                 {
                 "WS_A_VEHICLES\Data\LAAT\180_MelL_body1.paa", 
@@ -527,7 +532,7 @@ class CfgVehicles
             class base
             {
                 displayname="I_NEED_A_MEDIC_BAG";
-                author="Raccoon";
+                author="Wyvern Studios";
                 textures[]=
                 {
 				"WS_A_VEHICLES\Data\LAAT\180th_PegasusM_body1.paa", 
@@ -558,7 +563,8 @@ class CfgVehicles
 	{
 		_generalmacro="TCW_LAAT_i";
 		accuracy=5;
-		author="Raccoon";
+		author="Wyvern Studios";
+		editorSubcategory="WS_Categ_180thVC";
 		availableforsupporttypes[]=
 		{
 			"CAS_Heli"
@@ -591,13 +597,14 @@ class CfgVehicles
 	{
 		_generalmacro="TCW_LAAT_i";
 		accuracy=5;
-		author="Raccoon";
+		author="Wyvern Studios";
+		editorSubcategory="WS_Categ_180thVC";
 		availableforsupporttypes[]=
 		{
 			"CAS_Heli"
 		};
 		cost="3e+006";
-		crew="180th_Raccoon";
+		crew="180th_Pilot";
 		displayname="[180th] LAAT/LE (Reaper)";
 		faction="b_wac";
 		vehicleclass="Helicopter";
@@ -629,19 +636,26 @@ class CfgVehicles
 		model="\ls_vehicles_ground\barc\ls_ground_barc";
 		editorpreview="\ls_vehicles_ground\_ui\editorPreviews\image_barc.jpg";
 		Icon="\ls_vehicles_ground\_ui\icons\barc_icon.paa";
-		editorSubcategory="WS_Categ_180thGV";
+		editorSubcategory="WS_Categ_180thVC";
 		selectionBrakeLights="brzdove svetlo";
 		selectionBrackLights="zadni svetlo";
 		displayName="180thBARCSpeeder_base";
 		weapons[]=
 		{
-			"ls_speeder_AP"
+			"ls_speeder_AP",
+			"180_TX130_cannon"
 		};
 		magazines[]=
 		{
 			"ls_50Rnd_speederHE_belt",
 			"ls_50Rnd_speederHE_belt",
-			"ls_50Rnd_speederHE_belt"
+			"ls_50Rnd_speederHE_belt",
+			"ls_50Rnd_speederHE_belt",
+			"ls_50Rnd_speederHE_belt",
+			"ls_50Rnd_speederHE_belt",
+			"SWLG_TX130_cannon_mag",
+			"SWLG_TX130_cannon_mag",
+			"SWLG_TX130_cannon_mag"
 		};
 		memoryPointGun[]=
 		{
@@ -674,9 +688,9 @@ class CfgVehicles
 		turnCoef=2.5;
 		precision=10;
 		brakeDistance=3;
-		acceleration=20;
+		acceleration=35;
 		fireResistance=5;
-		armor=150;
+		armor=420;
 		cost=50000;
 		transportMaxBackpacks=3;
 		transportSoldier=0;
@@ -741,22 +755,22 @@ class CfgVehicles
 		{
 			class HitLFWheel: HitLFWheel
 			{
-				armor=0.125;
+				armor=1;
 				passThrough=0;
 			};
 			class HitLF2Wheel: HitLF2Wheel
 			{
-				armor=0.125;
+				armor=1;
 				passThrough=0;
 			};
 			class HitRFWheel: HitRFWheel
 			{
-				armor=0.125;
+				armor=1;
 				passThrough=0;
 			};
 			class HitRF2Wheel: HitRF2Wheel
 			{
-				armor=0.125;
+				armor=1;
 				passThrough=0;
 			};
 			class HitFuel
@@ -1647,17 +1661,17 @@ class CfgVehicles
 			};
 		};
 		thrustDelay=0;
-		engineStartSpeed=1.5;
-		brakeIdleSpeed=1.78;
-		maxSpeed=300;
-		fuelCapacity=30;
+		engineStartSpeed=1.8;
+		brakeIdleSpeed=2.5;
+		maxSpeed=420;
+		fuelCapacity=40;
 		wheelCircumference=2.277;
 		antiRollbarForceCoef=0;
 		antiRollbarForceLimit=0;
 		antiRollbarSpeedMin=0;
 		antiRollbarSpeedMax=0;
-		idleRpm=1000;
-		redRpm=7000;
+		idleRpm=800;
+		redRpm=8000;
 		class complexGearbox
 		{
 			GearboxRatios[]=
@@ -1718,10 +1732,10 @@ class CfgVehicles
 		rearBias=1.3;
 		centreBias=2.5;
 		clutchStrength=5;
-		minOmega=104.72;
-		maxOmega=733.03802;
-		enginePower=300;
-		peakTorque=450;
+		minOmega=83.775;
+		maxOmega=837.758;
+		enginePower=600;
+		peakTorque=480;
 		dampingRateFullThrottle=0.15000001;
 		dampingRateZeroThrottleClutchDisengaged=0.1;
 		dampingRateZeroThrottleClutchEngaged=0.2;
@@ -1729,14 +1743,14 @@ class CfgVehicles
 		normalSpeedForwardCoef=1;
 		torqueCurve[]=
 		{
-			{0.142857,0.533333},
-			{0.14,0.70999998},
-			{0.28999999,0.79000002},
-			{0.43000001,0.82999998},
+			{0.14,0.633333},
+			{0.182857,0.70999998},
+			{0.28999999,0.89000002},
+			{0.43000001,0.92999998},
 			{0.56999999,0.95999998},
 			{0.70999998,0.95999998},
-			{0.86000001,0.81999999},
-			{1,0.73333299}
+			{0.86000001,0.91999999},
+			{1,0.83333299}
 		};
 		changeGearMinEffectivity[]={0.94999999,0.15000001,0.89999998,0.89999998,0.89999998,0.89999998,0.89999998,0.80000001};
 		switchTime=0.31;
@@ -1917,7 +1931,7 @@ class CfgVehicles
 		crew="180th_BARC";
 		side=1;
 		faction="b_wac";
-		displayName="[180th] BARC Speeder";
-		author="Raccoon";
+		displayName="[180th Basilisk] BARC Speeder";
+		author="Wyvern Studios";
 	};
 };

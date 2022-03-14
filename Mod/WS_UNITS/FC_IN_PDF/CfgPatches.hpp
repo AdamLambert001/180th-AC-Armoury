@@ -35,7 +35,6 @@ class CfgPatches {
             "cba_xeh",
             "OPTRE_Vehicles_Warthog",
             "OPTRE_ACE_Compat",
-            "Rep_For_Base",
             "A3_Soft_F",
             "A3_Soft_F_Gamma_Hatchback_01",
             "A3_Soft_F_Exp_Offroad_02",

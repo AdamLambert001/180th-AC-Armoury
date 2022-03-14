@@ -28,7 +28,7 @@ class CfgPatches
     };
 };
 
-class CfgFncs 
+class CfgFunctions 
 {
     class HS 
     {
@@ -43,11 +43,11 @@ class CfgFncs
                 file = "\fncs\fn_PainReduceLocal.sqf";
             };
         };
-        class Adrenal
+        class HSA
         {
             file = "\fncs\fn_adrenal.sqf";
         };
-        class UeedInc
+        class HSU
         {
             file = "\fncs\fn_speed.sqf";
         };
@@ -160,7 +160,7 @@ class ACE_Medical_Treatment {
     class Bandaging {
         class ElasticBandage; /*extern*/
 
-        class HS_CSS: ElasticBandage 
+        class HSP_CSS: ElasticBandage 
         {
 			class Abrasion {
 				effectiveness = 5;
@@ -354,7 +354,7 @@ class ACE_Medical_Treatment {
             viscosityChange = 60;
             incompatibleMedication[] = {"StimAdrenal","StimRelief","ACE_morphine","ACE_epinephrine"};
         };
-        class HSU_CSU: HSA_CAS
+        class HSU_CSU: HSP_CRS
         {
             hrIncreaseLow[] = {60};
             hrIncreaseNormal[] = {40};
@@ -382,7 +382,6 @@ class ACE_Medical_Treatment_Actions
         displayNameProgress = "Injecting Combat Stim... ... ...";
         allowedSelections[] = {"LeftArm","RightArm","LeftLeg","RightLeg"};
         items[] = {"StimRelief"};
-        callbackSuccess = "HS_fnc_PainReduction";
         treatmentTime = 3;
         category = "medication";
     };
@@ -391,23 +390,20 @@ class ACE_Medical_Treatment_Actions
         displayName = "Inject Adrenal";
         displayNameProgress = "Injecting Adrenal Stim... ... ...";
         items[] = {"StimAdrenal"};
-        callbackSuccess = "HS_fnc_Adrenal";
     };
-    class HS_CLS: HSP_CRS
+    class HSP_CLS: HSP_CRS
     {
         displayName = "Inject Latheniol";
         displayNameProgress = "Euthanising the Patient, please wait up to 80 seconds before effect....";
         items[] = {"StimLatheniol"};
-        callbackSuccess = "HS_fnc_PainReduction";
         allowedSelections[] = {"Body"};
         treatmentTime = 6;
     };
-    class HS_CSS: ElasticBandage
+    class HSP_CSS: ElasticBandage
     {
         displayName = "Spray Cyano Silicate Bacta";
         displayNameProgress = "Cauterising wounds, disinfecting affected areas ";
         items[] = {"CyanoBacta"};
-        callbackSuccess = "HS_fnc_PainReduction";
         treatmentTime = 8;
         //Look at "Uses"?
     };
@@ -416,7 +412,6 @@ class ACE_Medical_Treatment_Actions
         displayName = "Inject StimUeed";
         displayNameProgress = "Injecting StimUeed Stim, wait up to a minute for full affect... ... ...";
         items[] = {"StimUeed"};
-        callbackSuccess = "HS_fnc_UeedInc";
     };
 
 };

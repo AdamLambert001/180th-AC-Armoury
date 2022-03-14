@@ -101,11 +101,19 @@ class CfgWeapons
 	};
 	class 180th_Wallace_Pilot_Helmet: SWLB_clone_pilot_P2_helmet
 	{
-		displayName="[180th Customs] Clone pilot Helmet (Wallace)";
+		displayName="[180th Customs] Clone pilot helmet (Wallace)";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_CUSTOMS\data\helmets\180th_WallacePilot_Helmet.paa",
+		};
+	};
+	class 180th_Roach_BARC_Helmet: SWLB_clone_barc_helmet
+	{
+		displayName="[180th Customs] Clone BARC helmet (Roach)";
+		hiddenSelectionsTextures[]=
+		{
+			"WS_A_CUSTOMS\data\helmets\180th_Roach_BARC_Helmet.paa"
 		};
 	};
     class 180th_Paul_Helmet: SWLB_clone_P2_helmet
@@ -265,7 +273,7 @@ class CfgWeapons
 			"WS_A_CUSTOMS\data\helmets\180th_Hoplite_Helmet.paa"
 		};
 	};
-		class 180th_Psychic_Helmet: SWLB_clone_P2_helmet
+	class 180th_Psychic_Helmet: SWLB_clone_P2_helmet
 	{
 		displayName="[180th Customs] Clone trooper helmet (Psychic)";
 		hiddenSelectionsTextures[]=

@@ -145,7 +145,7 @@ class CfgVehicles
 
 	class 180th_TX130: SWLG_tanks_tx130
 	{
-		displayName="[180th Kobold] TX-130 'Mozzie' Hover Tank";
+		displayName="[180th Minotaur] TX-130 'Mozzie' Hover Tank";
 		faction="b_wac";
 		scope = 2;
         scopeCurator = 2;
@@ -178,7 +178,7 @@ class CfgVehicles
 	};
 
 	class 180th_ATTE: 3as_ATTE_Base {
-		displayname="[180th Kobold] AT-TE 'Stompy' Walker";
+		displayname="[180th Minotaur] AT-TE 'Stompy' Walker";
 		faction="b_wac";
 		scope = 2;
         scopeCurator = 2;
@@ -229,7 +229,7 @@ class CfgVehicles
 	};
 	class 180th_Z95_Base: 3as_Z95_Republic
 	{
-		displayName="Z-95 Headhunter 'Chimera'";
+		displayName="[180th Chimera] Z-95 Headhunter";
 		faction="b_wac";
 		editorSubcategory="WS_Categ_180thVC";
 		editorPreview="";
@@ -307,7 +307,7 @@ class CfgVehicles
 
 	class 180th_Pegasus_LAAT: lsd_heli_laati
 	{
-		displayname="LAAT/I Gunship (Pegasus)";
+		displayname="[180th Pegasus] LAAT/I Gunship";
 		faction="b_wac";
 		author="Wyvern Studios";
 		editorSubcategory="WS_Categ_180thVC";
@@ -1931,7 +1931,7 @@ class CfgVehicles
 		crew="180th_BARC";
 		side=1;
 		faction="b_wac";
-		displayName="[180th] BARC Speeder";
+		displayName="[180th Basilisk] BARC Speeder";
 		author="Wyvern Studios";
 	};
 };

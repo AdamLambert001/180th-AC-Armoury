@@ -680,6 +680,21 @@ class CfgVehicles
 	class SWLB_clone_backpack;
 	class SWLB_clone_backpack_heavy;
 	class SWLB_clone_backpack_medic;
+
+
+	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Backpack
+	class 180th_Wallace_RTO_Backpack: SWLB_clone_backpack_RTO
+	{
+		displayName="[180th Customs] Clone trooper RTO backpack (Wallace)";
+		hiddenSelectionsTextures[]=
+		{
+			"\WS_A_CUSTOMS\data\accessories\180th_Wallace_RTO_Backpack.paa",
+			"",
+			"",
+			"",
+			"\WS_A_CUSTOMS\data\accessories\180th_Wallace_RTO_Backpack.paa"
+		};
+	};
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ARMOR 
 	class 180th_Jerry: SWLB_clone_base_P2
 	{

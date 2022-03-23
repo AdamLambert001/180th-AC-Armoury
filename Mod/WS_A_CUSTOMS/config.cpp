@@ -134,15 +134,6 @@ class CfgWeapons
 	    	"WS_A_CUSTOMS\data\helmets\180th_Soviet_Helmet.paa",
 		};
 	};
-    class 180th_King_Helmet: SWLB_clone_P2_helmet
-	{
-		displayName="[180th Customs] Clone trooper helmet (King)";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-	    	"WS_A_CUSTOMS\data\helmets\180th_King_Helmet.paa",
-		};
-	};
     class 180th_Tom_Helmet: SWLB_clone_P2_helmet
 	{
 		displayName="[180th Customs] Clone trooper helmet (Tom)";
@@ -193,12 +184,12 @@ class CfgWeapons
 			"WS_A_CUSTOMS\data\helmets\180th_Raccoon_Helmet_I.paa"
 		};
 	};
-    class 180th_Fire_Helmet: SWLB_P2_SpecOps_Helmet
+    class 180th_Fire_Helmet: SWLB_clone_P2_helmet
 	{
-		displayName="[180th Customs] Clone trooper JTAC helmet (Fire)";
+		displayName="[180th Customs] Clone trooper helmet (Fire)";
 		hiddenSelectionsTextures[]=
 		{
-			"WS_A_CUSTOMS\data\helmets\180th_Fire_JTAC_Helmet.paa"
+			"WS_A_CUSTOMS\data\helmets\180th_Fire_Helmet.paa"
 		};
 	};
 	class 180th_Jamison_Helmet: SWLB_clone_P2_helmet
@@ -223,14 +214,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_CUSTOMS\data\helmets\180th_Green_Helmet.paa"
-		};
-	};
-	class 180th_Degs_Helmet: SWLB_clone_P2_helmet
-	{
-		displayName="[180th Customs] Clone trooper helmet (Degs)";
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_CUSTOMS\data\helmets\180th_Degs_Helmet.paa"
 		};
 	};
 	class 180th_Rattay_Helmet: SWLB_clone_P2_helmet
@@ -271,14 +254,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_CUSTOMS\data\helmets\180th_Hoplite_Helmet.paa"
-		};
-	};
-	class 180th_Psychic_Helmet: SWLB_clone_P2_helmet
-	{
-		displayName="[180th Customs] Clone trooper helmet (Psychic)";
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_CUSTOMS\data\helmets\180th_Psychic_Helmet.paa"
 		};
 	};
 	class 180th_Wallace_Helmet: SWLB_clone_P2_helmet
@@ -341,6 +316,7 @@ class CfgWeapons
 	class SWLB_clone_grenadier_armor;
 	class SWLB_clone_specialist_armor;
 	class VestItem;
+	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Vests
     class 180th_Jerry_Armor: SWLB_clone_commander_armor
 	{
 		displayName="[180th Customs] Clone trooper captain vest (Jerry)";
@@ -349,14 +325,7 @@ class CfgWeapons
 			"\WS_A_BASE\data\vests\180th_Officer_ACC.paa"
 		};
 	};
-	class 180th_Test_Armor: SWLB_clone_commander_armor
-	{
-		displayName="[180th Customs] Clone trooper captain vest (Test)";
-		hiddenSelectionsTextures[]=
-		{
-			"\WS_A_CUSTOMS\data\vests\180th_Officer_Test_ACC.paa"
-		};
-	};
+	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Uniform
     class SWLB_clone_uniform;
 	class UniformItem;
 	class 180th_Jerry_Uniform: SWLB_clone_uniform
@@ -383,7 +352,7 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-		class 180th_Soviet_Uniform: SWLB_clone_uniform
+	class 180th_Soviet_Uniform: SWLB_clone_uniform
 	{
 		displayName="[180th Customs] Clone trooper uniform (Soviet)";
 		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
@@ -395,19 +364,7 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-		class 180th_King_Uniform: SWLB_clone_uniform
-	{
-		displayName="[180th Customs] Clone trooper uniform (King)";
-		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="180th_King";
-			containerClass="Supply140";
-			mass=40;
-		};
-	};
-		class 180th_Tom_Uniform: SWLB_clone_uniform
+	class 180th_Tom_Uniform: SWLB_clone_uniform
 	{
 		displayName="[180th Customs] Clone trooper uniform (Tom)";
 		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
@@ -527,18 +484,6 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-	class 180th_Degs_Uniform: SWLB_clone_uniform
-	{
-		displayName="[180th Customs] Clone trooper uniform (Degs)";
-		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="180th_Degs";
-			containerClass="Supply140";
-			mass=40;
-		};
-	};
 	class 180th_Grape_Uniform: SWLB_clone_uniform
 	{
 		displayName="Grape Man Armor";
@@ -575,20 +520,7 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-
-	class 180th_Psychic_Uniform: SWLB_clone_uniform
-	{
-		displayName="[180th Customs] Clone trooper uniform (Psychic)";
-		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="180th_Psychic";
-			containerClass="Supply140";
-			mass=40;
-		};
-	};
-		class 180th_Fire_Uniform: SWLB_clone_uniform
+	class 180th_Fire_Uniform: SWLB_clone_uniform
 	{
 		displayName="[180th Customs] Clone trooper uniform (Fire)";
 		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
@@ -600,7 +532,7 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-		class 180th_Kreed_Uniform: SWLB_clone_uniform
+	class 180th_Kreed_Uniform: SWLB_clone_uniform
 	{
 		displayName="[180th Customs] Clone trooper uniform (Kreed)";
 		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
@@ -780,36 +712,6 @@ class CfgVehicles
 		{
 			"SWLB_clone_basic_armor",
 			"180th_Soviet_Helmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"SWLB_comlink"
-		};
-	};
-	class 180th_King: SWLB_clone_base_P2
-	{
-		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
-        faction = "180thACA";
-		editorSubcategory="WS_180th_Armory_Customs";
-		uniformclass="180th_King_Uniform";
-		hiddenSelectionsTextures[]=
-		{
-	        "WS_A_CUSTOMS\data\armor\180th_King_Armor1.paa",
-			"WS_A_CUSTOMS\data\armor\180th_King_Armor2.paa",
-		};
-		linkedItems[]=
-		{
-			"SWLB_clone_basic_armor",
-			"180th_King_Helmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"SWLB_comlink"
-		};
-		respawnLinkedItems[]=
-		{
-			"SWLB_clone_basic_armor",
-			"180th_King_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1070,7 +972,7 @@ class CfgVehicles
 		linkedItems[]=
 		{
 			"SWLB_clone_basic_armor",
-			"180th_Fire_JTAC_Helmet",
+			"180th_Fire_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1079,7 +981,7 @@ class CfgVehicles
 		respawnLinkedItems[]=
 		{
 			"SWLB_clone_basic_armor",
-			"180th_Fire_JTAC_Helmet",
+			"180th_Fire_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1110,36 +1012,6 @@ class CfgVehicles
 		{
 			"SWLB_clone_basic_armor",
 			"180th_Grape_Helmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"SWLB_comlink"
-		};
-	};
-		class 180th_Psychic: SWLB_clone_base_P2
-	{
-		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
-        faction = "180thACA";
-		editorSubcategory="WS_180th_Armory_Customs";
-		uniformclass="180th_Psychic_Uniform";
-		hiddenSelectionsTextures[]=
-		{
-	        "WS_A_CUSTOMS\data\armor\180th_Psychic_Armor1.paa",
-			"WS_A_CUSTOMS\data\armor\180th_Psychic_Armor2.paa",
-		};
-		linkedItems[]=
-		{
-			"SWLB_clone_basic_armor",
-			"180th_Psychic_Helmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"SWLB_comlink"
-		};
-		respawnLinkedItems[]=
-		{
-			"SWLB_clone_basic_armor",
-			"180th_Psychic_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1260,36 +1132,6 @@ class CfgVehicles
 		{
 			"SWLB_clone_basic_armor",
 			"180th_Frost_Helmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"SWLB_comlink"
-		};
-	};
-		class 180th_Degs: SWLB_clone_base_P2
-	{
-		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
-        faction = "180thACA";
-		editorSubcategory="WS_180th_Armory_Customs";
-		uniformclass="180th_Degs_Uniform";
-		hiddenSelectionsTextures[]=
-		{
-	        "WS_A_CUSTOMS\data\armor\180th_Degs_Armor1.paa",
-			"WS_A_CUSTOMS\data\armor\180th_Degs_Armor2.paa",
-		};
-		linkedItems[]=
-		{
-			"SWLB_clone_basic_armor",
-			"180th_Degs_Helmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"SWLB_comlink"
-		};
-		respawnLinkedItems[]=
-		{
-			"SWLB_clone_basic_armor",
-			"180th_Degs_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",

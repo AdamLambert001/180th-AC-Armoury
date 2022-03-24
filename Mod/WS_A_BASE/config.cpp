@@ -1535,7 +1535,7 @@ class CfgVehicles
 			"SWLB_comlink"
 		};
 	};
-		class 180th_MR: SWLB_clone_base_P2
+	class 180th_MR: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "180thACA";
@@ -1688,7 +1688,7 @@ class CfgVehicles
 			"SWLB_comlink"
 		};
 	}; 
-		class 180th_BARC: SWLB_clone_base_P2
+	class 180th_BARC: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "180thACA";
@@ -1718,7 +1718,7 @@ class CfgVehicles
 			"SWLB_comlink"
 		};
 	}; 
-		class 180th_Pilot: SWLB_clone_base_P2
+	class 180th_Pilot: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "180thACA";
@@ -1930,7 +1930,7 @@ class CfgVehicles
 			"SWLB_comlink"
 		};
 	}; 
-		class 180th_ArenaGM: SWLB_clone_base_P2
+	class 180th_ArenaGM: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "180thACA";
@@ -1963,6 +1963,6 @@ class CfgVehicles
 };
 class cfgMods
 {
-	author="Raccoon";
-	timepacked="1558046804";
+	author="Wyvern Studios";
+	timepacked="031324032022";
 };

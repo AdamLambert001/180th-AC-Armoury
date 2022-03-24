@@ -980,6 +980,7 @@ class CfgVehicles
 	class SWLB_clone_RTO_mini_backpack;
 	class SWLB_clone_backpack_heavy;
 	class SWLB_clone_backpack_medic;
+	
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> BACKPACKS 
 	class 180th_Clone_Backpack: SWLB_clone_backpack
 	{
@@ -1040,12 +1041,10 @@ class CfgVehicles
 			"",
 			"\WS_A_BASE\data\accessories\180th_RTO_Backpack.paa"
 		};
-		tf_dialog="SWLB_clone_rto_radio_dialog";
-		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-		tf_encryptionCode="tf_west_radio_code";
-		tf_hasLRradio=1;
-		tf_range=40000;
-		tf_subtype="digital_lr";
+		tf_range = 60000;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_additional_channel = 1;
+
 	};
 	class 180th_RTO_Mini_Pack: SWLB_clone_backpack
 	{
@@ -1063,14 +1062,12 @@ class CfgVehicles
 		};
 		maximumload=1;
 		picture="\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_RTO_mini_backpack_ca.paa";
-		tf_dialog="SWLB_clone_rto_mini_radio_dialog";
-		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-		tf_encryptionCode="tf_west_radio_code";
-		tf_hasLRradio=1;
-		tf_range=25000;
-		tf_subtype="digital_lr";
+		tf_range = 40000;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_additional_channel = 1;
+
 	};
-	 class 180th_Recon_RTO_Backpack: SWLB_clone_RTO_mini_backpack
+	class 180th_Recon_RTO_Backpack: SWLB_clone_RTO_mini_backpack
 	{
 		author="Wyvern Studios";
 		scopecurator=2;
@@ -1094,6 +1091,9 @@ class CfgVehicles
 			"WS_A_BASE\data\accessories\180th_Light_ACC.paa",
 			"\WS_A_BASE\data\accessories\180th_Mini_RTO.paa",
 		};
+		tf_range = 40000;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_additional_channel = 1;
 	};
 	class 180th_clone_bags: B_Kitbag_rgr
 	{

@@ -57,6 +57,33 @@ class CfgWeapons
 	class NVGoggles;
 	class ls_blueforHelmet_base;
 	class HeadgearItem;
+	class SWLB_clone_basic_armor;
+	class SWLB_clone_kama_armor;
+	class SWLB_clone_officer_armor;
+	class SWLB_clone_commander_armor;
+	class SWLB_clone_airborne_armor;
+	class SWLB_clone_airborne_nco_armor;
+	class SWLB_clone_medic_armor;
+	class SWLB_clone_cfr_armor;
+	class SWLB_clone_recon_armor;
+	class SWLB_clone_recon_nco_armor;
+	class SWLB_clone_recon_officer_armor;
+	class SWLB_clone_arc_armor;
+	class SWLB_clone_assault_armor;
+	class SWLB_clone_grenadier_armor;
+	class SWLB_clone_specialist_armor;
+	class VestItem;
+    class SWLB_clone_uniform;
+	class SWLB_CEE_Hazard_Vest;
+	class SWLB_CEE_Tactical_Commander;
+	class SWLB_CEE_Officer_Tactical;
+	class SWLB_CEE_Force_Recon;
+	class SWLB_CEE_Force_Recon_NCO;
+	class SWLB_CEE_Force_Recon_Officer;
+	class SWLB_CEE_Force_Recon_Commander;
+	class SWLB_CEE_Heavy_Vest;
+
+
 	class 180th_Clone_ccVisor: NVGoggles
 	{
 		author="Wyvern Studios";
@@ -412,28 +439,20 @@ class CfgWeapons
 			};
 		};
 	};
-    class SWLB_clone_basic_armor;
-	class SWLB_clone_kama_armor;
-	class SWLB_clone_officer_armor;
-	class SWLB_clone_commander_armor;
-	class SWLB_clone_airborne_armor;
-	class SWLB_clone_airborne_nco_armor;
-	class SWLB_clone_medic_armor;
-	class SWLB_clone_cfr_armor;
-	class SWLB_clone_recon_armor;
-	class SWLB_clone_recon_nco_armor;
-	class SWLB_clone_recon_officer_armor;
-	class SWLB_clone_arc_armor;
-	class SWLB_clone_assault_armor;
-	class SWLB_clone_grenadier_armor;
-	class SWLB_clone_specialist_armor;
-	class VestItem;
+
+
+	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> VESTS/ACCs
+
+	class 180th_Trooper_Vest: SWLB_clone_basic_armor {
+		displayName = "[180th base] Clone trooper vest";
+	};
+
 	class 180th_Officer_Armor: SWLB_clone_officer_armor
 	{
 		displayName="[180th Base] Clone trooper officer vest";
 		hiddenSelectionsTextures[]=
 		{
-			"\WS_A_BASE\data\vests\180th_Officer_ACC.paa"
+			"\WS_A_BASE\data\accessories\180th_Officer_ACC.paa"
 		};
 	};
     class 180th_Clone_Commander_Armor: SWLB_clone_commander_armor
@@ -441,7 +460,7 @@ class CfgWeapons
 		displayName="[180th Base] Clone trooper commander vest";
 		hiddenSelectionsTextures[]=
 		{
-			"\WS_A_BASE\data\vests\180th_Officer_ACC.paa"
+			"\WS_A_BASE\data\accessories\180th_Officer_ACC.paa"
 		};
 	};
     class 180th_Clone_ARC_Armor: SWLB_clone_arc_armor
@@ -449,8 +468,8 @@ class CfgWeapons
 		displayName="[180th Base] Clone arc trooper vest";
 		hiddenSelectionsTextures[]=
 		{
-			"\WS_A_BASE\data\vests\180th_ARC_Vest.paa",
-			"\WS_A_BASE\data\vests\180th_ARC_Officer_ACC.paa"
+			"\WS_A_BASE\data\accessories\180th_ARC_Vest.paa",
+			"\WS_A_BASE\data\accessories\180th_ARC_Officer_ACC.paa"
 		};
 	};
     class 180th_Clone_Kama_Vest: SWLB_clone_kama_armor
@@ -458,7 +477,7 @@ class CfgWeapons
 		displayName="[180th Base] Clone trooper kama";
 		hiddenSelectionsTextures[]=
 		{
-			"\WS_A_BASE\data\vests\180th_Officer_ACC.paa"
+			"\WS_A_BASE\data\accessories\180th_Officer_ACC.paa"
 		};
 	};
     class 180th_Lieutenant_Vest: SWLB_clone_basic_armor
@@ -472,7 +491,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\WS_A_BASE\data\vests\180th_Officer_ACC.paa"
+			"\WS_A_BASE\data\accessories\180th_Officer_ACC.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -488,20 +507,117 @@ class CfgWeapons
 				class Chest
 				{
 					HitpointName="HitChest";
-					armor=6;
-					PassThrough=0.30000001;
+					armor=8;
+					PassThrough=0.3000000;
 				};
 				class Arms
 				{
 					hitpointName="HitArms";
-					armor=4;
-					passThrough=0.30000001;
+					armor=5;
+					passThrough=0.3000000;
 				};
 			};
 		};
 	};
 
-    class SWLB_clone_uniform;
+
+
+	class 180th_Heavy_Vest: SWLB_CEE_Heavy_Vest {
+		displayName = "[180th base] Clone trooper Heavy Vest";
+		hiddenSelectionsTextures[] = {
+			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa", 
+			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa",  
+			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa", 
+			"WS_A_BASE\data\accessories\180th_Light_ACC.paa"
+		};
+	};
+
+	class 180th_Medic_Vest: SWLB_clone_medic_armor {
+		displayName = "[180th base] Clone trooper medic vest";
+		hiddenSelectionsTextures[] = {"WS_A_BASE\data\accessories\180th_Medic_ACC.paa"};
+	};
+
+	class 180th_Detachment_Vest: SWLB_CEE_Hazard_Vest {
+		displayName = "[180th base] Clone trooper special detachment vest";
+		hiddenSelectionsTextures[] = {
+			"WS_A_BASE\data\accessories\180th_Light_ACC.paa",
+			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa"
+		};
+	};
+
+	class 180th_Tactical_NCO: SWLB_CEE_Tactical_Commander {
+		displayName = "[180th base] Clone tactical NCO vest";
+		hiddenSelectionsTextures[] = {
+			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa", 
+			"WS_A_BASE\data\accessories\180th_Light_ACC.paa", 
+			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa"
+		};
+	};
+
+	class 180th_Tactical_LT: SWLB_CEE_Officer_Tactical {
+		displayName = "[180th base] Clone tactical lieutenant vest";
+		hiddenSelectionsTextures[] = {
+			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa", 
+			"WS_A_BASE\data\accessories\180th_Light_ACC.paa"
+		};
+	};
+	
+	class 180th_Heavy_Specialist: SWLB_clone_airborne_armor {
+		displayName = "[180th base] Clone heavy specialist vest";
+		hiddenSelectionsTextures[] = {
+			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa", 
+			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa", 
+			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa", 
+			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa"
+		};
+	};
+
+	class 180th_Platoon_Medic_Vest: 180th_Heavy_Specialist {
+		displayName = "[180th base] Clone platoon medic vest";
+		hiddenSelectionsTextures[] = {
+			"WS_A_BASE\data\accessories\180th_Medic_ACC.paa",
+			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa",
+			"WS_A_BASE\data\accessories\180th_Medic_ACC.paa",
+			"WS_A_BASE\data\accessories\180th_Medic_ACC.paa"
+			};
+	};
+
+	class 180th_Recon: SWLB_CEE_Force_Recon {
+		displayName = "[180th base] Clone recon trooper vest";
+		hiddenSelectionsTextures[] = {
+			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa", 
+			"WS_A_BASE\data\accessories\180th_Light_ACC.paa"
+		};
+	};
+
+	class 180th_Recon_NCO: SWLB_CEE_Force_Recon_NCO {
+		displayName = "[180th base] Clone recon NCO vest";
+		hiddenSelectionsTextures[] = {
+			"WS_A_BASE\data\accessories\180th_Light_ACC.paa", 
+			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa", 
+			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa"
+		};
+	};
+
+	class 180th_Recon_LT: SWLB_CEE_Force_Recon_Officer {
+		displayName = "[180th base] Clone recon lieutenant vest";
+		hiddenSelectionsTextures[] = {
+			"WS_A_BASE\data\accessories\180th_Light_ACC.paa", 
+			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa"
+		};
+	};
+
+	class 180th_Recon_Commander: SWLB_CEE_Force_Recon_Commander {
+		displayName = "[180th base] Clone recon commander vest";
+		hiddenSelectionsTextures[] = {
+			"WS_A_BASE\data\accessories\180th_Light_ACC.paa", 
+			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa", 
+			"WS_A_BASE\data\accessories\180th_Light_ACC.paa", 
+			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa"
+		};
+	};
+
+
 	class UniformItem;
 	class 180th_Recruit_Uniform: SWLB_clone_uniform
 	{
@@ -864,6 +980,7 @@ class CfgVehicles
 	class SWLB_clone_RTO_mini_backpack;
 	class SWLB_clone_backpack_heavy;
 	class SWLB_clone_backpack_medic;
+	
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> BACKPACKS 
 	class 180th_Clone_Backpack: SWLB_clone_backpack
 	{
@@ -924,6 +1041,10 @@ class CfgVehicles
 			"",
 			"\WS_A_BASE\data\accessories\180th_RTO_Backpack.paa"
 		};
+		tf_range = 60000;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_additional_channel = 1;
+
 	};
 	class 180th_RTO_Mini_Pack: SWLB_clone_backpack
 	{
@@ -941,14 +1062,12 @@ class CfgVehicles
 		};
 		maximumload=1;
 		picture="\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_RTO_mini_backpack_ca.paa";
-		tf_dialog="SWLB_clone_rto_mini_radio_dialog";
-		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-		tf_encryptionCode="tf_west_radio_code";
-		tf_hasLRradio=1;
-		tf_range=25000;
-		tf_subtype="digital_lr";
+		tf_range = 40000;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_additional_channel = 1;
+
 	};
-	 class 180th_Recon_RTO_Backpack: SWLB_clone_RTO_mini_backpack
+	class 180th_Recon_RTO_Backpack: SWLB_clone_RTO_mini_backpack
 	{
 		author="Wyvern Studios";
 		scopecurator=2;
@@ -969,9 +1088,12 @@ class CfgVehicles
 			"SWLB_equipment\backpacks\data\SWLB_clone_RTO_mini_backpack_accumulator_co.paa",
 			"\WS_A_BASE\data\accessories\180th_Clone_Bags.paa",
 			"\WS_A_BASE\data\accessories\180th_Clone_Bags.paa",
-			"SWLB_clones\data\light_accessories_co.paa",
+			"WS_A_BASE\data\accessories\180th_Light_ACC.paa",
 			"\WS_A_BASE\data\accessories\180th_Mini_RTO.paa",
 		};
+		tf_range = 40000;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_additional_channel = 1;
 	};
 	class 180th_clone_bags: B_Kitbag_rgr
 	{
@@ -1413,7 +1535,7 @@ class CfgVehicles
 			"SWLB_comlink"
 		};
 	};
-		class 180th_MR: SWLB_clone_base_P2
+	class 180th_MR: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "180thACA";
@@ -1566,7 +1688,7 @@ class CfgVehicles
 			"SWLB_comlink"
 		};
 	}; 
-		class 180th_BARC: SWLB_clone_base_P2
+	class 180th_BARC: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "180thACA";
@@ -1596,7 +1718,7 @@ class CfgVehicles
 			"SWLB_comlink"
 		};
 	}; 
-		class 180th_Pilot: SWLB_clone_base_P2
+	class 180th_Pilot: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "180thACA";
@@ -1808,7 +1930,7 @@ class CfgVehicles
 			"SWLB_comlink"
 		};
 	}; 
-		class 180th_ArenaGM: SWLB_clone_base_P2
+	class 180th_ArenaGM: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "180thACA";
@@ -1841,6 +1963,6 @@ class CfgVehicles
 };
 class cfgMods
 {
-	author="Raccoon";
-	timepacked="1558046804";
+	author="Wyvern Studios";
+	timepacked="031324032022";
 };

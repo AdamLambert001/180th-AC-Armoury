@@ -33,7 +33,6 @@ class CfgPatches
 			"180th_Pegasus_LAAT",
 			"180th_Pey_LAAT",
 			"180th_Raccoon_LAAT",
-			"180th_Kroner_LAAT",
 			"180th_Huebert_LAAT", 
 			"180th_Melisande_LAAT", 
 			"180th_laat_medevac"
@@ -52,6 +51,10 @@ class CfgEditorSubcategories
 	class WS_Categ_180thVC
 	{
 		displayName="Manticore Company (Assets)";
+	};
+	class WS_Categ_180thGTRS
+	{
+		displayName="Transport Vehicles (Assets)";
 	};
 	class Rarefied_Air_CavalryV
 	{
@@ -102,6 +105,10 @@ class CfgWeapons
 	{
 		displayName = BARC Cannons Duel Shot;
 	};
+	class 180_Transport_TX_Cannon: SWLG_TX130_cannon
+	{
+		displayName = High Powered Energy Shot;
+	};
 };
 
 
@@ -112,7 +119,10 @@ class CfgVehicles
 	class 3as_arc_170_base;
 	class 3AS_Jug_base_F;
 	class 3as_saber_Base;
-	class Car;
+	class Car: LandVehicle
+	{
+		class NewTurret;
+	};
     class 3AS_Patrol_LAAT_Base;
 	class ls_laat_ab;
 	class lsd_laat_base;
@@ -123,6 +133,11 @@ class CfgVehicles
 	class lsd_heli_laati;
 	class 3as_ATTE_Base;
 	class 3as_BTLB_Bomber;
+	class B_Truck_01_ammo_F;
+	class B_Truck_01_transport_F;
+	class B_Truck_01_covered_F;
+	class B_Truck_01_fuel_F;
+
 
 	class Car_F: Car
 	{
@@ -138,8 +153,25 @@ class CfgVehicles
 			class HitGlass3;
 			class HitGlass4;
 		};
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+			};
+		};
 		class EventHandlers;
 		class AnimationSources;
+	};
+
+	
+	class I_APC_Wheeled_03_cannon_F: Car_F 
+	{
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+			};
+		};
 	};
 	//--------------------------------------------------------Land Vehicles--------------------------------------------------------//
 
@@ -204,6 +236,134 @@ class CfgVehicles
 		armor = 3300;
 		crew = "180th_Engineer";
 	};
+
+	class 180th_Pandur_APC_Whl_Gun: I_APC_Wheeled_03_cannon_F
+    {
+        side = 1;
+        scope=2;
+		scopeCurator = 2;
+		editorSubcategory="WS_Categ_180thGTRS";
+        vehicleClass = "Armoured";
+        crew = "180th_Engineer";
+        faction = "b_wac";
+        displayName = "[180th] Nekpup APC (Gun)";
+        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
+        hiddenSelectionsTextures[] = {"WS_A_VEHICLES\Data\AV4\180th_APC_1.paa", "WS_A_VEHICLES\Data\AV4\180th_APC_2.paa", "WS_A_VEHICLES\Data\AV4\180th_APC_4.paa", "WS_A_VEHICLES\Data\AV4\180th_APC_3.paa"};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[]=
+				{
+					"SWLW_Z6",
+					"180_Transport_TX_Cannon",
+					"missiles_titan"
+				};
+				magazines[]=
+				{
+					"SWLW_Z6_mag",
+					"SWLW_Z6_mag",
+					"SWLG_TX130_cannon_mag",
+					"2Rnd_GAT_missiles"
+				};
+			};
+		};
+    };
+
+	class 180th_Pandur_APC_Whl: I_APC_Wheeled_03_cannon_F
+    {
+        side = 1;
+        scope=2;
+		scopeCurator = 2;
+		editorSubcategory="WS_Categ_180thGTRS";
+        vehicleClass = "Armoured";
+        crew = "180th_Engineer";
+        faction = "b_wac";
+        displayName = "[180th] Nekpup APC";
+        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
+        hiddenSelectionsTextures[] = {"WS_A_VEHICLES\Data\AV4\180th_APC_1.paa", "WS_A_VEHICLES\Data\AV4\180th_APC_2.paa", "", "WS_A_VEHICLES\Data\AV4\180th_APC_3.paa"};
+
+		class Turrets {
+		};
+
+		class AnimationSources: AnimationSources {
+
+			class HideTurret {
+				animPeriod = 0.001000;
+				initPhase = "true";
+				source = "user";
+			};
+		};
+    };
+
+	class 180th_Hemtt_ammo_Whl: B_Truck_01_ammo_F
+    {
+        side = 1;
+        scope=2;
+		scopeCurator = 2;
+		editorSubcategory="WS_Categ_180thGTRS";
+        crew = "180th_Engineer";
+        faction = "b_wac";
+        displayName = "[180th] HEMTT (Ammo)";
+        hiddenSelectionsTextures[] = 
+		{
+			"WS_A_VEHICLES\Data\HEMTT\180th_HMT_ex_01.paa", 
+			"WS_A_VEHICLES\Data\HEMTT\180th_HMT_ex_02.paa",
+			"\A3\Soft_F_Gamma\Truck_01\Data\truck_01_ammo_CO.paa"
+		};
+    };
+
+	class 180th_Hemtt_fuel_Whl: B_Truck_01_fuel_F
+    {
+        side = 1;
+        scope=2;
+		scopeCurator = 2;
+		editorSubcategory="WS_Categ_180thGTRS";
+        crew = "180th_Engineer";
+        faction = "b_wac";
+        displayName = "[180th] HEMTT (Fuel)";
+        hiddenSelectionsTextures[] = 
+		{
+			"WS_A_VEHICLES\Data\HEMTT\180th_HMT_ex_01.paa", 
+			"WS_A_VEHICLES\Data\HEMTT\180th_HMT_ex_02.paa",
+			"\A3\Soft_F_Gamma\Truck_01\Data\truck_01_Fuel_CO.paa"
+		};
+    };
+
+	class 180th_Hemtt_transport_Whl: B_Truck_01_transport_F
+    {
+        side = 1;
+        scope=2;
+		scopeCurator = 2;
+		editorSubcategory="WS_Categ_180thGTRS";
+        crew = "180th_Engineer";
+        faction = "b_wac";
+        displayName = "[180th] HEMTT (Transport)";
+        hiddenSelectionsTextures[] = 
+		{
+			"WS_A_VEHICLES\Data\HEMTT\180th_HMT_ex_01.paa", 
+			"WS_A_VEHICLES\Data\HEMTT\180th_HMT_ex_02.paa", 
+			"WS_A_VEHICLES\Data\HEMTT\180th_HMT_Cargo_01.paa"
+		};
+    };
+
+	class 180th_Hemtt_covered_Whl: B_Truck_01_covered_F
+    {
+        side = 1;
+        scope=2;
+		scopeCurator = 2;
+		editorSubcategory="WS_Categ_180thGTRS";
+        crew = "180th_Engineer";
+        faction = "b_wac";
+        displayName = "[180th] HEMTT (Covered)";
+        hiddenSelectionsTextures[] = 
+		{
+			"WS_A_VEHICLES\Data\HEMTT\180th_HMT_ex_01.paa", 
+			"WS_A_VEHICLES\Data\HEMTT\180th_HMT_ex_02.paa", 
+			"WS_A_VEHICLES\Data\HEMTT\180th_HMT_Cargo_01.paa",
+			"\a3\soft_f_beta\truck_01\data\truck_01_cover_co.paa"
+		};
+    };
 
 	//--------------------------------------------------------Starfighters--------------------------------------------------------//
 	class 180th_Z95_Racc: 3as_Z95_Republic

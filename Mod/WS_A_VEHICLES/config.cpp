@@ -16,7 +16,7 @@ class CfgPatches
 			"A3_Characters_F_Proxies"
 		};
 		requiredVersion=0.1;
-		units[]=
+		units[]= 
 		{
 			"180th_TX130",
 			"180th_ATTE",
@@ -33,9 +33,15 @@ class CfgPatches
 			"180th_Pegasus_LAAT",
 			"180th_Pey_LAAT",
 			"180th_Raccoon_LAAT",
-			"180th_Huebert_LAAT", 
+			"180th_Huebert_LAAT",
 			"180th_Melisande_LAAT", 
-			"180th_laat_medevac"
+			"180th_laat_medevac",
+			"180th_Hemtt_covered_Whl ",
+			"180th_Hemtt_transport_Whl",
+			"180th_Hemtt_fuel_Whl",
+			"180th_Hemtt_ammo_Whl",
+			"180th_Pandur_APC_Whl",
+			"180th_Pandur_APC_Whl_Gun"
 
 
 		};
@@ -270,7 +276,7 @@ class CfgVehicles
 		};
     };
 
-	class 180th_Pandur_APC_Whl: I_APC_Wheeled_03_cannon_F
+	class 180th_Pandur_APC_Whl: I_APC_Wheeled_03_cannon_F 
     {
         side = 1;
         scope=2;
@@ -330,7 +336,7 @@ class CfgVehicles
 		};
     };
 
-	class 180th_Hemtt_transport_Whl: B_Truck_01_transport_F
+	class 180th_Hemtt_transport_Whl: B_Truck_01_transport_F 
     {
         side = 1;
         scope=2;

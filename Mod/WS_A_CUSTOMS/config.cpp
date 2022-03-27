@@ -59,7 +59,7 @@ class CfgWeapons
 		author="Wyvern Studios";
 		displayName="[180th Customs] Clone NV Visor (Roach)";
 		modelOptics="\SWLB_clones\SWLB_clone_nvg_optic_dummy.p3d";
-		model="\SWLB_clones\swlb_clone_nvg_on.p3d";
+		model="\SWLB_clones\swlb_clone_nvg_off.p3d";
 		hiddenSelections[]=
 		{
 			"camo1",

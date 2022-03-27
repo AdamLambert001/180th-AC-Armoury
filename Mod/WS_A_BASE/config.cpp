@@ -447,6 +447,26 @@ class CfgWeapons
 		displayName = "[180th base] Clone trooper vest";
 	};
 
+	class 180th_Grenadier_Vest: SWLB_clone_grenadier_armor {
+		displayName = "[180th base] Clone grenadier vest";
+		hiddenSelectionsTextures[] = 
+		{
+			"WS_A_BASE\data\accessories\180th_Light_ACC.paa",
+			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa" 
+		};
+	};
+
+	class 180th_NCO_Vest: SWLB_clone_recon_nco_armor {
+		displayName = "[180th base] Clone NCO trooper vest";
+		hiddenSelectionsTextures[] = 
+		{
+			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa",
+			"",
+			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa",
+			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa"  
+		};
+	};
+
 	class 180th_Officer_Armor: SWLB_clone_officer_armor
 	{
 		displayName="[180th Base] Clone trooper officer vest";
@@ -496,7 +516,7 @@ class CfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel="\SWLB_clones\SWLB_clone_lieutenant_armor.p3d";
-			containerClass="Supply40";
+			containerClass="Supply60";
 			hiddenSelections[]=
 			{
 				"camo1"
@@ -524,7 +544,8 @@ class CfgWeapons
 
 	class 180th_Heavy_Vest: SWLB_CEE_Heavy_Vest {
 		displayName = "[180th base] Clone trooper Heavy Vest";
-		hiddenSelectionsTextures[] = {
+		hiddenSelectionsTextures[] = 
+		{
 			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa", 
 			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa",  
 			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa", 
@@ -539,7 +560,8 @@ class CfgWeapons
 
 	class 180th_Detachment_Vest: SWLB_CEE_Hazard_Vest {
 		displayName = "[180th base] Clone trooper special detachment vest";
-		hiddenSelectionsTextures[] = {
+		hiddenSelectionsTextures[] = 
+		{
 			"WS_A_BASE\data\accessories\180th_Light_ACC.paa",
 			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa"
 		};
@@ -547,7 +569,8 @@ class CfgWeapons
 
 	class 180th_Tactical_NCO: SWLB_CEE_Tactical_Commander {
 		displayName = "[180th base] Clone tactical NCO vest";
-		hiddenSelectionsTextures[] = {
+		hiddenSelectionsTextures[] = 
+		{
 			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa", 
 			"WS_A_BASE\data\accessories\180th_Light_ACC.paa", 
 			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa"
@@ -556,7 +579,8 @@ class CfgWeapons
 
 	class 180th_Tactical_LT: SWLB_CEE_Officer_Tactical {
 		displayName = "[180th base] Clone tactical lieutenant vest";
-		hiddenSelectionsTextures[] = {
+		hiddenSelectionsTextures[] = 
+		{
 			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa", 
 			"WS_A_BASE\data\accessories\180th_Light_ACC.paa"
 		};
@@ -564,7 +588,8 @@ class CfgWeapons
 	
 	class 180th_Heavy_Specialist: SWLB_clone_airborne_armor {
 		displayName = "[180th base] Clone heavy specialist vest";
-		hiddenSelectionsTextures[] = {
+		hiddenSelectionsTextures[] = 
+		{
 			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa", 
 			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa", 
 			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa", 
@@ -574,17 +599,19 @@ class CfgWeapons
 
 	class 180th_Platoon_Medic_Vest: 180th_Heavy_Specialist {
 		displayName = "[180th base] Clone platoon medic vest";
-		hiddenSelectionsTextures[] = {
+		hiddenSelectionsTextures[] = 
+		{
 			"WS_A_BASE\data\accessories\180th_Medic_ACC.paa",
 			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa",
 			"WS_A_BASE\data\accessories\180th_Medic_ACC.paa",
 			"WS_A_BASE\data\accessories\180th_Medic_ACC.paa"
-			};
+		};
 	};
 
 	class 180th_Recon: SWLB_CEE_Force_Recon {
 		displayName = "[180th base] Clone recon trooper vest";
-		hiddenSelectionsTextures[] = {
+		hiddenSelectionsTextures[] = 
+		{
 			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa", 
 			"WS_A_BASE\data\accessories\180th_Light_ACC.paa"
 		};
@@ -592,7 +619,8 @@ class CfgWeapons
 
 	class 180th_Recon_NCO: SWLB_CEE_Force_Recon_NCO {
 		displayName = "[180th base] Clone recon NCO vest";
-		hiddenSelectionsTextures[] = {
+		hiddenSelectionsTextures[] = 
+		{
 			"WS_A_BASE\data\accessories\180th_Light_ACC.paa", 
 			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa", 
 			"WS_A_BASE\data\accessories\180th_Heavy_ACC.paa"
@@ -601,7 +629,8 @@ class CfgWeapons
 
 	class 180th_Recon_LT: SWLB_CEE_Force_Recon_Officer {
 		displayName = "[180th base] Clone recon lieutenant vest";
-		hiddenSelectionsTextures[] = {
+		hiddenSelectionsTextures[] = 
+		{
 			"WS_A_BASE\data\accessories\180th_Light_ACC.paa", 
 			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa"
 		};
@@ -609,7 +638,8 @@ class CfgWeapons
 
 	class 180th_Recon_Commander: SWLB_CEE_Force_Recon_Commander {
 		displayName = "[180th base] Clone recon commander vest";
-		hiddenSelectionsTextures[] = {
+		hiddenSelectionsTextures[] = 
+		{
 			"WS_A_BASE\data\accessories\180th_Light_ACC.paa", 
 			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa", 
 			"WS_A_BASE\data\accessories\180th_Light_ACC.paa", 

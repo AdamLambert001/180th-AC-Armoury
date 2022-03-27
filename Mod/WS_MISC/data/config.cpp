@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class 180th_misc
 	{
-		author="Raccoon";
+		author="Wyvern Studios";
 		name="$-";
 		requiredAddons[]=
 		{

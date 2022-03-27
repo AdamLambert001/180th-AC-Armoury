@@ -2,7 +2,7 @@ class cfgpatches
 {
 	class 180th_statics_props
 	{
-		author="Raccoon";
+		author="Wyvern Studios";
 		requiredAddons[]=
 		{
 			"ls_core"
@@ -14,6 +14,6 @@ class cfgpatches
 };
 class cfgMods
 {
-	author="";
-	timepacked="1612347698";
+	author="Wyvern Studios";
+	timepacked="153627032022";
 };

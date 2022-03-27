@@ -1320,6 +1320,6 @@ class CfgVehicles
 };
 class cfgMods
 {
-	author="Raccoon";
-	timepacked="1558046804";
+	author="Wyvern Studios";
+	timepacked="154027032022";
 };

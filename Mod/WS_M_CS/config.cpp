@@ -6,6 +6,7 @@ class CfgMods
         author = "Rib/Roach";
         hideName = "false";
         hidePicture = "false";
+        timepacked = "193614032022"
     };
 };
 

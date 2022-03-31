@@ -81,7 +81,7 @@ class CfgWeapons
 		{
 			type=616;
 			uniformModel="\SWLB_clones\swlb_clone_nvg_on.p3d";
-			modelOff="\SWLB_clones\swlb_clone_nvg_on.p3d";
+			modelOff="\SWLB_clones\swlb_clone_nvg_off.p3d";
 			mass=1;
 			hiddenSelections[]=
 			{
@@ -307,15 +307,7 @@ class CfgWeapons
 	
 	
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DETACHMENT 
-	 class 180th_Delta_Helmet: SWLB_clone_eng_helmet
-	{
-		displayName="[180th Customs] Clone trooper engineer helmet (Delta)";
-        picture="\SWLB_clones\data\ui\icon_SWLB_clone_eng_helmet_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_CUSTOMS\data\helmets\180th_Delta_Helmet_ENG.paa",
-		};
-	};
+
     class SWLB_clone_basic_armor;
 	class SWLB_clone_kama_armor;
 	class SWLB_clone_officer_armor;
@@ -401,18 +393,6 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Roach";
 			containerClass="Supply180";
-			mass=40;
-		};
-	};
-	class 180th_Delta_Uniform: SWLB_clone_uniform
-	{
-		displayName="[180th Customs] Clone trooper uniform (Delta)";
-		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="180th_Delta";
-			containerClass="Supply140";
 			mass=40;
 		};
 	};
@@ -741,36 +721,6 @@ class CfgVehicles
 		{
 			"SWLB_clone_basic_armor",
 			"180th_Soviet_Helmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"SWLB_comlink"
-		};
-	};
-	class 180th_Delta: SWLB_clone_base_P2
-	{
-		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
-        faction = "180thACA";
-		editorSubcategory="WS_180th_Armory_Customs";
-		uniformclass="180th_Delta_Uniform";
-		hiddenSelectionsTextures[]=
-		{
-	        "WS_A_CUSTOMS\data\armor\180th_Delta_Armor1.paa",
-			"WS_A_CUSTOMS\data\armor\180th_Delta_Armor2.paa",
-		};
-		linkedItems[]=
-		{
-			"SWLB_clone_basic_armor",
-			"180th_Delta_Helmet",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"SWLB_comlink"
-		};
-		respawnLinkedItems[]=
-		{
-			"SWLB_clone_basic_armor",
-			"180th_Delta_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",

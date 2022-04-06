@@ -321,11 +321,11 @@ class CfgWeapons
 	};
 	class 180th_Heavy_Gunner_Helmet: SWLB_clone_P2_helmet
 	{
-		displayName="[180th Base] Clone heavy gunner helmet (WIP)";
+		displayName="[180th Base] Clone heavy gunner helmet";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-	    	"WS_A_BASE\data\helmets\180th_EOD_Helmet.paa",
+	    	"WS_A_BASE\data\helmets\180th_HG_Helmet.paa",
 		};
 	};
 	class 180th_JTAC_Helmet: SWLB_P2_SpecOps_Helmet
@@ -334,6 +334,24 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_BASE\data\helmets\180th_JTAC_Helmet.paa"
+		};
+	};
+	class 180th_Riot_Helmet: SWLB_clone_P2_helmet 
+	{
+		displayName="[180th Base] Clone riot helmet (WIP)";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+	    	"WS_A_BASE\data\helmets\180th_Riot_Helmet.paa",
+		};
+	};
+	class 180th_AAT_Helmet: SWLB_clone_P2_helmet 
+	{
+		displayName="[180th Base] Clone advanced rocket helmet (WIP)";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+	    	"WS_A_BASE\data\helmets\180th_Riot_Helmet.paa",
 		};
 	};
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DETACHMENT 

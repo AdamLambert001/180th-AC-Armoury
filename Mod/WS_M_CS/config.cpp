@@ -6,7 +6,7 @@ class CfgMods
         author = "Rib/Roach";
         hideName = "false";
         hidePicture = "false";
-        timepacked = "193614032022"
+        timepacked = "143009042022"
     };
 };
 
@@ -16,7 +16,7 @@ class CfgPatches
     {
         name = COMPONENT_NAME;
         author = "Rib/Roach";
-        units[] = {};
+        units[] = {"StimReliefItem", "StimAdrenalItem", "StimLatheniolItem","CyanoBactaItem","StimUeedItem"};
         weapons[] = {"StimRelief", "StimAdrenal", "StimLatheniol","CyanoBacta","StimUeed"};
         magazines[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -68,9 +68,9 @@ class CfgWeapons
         category = "medication";
         scope = 2; 
         displayName = "[CS] Relief Stim";
-        picture = "\WS_M_CS\data\stimpain.paa";
-        logo = "\WS_M_CS\data\stimpain.paa";
-        model = "\MRC\JLTS\contraband\Drugs\stimulant.p3d"; //JLTS
+        picture = "\WS_M_CS\data\UI\stimpain.paa";
+        logo = "\WS_M_CS\data\UI\stimpain.paa";
+        model = "\MRC\JLTS\contraband\Drugs\stimulant.p3d"; //extern
         descriptionShort = "Inject into arm, for pain relief";
         class ItemInfo: CBA_MiscItem_ItemInfo
         {
@@ -83,15 +83,15 @@ class CfgWeapons
         };
 		hiddenSelectionsTextures[] = 
         {
-            "\WS_M_CS\data\clonebasestimulant.paa"
+            "\WS_M_CS\data\HS_basestimulant.paa"
         };
     };
 
     class StimAdrenal: StimRelief
     {
         displayName = "[CS] Adrenal Stim";
-        picture = "\WS_M_CS\data\stimadre.paa";
-        logo = "\WS_M_CS\data\stimadre.paa";
+        picture = "\WS_M_CS\data\UI\stimadre.paa";
+        logo = "\WS_M_CS\data\UI\stimadre.paa";
         descriptionShort = "Inject into arm, for adrenal";
 
         hiddenSelections[] = 
@@ -100,7 +100,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "\WS_M_CS\data\cloneadrenstimulant.paa"
+            "\WS_M_CS\data\HS_adrenstimulant.paa"
         };
     };
 
@@ -108,15 +108,15 @@ class CfgWeapons
     {
         displayName = "[CS] Latheniol Stim";
         descriptionShort = "Inject into others to immediately kill";
-        picture = "\WS_M_CS\data\stimlath.paa";
-        logo = "\WS_M_CS\data\stimlath.paa";
+        picture = "\WS_M_CS\data\UI\stimlath.paa";
+        logo = "\WS_M_CS\data\UI\stimlath.paa";
         hiddenSelections[] = 
         {
             "camo1"
         };
         hiddenSelectionsTextures[] =
         {
-            "\WS_M_CS\data\clonelathstimulant.paa";
+            "\WS_M_CS\data\HS_lathstimulant.paa";
         };
     };
 
@@ -124,30 +124,30 @@ class CfgWeapons
     {
         displayName = "[CS] Cyano-Silicate Bacta";
         descriptionShort = "Spray to cauterise immediately";
-        picture = "\WS_M_CS\data\bactaspray.paa";
-        logo = "\WS_M_CS\data\bactaspray.paa";
-        model = "";
+        picture = "\WS_M_CS\data\UI\bactaspray.paa";
+        logo = "\WS_M_CS\data\UI\bactaspray.paa";
+        model = "\MRC\JLTS\contraband\Drugs\bacta.p3d"; //extern
         class ItemInfo: CBA_MiscItem_ItemInfo
         {
             mass = 0.5;
         };
-        hiddenSelections[] = {};
-        hiddenSelectionsTextures[] = {};
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] = {"\WS_M_CS\data\HS_cyanobacta.paa","#(argb,8,8,3)color(0,0.25,1,0.6,co)"}; //color(1,0,0,0.8,co)
     };
 
     class StimUeed: StimRelief
     {
         displayName = "[CS] Simu'eed Stim";
         descriptionShort = "Inject to increase metabolism";
-        picture = "\WS_M_CS\data\stimu'eed.paa";
-        logo = "\WS_M_CS\data\stimu'eed.paa";
+        picture = "\WS_M_CS\data\UI\stimu'eed.paa";
+        logo = "\WS_M_CS\data\UI\stimu'eed.paa";
         hiddenSelections[] = 
         {
             "camo1"
         };
         hiddenSelectionsTextures[] =
         {
-            "\WS_M_CS\data\cloneueedstimulant.paa";
+            "\WS_M_CS\data\HS_ueedstimulant.paa";
         };
     };
 
@@ -326,7 +326,7 @@ class ACE_Medical_Treatment {
             hrIncreaseHigh[] = {0};
             painReduce = 0.5;
             timeInSystem = 420;
-            timeTillMaxEffect = 75;
+            timeTillMaxEffect = 45;
             maxDose = 10;
             incompatibleMedication[] = {};
             viscosityChange = 5;
@@ -345,13 +345,13 @@ class ACE_Medical_Treatment {
         };
         class HS_CLS: HSP_CRS
         {
-            hrIncreaseLow[] = {-90};
-            hrIncreaseNormal[] = {-60};
-            hrIncreaseHigh[] = {200};
+            hrIncreaseLow[] = {-200};
+            hrIncreaseNormal[] = {-400};
+            hrIncreaseHigh[] = {500};
             painReduce = 1;
             timeInSystem = 120;
-            timeTillMaxEffect = 80;
-            maxDose = 2;
+            timeTillMaxEffect = 60;
+            maxDose = 1;
             viscosityChange = 60;
             incompatibleMedication[] = {"StimAdrenal","StimRelief","ACE_morphine","ACE_epinephrine"};
         };
@@ -359,11 +359,11 @@ class ACE_Medical_Treatment {
         {
             hrIncreaseLow[] = {60};
             hrIncreaseNormal[] = {40};
-            hrIncreaseHigh[] = {60};
+            hrIncreaseHigh[] = {-40};
             painReduce = 0;
             timeInSystem = 240;
             timeTillMaxEffect = 60;
-            maxDose = 2;
+            maxDose = 3;
             incompatibleMedication[] = {"StimAdrenal"};
             viscosityChange = -20;
         };
@@ -395,7 +395,7 @@ class ACE_Medical_Treatment_Actions
     class HSP_CLS: HSP_CRS
     {
         displayName = "Inject Latheniol";
-        displayNameProgress = "Euthanising the Patient, please wait up to 80 seconds before effect....";
+        displayNameProgress = "Euthanising the Patient, please wait to 60s for full effect....";
         items[] = {"StimLatheniol"};
         allowedSelections[] = {"Body"};
         treatmentTime = 6;
@@ -411,10 +411,9 @@ class ACE_Medical_Treatment_Actions
     class HSU_CSU: HSP_CRS
     {
         displayName = "Inject StimUeed";
-        displayNameProgress = "Injecting StimUeed Stim, wait up to a minute for full affect... ... ...";
+        displayNameProgress = "Injecting StimUeed Stim, wait to 60s for full effect... ... ...";
         items[] = {"StimUeed"};
     };
 
 };
-//420 :)
 

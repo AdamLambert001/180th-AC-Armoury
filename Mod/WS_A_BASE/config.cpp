@@ -52,6 +52,7 @@ class CfgWeapons
 	class SWLB_clone_ARF_P2_helmet;
 	class SWLB_clone_barc_helmet;
 	class SWLB_P2_SpecOps_Helmet;
+	class SWLB_P1_Pilot_Helmet;
 	class SWLB_clone_pilot_P2_helmet;
 	class SWLB_clone_eng_helmet;
 	class NVGoggles;
@@ -386,11 +387,21 @@ class CfgWeapons
 	};
     class 180th_Pilot_Helmet: SWLB_clone_pilot_P2_helmet
 	{
-		displayName="[180th Base] Clone pilot helmet";
+		displayName="[180th Base] Clone pilot helmet (P2)";
 		picture = "\SWLB_clones\data\ui\icon_swlb_clone_pilot_p2_helmet_ca";
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_BASE\data\helmets\180th_Pilot_Helmet.paa",
+		};
+	};
+	class 180th_P1_Pilot_Helmet: SWLB_P1_Pilot_Helmet
+	{
+		displayName = "[180th Base] Clone pilot helmet (P1)";
+		picture = "\SWLB_clones\data\ui\icon_swlb_clone_pilot_p2_helmet_ca";
+		hiddenSelectionsTextures[]=
+		{
+			"WS_A_BASE\data\helmets\180th_P1_Pilot_Helmet.paa",
+			"WS_A_BASE\data\accessories\180th_Lifesupport.paa"
 		};
 	};
     class 180th_Airborne_Helmet: SWLB_clone_ab_helmet

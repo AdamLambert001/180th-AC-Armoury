@@ -312,7 +312,7 @@ class CfgWeapons
 	};
 	class 180th_EOD_Helmet: SWLB_clone_P2_helmet
 	{
-		displayName="[180th Base] Clone eod helmet";
+		displayName="[180th Base] Clone eod trooper helmet";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
@@ -338,7 +338,7 @@ class CfgWeapons
 	};
 	class 180th_Riot_Helmet: SWLB_clone_P2_helmet 
 	{
-		displayName="[180th Base] Clone riot helmet (WIP)";
+		displayName="[180th Base] Clone riot trooper helmet (WIP)";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
@@ -347,11 +347,11 @@ class CfgWeapons
 	};
 	class 180th_AAT_Helmet: SWLB_clone_P2_helmet 
 	{
-		displayName="[180th Base] Clone advanced rocket helmet (WIP)";
+		displayName="[180th Base] Clone advanced rocket trooper helmet (WIP)";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
-	    	"WS_A_BASE\data\helmets\180th_Riot_Helmet.paa",
+	    	"WS_A_BASE\data\helmets\180th_AAT_Helmet.paa",
 		};
 	};
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DETACHMENT 

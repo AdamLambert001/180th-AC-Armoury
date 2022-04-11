@@ -288,6 +288,14 @@ class CfgWeapons
 			"WS_A_CUSTOMS\data\helmets\180th_Reaper_Helmet.paa"
 		};
 	};
+	class 180th_Germ_Helmet: SWLB_clone_P2_helmet
+	{
+		displayName="[180th Customs] Clone trooper helmet (Germ)";
+		hiddenSelectionsTextures[]=
+		{
+			""
+		};
+	};
 	class 180th_Reaper_Pilot_Helmet: SWLB_clone_pilot_P2_helmet
 	{
 		displayName="[180th Customs] Clone trooper Pilot helmet (Reaper)";

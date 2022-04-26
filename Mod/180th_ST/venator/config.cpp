@@ -234,7 +234,7 @@ class cfgvehicles
 		};
 	};
 
-	class 180th_venator_base_3: 442_venator_base {
+	class 180th_venator_base_4: 442_venator_base {
 		displayName = "The Redeemer (Open Hollowed)";
 		multistructureparts[] = {
 			{"180th_ven_body1_1", "body1_1"}, 
@@ -263,7 +263,7 @@ class cfgvehicles
 		};
 	};
 
-	class 180th_venator_base_4: 442_venator_base {
+	class 180th_venator_base_5: 442_venator_base {
 		displayName = "The Redeemer (Open Fully Hollow)";
 		multistructureparts[] = {
 			{"180th_ven_body1_1", "body1_1"}, 
@@ -285,7 +285,7 @@ class cfgvehicles
 		};
 	};
 
-	class 180th_venator_base_5: 442_venator_base {
+	class 180th_venator_base_6: 442_venator_base {
 		displayName = "The Redeemer (Fully Hollowed)";
 		multistructureparts[] = {
 			{"442_ven_body1_1", "body1_1"}, 

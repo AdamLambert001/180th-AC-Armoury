@@ -12,8 +12,9 @@ class cfgpatches
 		weapons[]={};
 	};
 };
+
 class cfgMods
 {
 	author="Wyvern Studios";
-	timepacked="153627032022";
+	timepacked="224326042022";
 };

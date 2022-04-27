@@ -75,7 +75,6 @@ class cfgvehicles
 	class 442_venator_zeus;
 	class 442_venator_base;
 
-
 	class 180_venator_zeus: 442_venator_zeus {
 		author=AUTHOR;
 		scope=2;
@@ -86,8 +85,7 @@ class cfgvehicles
 		vehicleClass="Structures";
 		icon="iconObject_1x1";
 		displayname = "The Redeemer (Zeus)";
-		hiddenselections[]=
-		{
+		hiddenselections[]= {
 			"body1",
 			"body2",
 			"body3",
@@ -110,8 +108,7 @@ class cfgvehicles
 			"interior8",
 			"bridge"
 		};
-		hiddenselectionstextures[]=
-		{
+		hiddenselectionstextures[]= {
 			"180th_ST\venator\body1_co.paa",
 			"180th_ST\venator\body2_co.paa",
 			"180th_ST\venator\body3_co.paa",
@@ -136,6 +133,7 @@ class cfgvehicles
 		};
 	};
 
+	/*modded versions from k*/
 	class 180_venator_base: 442_venator_base {
 		author=AUTHOR;
 		reversed = 0;
@@ -184,6 +182,7 @@ class cfgvehicles
 	};
 
 	class 180_venator_base_2: 180_venator_base {
+		scope = 2;
 		displayName = "The Redeemer (Open)";
 		multistructureparts[] = {
 			{"180th_ven_body1_1", "body1_1"}, 
@@ -199,7 +198,7 @@ class cfgvehicles
 			{"180th_ven_body8", "body8"}, 
 			{"180th_ven_body9", "body9"}, 
 			{"180th_ven_body10", "body10"}, 
-			{"180th_ven_door", "door"}, 
+			{"180th_ven_door2", "door"}, 
 			{"180th_ven_engine", "engine"}, 
 			{"180th_ven_interior1", "interior1"},
 			{"180th_ven_interior2", "interior2"},
@@ -214,6 +213,7 @@ class cfgvehicles
 	};
 
 	class 180_venator_base_3: 180_venator_base {
+		scope = 2;
 		displayName = "The Redeemer (Hollowed)";
 		multistructureparts[] = {
 			{"180th_ven_body1_1", "body1_1"}, 
@@ -243,6 +243,7 @@ class cfgvehicles
 	};
 
 	class 180_venator_base_4: 180_venator_base {
+		scope = 2;
 		displayName = "The Redeemer (Open Hollowed)";
 		multistructureparts[] = {
 			{"180th_ven_body1_1", "body1_1"}, 
@@ -258,7 +259,7 @@ class cfgvehicles
 			{"180th_ven_body8", "body8"}, 
 			{"180th_ven_body9", "body9"}, 
 			{"180th_ven_body10", "body10"}, 
-			{"180th_ven_door", "door"}, 
+			{"180th_ven_door2", "door"}, 
 			{"180th_ven_engine", "engine"}, 
 			{"180th_ven_interior1", "interior1"},
 			{"180th_ven_interior2", "interior2"},
@@ -272,6 +273,7 @@ class cfgvehicles
 	};
 
 	class 180_venator_base_5: 180_venator_base {
+		scope = 2;
 		displayName = "The Redeemer (Open Fully Hollow)";
 		multistructureparts[] = {
 			{"180th_ven_body1_1", "body1_1"}, 
@@ -294,24 +296,25 @@ class cfgvehicles
 	};
 
 	class 180_venator_base_6: 180_venator_base {
+		scope = 2;
 		displayName = "The Redeemer (Fully Hollowed)";
 		multistructureparts[] = {
-			{"442_ven_body1_1", "body1_1"}, 
-			{"442_ven_body1_2", "body1_2"}, 
-			{"442_ven_body2_1", "body2_1"}, 
-			{"442_ven_body2_2", "body2_2"}, 
-			{"442_ven_body2_3", "body2_3"}, 
-			{"442_ven_body3", "body3"}, 
-			{"442_ven_body4", "body4"}, 
-			{"442_ven_body5", "body5"}, 
-			{"442_ven_body6", "body6"}, 
-			{"442_ven_body7", "body7"}, 
-			{"442_ven_body8", "body8"}, 
-			{"442_ven_body9", "body9"}, 
-			{"442_ven_body10", "body10"}, 
-			{"442_ven_door", "door"}, 
-			{"442_ven_engine", "engine"}, 
-			{"442_ven_bridge", "bridge"}
+			{"180th_ven_body1_1", "body1_1"}, 
+			{"180th_ven_body1_2", "body1_2"}, 
+			{"180th_ven_body2_1", "body2_1"}, 
+			{"180th_ven_body2_2", "body2_2"}, 
+			{"180th_ven_body2_3", "body2_3"}, 
+			{"180th_ven_body3", "body3"}, 
+			{"180th_ven_body4", "body4"}, 
+			{"180th_ven_body5", "body5"}, 
+			{"180th_ven_body6", "body6"}, 
+			{"180th_ven_body7", "body7"}, 
+			{"180th_ven_body8", "body8"}, 
+			{"180th_ven_body9", "body9"}, 
+			{"180th_ven_body10", "body10"}, 
+			{"180th_ven_door", "door"}, 
+			{"180th_ven_engine", "engine"}, 
+			{"180th_ven_bridge", "bridge"}
 		};
 	};
 };

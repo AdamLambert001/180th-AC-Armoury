@@ -293,7 +293,7 @@ class CfgWeapons
 		displayName="[180th Customs] Clone trooper helmet (Germ)";
 		hiddenSelectionsTextures[]=
 		{
-			""
+			"WS_A_CUSTOMS\data\helmets\180th_Germ_Helmet.paa"
 		};
 	};
 	class 180th_Reaper_Pilot_Helmet: SWLB_clone_pilot_P2_helmet
@@ -310,7 +310,15 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_CUSTOMS\data\helmets\180th_Grape_Man_Helmet.paa"
-		};
+		};//SWLB_P2_SpecOps_Helmet
+	};
+	class 180th_O_JTAC_Helmet: SWLB_clone_P2_helmet
+	{
+		displayName="[180th Customs] Clone trooper JTAC helmet (O)";
+		hiddenSelectionsTextures[]=
+		{
+			"WS_A_CUSTOMS\data\helmets\180th_O_JTAC_Helmet.paa"
+		};//SWLB_P2_SpecOps_Helmet
 	};
 	
 	

@@ -12,15 +12,14 @@ class cfgpatches
 		requiredVersion=0.1;
 		units[]=
 		{
-			"180th_venator_zeus",
-			"180th_venator_base",
-			"180th_venator_base_2",
-			"180th_venator_base_2",
-			"180th_venator_base_3",
-			"180th_venator_base_4",
-			"180th_venator_base_5",
-			"180th_venator_base_6",
-			"180th_ven_hull_base",
+			"180_venator_zeus",
+			"180_venator_base",
+			"180_venator_base_2",
+			"180_venator_base_2",
+			"180_venator_base_3",
+			"180_venator_base_4",
+			"180_venator_base_5",
+			"180_venator_base_6",
 			"180th_ven_body1_1",
 			"180th_ven_body1_2",
 			"180th_ven_body2_1",
@@ -55,25 +54,19 @@ class cfgpatches
 
 class CfgFactionClasses 
 {
-	class 180th_statics_props
-	{
-	displayName = "180th Assault Corps";
+	class 180th_statics_props {
+		displayName = "180th Assault Corps Props";
 	};
-	class 180th_statics_props_extra
-	{
-	displayName = "180th Assault Corps (extra)";
-	};
+
 };
 
 class CfgEditorSubcategories
 {
-	class 180th_ships_sub
-	{
-		displayName="Ships";
+	class 180th_ships_sub {
+		displayName="Static Ships";
 	};
-	class 180th_ship_parts_sub
-	{
-		displayName="Ships";
+	class 180th_ship_parts_sub {
+		displayName="Static Ship Parts";
 	};
 };
 
@@ -81,20 +74,18 @@ class cfgvehicles
 {
 	class 442_venator_zeus;
 	class 442_venator_base;
-	class 442_ven_hull_base;
 
 
-	class 180th_venator_zeus: 442_venator_zeus
-	{
+	class 180_venator_zeus: 442_venator_zeus {
 		author=AUTHOR;
 		scope=2;
 		scopecurator=2;
 		editorpreview="";
-		editorcategory="Wyvern Studios";
+		editorcategory="180th_statics_props";
 		editorsubcategory="180th_ships_sub";
 		vehicleClass="Structures";
 		icon="iconObject_1x1";
-		displayname = "[180th] The Redeemer";
+		displayname = "The Redeemer (Zeus)";
 		hiddenselections[]=
 		{
 			"body1",
@@ -145,8 +136,17 @@ class cfgvehicles
 		};
 	};
 
-	class 180th_venator_base: 442_venator_base {
-		displayName = "The Redeemer (Open Fully Hollowed)";
+	class 180_venator_base: 442_venator_base {
+		author=AUTHOR;
+		reversed = 0;
+		scope = 1;
+		scopecurator = 1;
+		editorcategory = "180th_statics_props";
+		editorsubcategory = "180th_ships_sub";
+		displayName = "The Redeemer (180th)";
+		mapsize = 1326;
+		destrType = 0;
+		featureType = 2;
 		multistructureparts[] = {
 		{"180th_ven_body1_1", "body1_1"}, 
 		{"180th_ven_body1_2", "body1_2"}, 
@@ -173,9 +173,17 @@ class cfgvehicles
 		{"180th_ven_interior8", "interior8"},
 		{"180th_ven_bridge", "bridge"}
 		};
+
+		class Eventhandlers {
+			init = "_this call BIS_fnc_Destroyer01Init;";
+			attributesChanged3DEN = "_this call BIS_fnc_Destroyer01PosUpdate;";
+			dragged3DEN = "_this call BIS_fnc_Destroyer01PosUpdate;";
+			registeredToWorld3DEN = "_this call BIS_fnc_Destroyer01EdenInit;";
+			unregisteredFromWorld3DEN = "_this call BIS_fnc_Destroyer01EdenDelete;";
+		};
 	};
 
-	class 180th_venator_base_2: 442_venator_base {
+	class 180_venator_base_2: 180_venator_base {
 		displayName = "The Redeemer (Open)";
 		multistructureparts[] = {
 			{"180th_ven_body1_1", "body1_1"}, 
@@ -205,7 +213,7 @@ class cfgvehicles
 		};
 	};
 
-	class 180th_venator_base_3: 442_venator_base {
+	class 180_venator_base_3: 180_venator_base {
 		displayName = "The Redeemer (Hollowed)";
 		multistructureparts[] = {
 			{"180th_ven_body1_1", "body1_1"}, 
@@ -221,7 +229,7 @@ class cfgvehicles
 			{"180th_ven_body8", "body8"}, 
 			{"180th_ven_body9", "body9"}, 
 			{"180th_ven_body10", "body10"}, 
-			{"180th_ven_door2", "door"}, 
+			{"180th_ven_door", "door"}, 
 			{"180th_ven_engine", "engine"}, 
 			{"180th_ven_interior1", "interior1"},
 			{"180th_ven_interior2", "interior2"},
@@ -234,7 +242,7 @@ class cfgvehicles
 		};
 	};
 
-	class 180th_venator_base_4: 442_venator_base {
+	class 180_venator_base_4: 180_venator_base {
 		displayName = "The Redeemer (Open Hollowed)";
 		multistructureparts[] = {
 			{"180th_ven_body1_1", "body1_1"}, 
@@ -250,7 +258,7 @@ class cfgvehicles
 			{"180th_ven_body8", "body8"}, 
 			{"180th_ven_body9", "body9"}, 
 			{"180th_ven_body10", "body10"}, 
-			{"180th_ven_door2", "door"}, 
+			{"180th_ven_door", "door"}, 
 			{"180th_ven_engine", "engine"}, 
 			{"180th_ven_interior1", "interior1"},
 			{"180th_ven_interior2", "interior2"},
@@ -263,7 +271,7 @@ class cfgvehicles
 		};
 	};
 
-	class 180th_venator_base_5: 442_venator_base {
+	class 180_venator_base_5: 180_venator_base {
 		displayName = "The Redeemer (Open Fully Hollow)";
 		multistructureparts[] = {
 			{"180th_ven_body1_1", "body1_1"}, 
@@ -285,7 +293,7 @@ class cfgvehicles
 		};
 	};
 
-	class 180th_venator_base_6: 442_venator_base {
+	class 180_venator_base_6: 180_venator_base {
 		displayName = "The Redeemer (Fully Hollowed)";
 		multistructureparts[] = {
 			{"442_ven_body1_1", "body1_1"}, 

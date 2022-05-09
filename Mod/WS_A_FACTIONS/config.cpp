@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class WV_Armory_Factions
 	{
-		author="Wyvern Studios";
+		author="Helix Studios";
 		requiredAddons[]=
 		{
 			"A3_Data_F",
@@ -61,7 +61,7 @@ class CfgWeapons
 	class HeadgearItem;
 	class 51st_Clone_NVVisor: NVGoggles
 	{
-		author="Wyvern Studios";
+		author="Helix Studios";
 		displayName="[51st] Clone NV Visor (Raised)";
 		modelOptics="\SWLB_clones\SWLB_clone_nvg_optic_dummy.p3d";
 		model="\SWLB_clones\swlb_clone_nvg_off.p3d";
@@ -122,251 +122,6 @@ class CfgWeapons
 	    	"WS_A_FACTIONS\data\helmets\51st_Cordo_Helmet.paa",
 		};
 	};
-	class GO8_Widow_helmet: ItemCore
-	{
-		scope=2;
-		author="JMax";
-		weaponPoolAvailable=1;
-		displayName="[GO8] Widow Helmet";
-		picture="\JMSLLTE_empire\helmets\data\ico\ico_helm_storm.paa";
-		model="JMSLLTE_scum\helmets\Commando_helmet.p3d";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\helmets\GO8_Widow_Helmet.paa"
-		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=20;
-			uniformmodel="JMSLLTE_scum\helmets\Commando_helmet.p3d";
-			modelSides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo"
-			};
-			material=-1;
-			explosionShielding=1.4;
-			minimalHit=0.0099999998;
-			passThrough=0.0099999998;
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=60;
-					passThrough=0.1;
-				};
-			};
-		};
-	};
-	class Penis: ItemCore
-	{
-		scope=2;
-		author="Raccoon";
-		weaponPoolAvailable=1;
-		displayName="[GO8] Officer helmet";
-		picture="\JMSLLTE_empire\helmets\data\ico\ico_helm_storm.paa";
-		model="WS_A_FACTIONS\data\helmets\helmet.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\helmets\GO8_Officer_Helmet.paa"
-		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=30;
-			uniformmodel="WS_A_FACTIONS\data\helmets\helmet.p3d";
-			modelSides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1"
-			};
-			material=-1;
-			explosionShielding=1.2;
-			minimalHit=0.0099999998;
-			passThrough=0.0099999998;
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=40;
-					passThrough=0.1;
-				};
-			};
-		};
-	};
-	class GO8_Officer_helmet: ItemCore
-	{
-		scope=2;
-		author="Raccoon";
-		weaponPoolAvailable=1;
-		displayName="[GO8] Officer helmet";
-		picture="\JMSLLTE_empire\helmets\data\ico\ico_helm_storm.paa";
-		model="JMSLLTE_empire\helmets\Officer_helmet.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\helmets\GO8_Officer_Helmet.paa"
-		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=30;
-			uniformmodel="JMSLLTE_empire\helmets\Officer_helmet.p3d";
-			modelSides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1"
-			};
-			material=-1;
-			explosionShielding=1.2;
-			minimalHit=0.0099999998;
-			passThrough=0.0099999998;
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=40;
-					passThrough=0.1;
-				};
-			};
-		};
-	};
-	class GO8_Trooper_helmet: ItemCore
-	{
-		scope=2;
-		author="Raccoon";
-		weaponPoolAvailable=1;
-		displayName="[GO8] Trooper helmet";
-		picture="\JMSLLTE_empire\helmets\data\ico\ico_helm_storm.paa";
-		model="JMSLLTE_empire\helmets\Officer_helmet.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\helmets\GO8_Trooper_Helmet.paa"
-		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=30;
-			uniformmodel="JMSLLTE_empire\helmets\Officer_helmet.p3d";
-			modelSides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1"
-			};
-			material=-1;
-			explosionShielding=1.2;
-			minimalHit=0.0099999998;
-			passThrough=0.0099999998;
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=40;
-					passThrough=0.1;
-				};
-			};
-		};
-	};
-	class GO8_Locust_helmet: ls_redforHelmet_base
-	{
-		scope=2;
-		displayname="[GO8] Locust Helmet";
-		ace_hearing_protection=0.8500002;
-		ace_hearing_lowervolume=0.2;
-		model="\ls_armor_redfor\helmet\jn\nimbusCommando\ls_jn_nimbusCommando_helmet";
-		hiddenSelections[]=
-		{
-			"visor",
-			"helmet"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\helmets\GO8_Locust_Helmet.paa",
-			"WS_A_FACTIONS\data\helmets\GO8_Locust_Helmet.paa"
-		};
-		class Iteminfo: ItemInfo
-		{
-			mass=10;
-			uniformModel="\ls_armor_redfor\helmet\jn\nimbusCommando\ls_jn_nimbusCommando_helmet";
-			hiddenselections[]=
-			{
-				"visor",
-				"helmet"
-			};
-			allowedSlots[]={801,901,701,605};
-			modelsides[]={0,1,2,3};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointname="HitHead";
-					armor=15;
-					passThrough=0.5;
-				};
-				class Face
-				{
-					hitpointName="HitFace";
-					armor=8;
-					passThrough=0.5;
-				};
-			};
-		};
-	};
-	class GO8_Wolf_helmet: ItemCore
-	{
-		scope=2;
-		author="Raccoon";
-		weaponPoolAvailable=1;
-		displayName="[GO8] Wolf Helmet";
-		picture="\JMSLLTE_empire\helmets\data\ico\ico_helm_storm.paa";
-		model="JMSLLTE_scum\helmets\Snow_helmet1_3.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\helmets\GO8_Wolf_Helmet.paa"
-		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=20;
-			uniformmodel="JMSLLTE_scum\helmets\Snow_helmet1_3.p3d";
-			modelSides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1"
-			};
-			material=-1;
-			explosionShielding=0.2;
-			minimalHit=0.0099999998;
-			passThrough=0.0099999998;
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=20;
-					passThrough=0.1;
-				};
-			};
-		};
-	};
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DETACHMENT 
 	class 51st_ARF_Helmet: SWLB_clone_ARF_P1_helmet
 	{
@@ -375,46 +130,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 		    "WS_A_FACTIONS\data\helmets\51st_ARF_Helmet.paa",
-		};
-	};
-	class WS_GO8_Heavy_helmet: JMSLLTE_EmpTrooper_helmet
-	{
-		scope=2;
-		author="Raccoon";
-		weaponPoolAvailable=1;
-		displayName="[GO8] Heavy Trooper helmet";
-		picture="\JMSLLTE_empire\helmets\data\ico\ico_helm_storm.paa";
-		model="JMSLLTE_empire\helmets\Trooper_helmet.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\helmets\GO8_Heavy_Helmet.paa"
-		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=30;
-			uniformmodel="JMSLLTE_empire\helmets\Trooper_helmet.p3d";
-			modelSides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1"
-			};
-			material=-1;
-			explosionShielding=1.2;
-			minimalHit=0.0099999998;
-			passThrough=0.0099999998;
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=40;
-					passThrough=0.1;
-				};
-			};
 		};
 	};
 	class WS_74th_Trooper_helmet: JMSLLTE_EmpTrooper_helmet
@@ -457,7 +172,7 @@ class CfgWeapons
 			};
 		};
 	};
-		class WS_74th_Medic_helmet: JMSLLTE_EmpTrooper_helmet
+	class WS_74th_Medic_helmet: JMSLLTE_EmpTrooper_helmet
 	{
 		scope=2;
 		author="Raccoon";
@@ -497,7 +212,7 @@ class CfgWeapons
 			};
 		};
 	};
-		class Medical_Officer_Cap: JMSLLTE_EmpOfficerCap_black_helmet
+	class Medical_Officer_Cap: JMSLLTE_EmpOfficerCap_black_helmet
 	{
 		scope=2;
 		author="Raccoon";
@@ -573,43 +288,6 @@ class CfgWeapons
 					hitpointName="HitHead";
 					armor=5;
 					passThrough=0.1;
-				};
-			};
-		};
-	};
-	class GO8_Phoenix_Helmet: ls_blueforHelmet_base
-	{
-		scope=2;
-		displayName="[GO8] Phoenix Helmet";
-		model="ls_armor_bluefor\helmet\gar\desert\ls_gar_desert_helmet.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1",
-			"visor"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\helmets\GO8_Phoenix_Helmet.paa",
-			"ls_armor_bluefor\helmet\gar\desert\data\visor_co.paa"
-		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=10;
-			uniformModel="ls_armor_bluefor\helmet\gar\desert\ls_gar_desert_helmet.p3d";
-			allowedSlots[]={801,901,701,605};
-			modelSides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"visor"
-			};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=50;
-					passThrough=0.5;
 				};
 			};
 		};
@@ -800,7 +478,7 @@ class CfgWeapons
 			mass=30;
 		};
 	};
-		class WS_74th_Medic_F_CombatUniform: Uniform_Base
+	class WS_74th_Medic_F_CombatUniform: Uniform_Base
 	{
 		author="Raccoon";
 		scope=2;
@@ -818,7 +496,7 @@ class CfgWeapons
 			mass=30;
 		};
 	};
-		class WS_74th_Brigov_F_CombatUniform: Uniform_Base
+	class WS_74th_Brigov_F_CombatUniform: Uniform_Base
 	{
 		author="Raccoon";
 		scope=2;
@@ -866,92 +544,6 @@ class CfgWeapons
 		{
 			uniformModel="-";
 			uniformClass="WS_74th_Pilot_F";
-			Armor=10;
-			modelSides[]={6};
-			containerClass="Supply50";
-			mass=10;
-		};
-	};
-	class Sharky_fatigues: U_C_Poloshirt_blue
-	{
-		author="Facel";
-		scope=2;
-		displayName="Church of Sharky fatigues";
-		picture="\mgsr_fatigues\UI\gear_mgsr_fatigues_05_x_ca";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="Sharky_fatigues";
-			containerClass="Supply20";
-			mass=40;
-		};
-	};
-		class WS_GO8_Guild_Armor_CombatUniform: Uniform_Base
-	{
-		author="Raccoon";
-		scope=2;
-		displayName="[GO8] Guildmaster armor";
-		picture="\JMSLLTE_empire\data\ico\ico_storm.paa";
-		nakedUniform="U_BasicBody";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="WS_GO8_Guild_Armor";
-			Armor=10;
-			modelSides[]={6};
-			containerClass="Supply110";
-			mass=40;
-		};
-	};
-		class WS_GO8_Heavy_Uniform_F_CombatUniform: Uniform_Base
-	{
-		author="JMax";
-		scope=2;
-		displayName="[GO8] Heavy uniform";
-		picture="\JMSLLTE_empire\data\ico\ico_storm.paa";
-		nakedUniform="U_BasicBody";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="WS_GO8_Heavy_Uniform_F";
-			Armor=10;
-			modelSides[]={6};
-			containerClass="Supply90";
-			mass=40;
-		};
-	};
-	class WS_GO8_grey_F_CombatUniform: Uniform_Base
-	{
-		author="Raccoon";
-		scope=2;
-		displayName="[GO8] Guild of eight tropper uniform";
-		picture="\JMSLLTE_empire\data\ico\ico_officer.paa";
-		nakedUniform="U_BasicBody";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="WS_G08_grey_F";
-			Armor=10;
-			modelSides[]={6};
-			containerClass="Supply50";
-			mass=10;
-		};
-	};
-	class WS_GO8_Officer_grey_F_CombatUniform: Uniform_Base
-	{
-		author="Raccoon";
-		scope=2;
-		displayName="[GO8] Guild of eight officer uniform";
-		picture="\JMSLLTE_empire\data\ico\ico_officer.paa";
-		nakedUniform="U_BasicBody";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="WS_G08_Officer_grey_F";
 			Armor=10;
 			modelSides[]={6};
 			containerClass="Supply50";
@@ -1102,162 +694,6 @@ class CfgWeapons
 			};
 		};
 	};
-	class WS_GO8OfficerChest_armor: Vest_Camo_Base
-	{
-		author="Raccoon";
-		scope=2;
-		side=3;
-		displayName="[GO8] Officer chest armor";
-		picture="\JMSLLTE_empire\vests\data\ico\ico_storm.paa";
-		model="\JMSLLTE_empire\vests\of_chestArmor.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\vests\GO8_Officer_Vest.paa"
-		};
-		class ItemInfo: VestItem
-		{
-			uniformModel="\JMSLLTE_empire\vests\of_chestArmor.p3d";
-			containerClass="Supply80";
-			mass=15;
-			modelsides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1"
-			};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=5;
-					passThrough=0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName="HitDiaphragm";
-					armor=10;
-					passThrough=0.40000001;
-				};
-				class Chest
-				{
-					hitpointName="HitChest";
-					armor=15;
-					passThrough=0.40000001;
-				};
-				class Abdomen
-				{
-					hitpointName="HitAbdomen";
-					armor=10;
-					passThrough=0.40000001;
-				};
-				class Pelvis
-				{
-					hitpointName="HitPelvis";
-					armor=5;
-					passThrough=0.40000001;
-				};
-				class Neck
-				{
-					hitpointName="HitNeck";
-					armor=2;
-					passThrough=0.2;
-				};
-				class Arms
-				{
-					hitpointName="HitArms";
-					armor=3;
-					passThrough=0.2;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					passThrough=0.40000001;
-				};
-			};
-		};
-	};
-		class WS_GO8TrooperChest_armor: Vest_Camo_Base
-	{
-		author="Raccoon";
-		scope=2;
-		side=3;
-		displayName="[GO8] Officer chest armor";
-		picture="\JMSLLTE_empire\vests\data\ico\ico_storm.paa";
-		model="\JMSLLTE_empire\vests\of_chestArmor.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\vests\GO8_Trooper_Vest.paa"
-		};
-		class ItemInfo: VestItem
-		{
-			uniformModel="\JMSLLTE_empire\vests\of_chestArmor.p3d";
-			containerClass="Supply80";
-			mass=15;
-			modelsides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1"
-			};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=5;
-					passThrough=0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName="HitDiaphragm";
-					armor=10;
-					passThrough=0.40000001;
-				};
-				class Chest
-				{
-					hitpointName="HitChest";
-					armor=15;
-					passThrough=0.40000001;
-				};
-				class Abdomen
-				{
-					hitpointName="HitAbdomen";
-					armor=10;
-					passThrough=0.40000001;
-				};
-				class Pelvis
-				{
-					hitpointName="HitPelvis";
-					armor=5;
-					passThrough=0.40000001;
-				};
-				class Neck
-				{
-					hitpointName="HitNeck";
-					armor=2;
-					passThrough=0.2;
-				};
-				class Arms
-				{
-					hitpointName="HitArms";
-					armor=3;
-					passThrough=0.2;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					passThrough=0.40000001;
-				};
-			};
-		};
-	};
 	class WS_TrooperCapeBelt_armor: Vest_Camo_Base
 	{
 		author="Raccoon";
@@ -1334,196 +770,6 @@ class CfgWeapons
 					passThrough=0.40000001;
 				};
 			};
-		};
-	};
-	class WS_Herd_trib_armor: Vest_Camo_Base
-	{
-		author="Raccoon";
-		scope=2;
-		side=3;
-		displayName="Herdessan tribal vest";
-		picture="\JMSLLTE_empire\vests\data\ico\ico_storm.paa";
-		model="\JMSLLTE_empire\vests\MimbVest.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\vests\Herdessan_Tribal_Vest.paa"
-		};
-		class ItemInfo: VestItem
-		{
-			uniformModel="\JMSLLTE_empire\vests\MimbVest.p3d";
-			containerClass="Supply80";
-			mass=2;
-			modelsides[]={6};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=5;
-					passThrough=0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName="HitDiaphragm";
-					armor=5;
-					passThrough=0.40000001;
-				};
-				class Chest
-				{
-					hitpointName="HitChest";
-					armor=10;
-					passThrough=0.40000001;
-				};
-				class Abdomen
-				{
-					hitpointName="HitAbdomen";
-					armor=1;
-					passThrough=0.40000001;
-				};
-				class Pelvis
-				{
-					hitpointName="HitPelvis";
-					armor=5;
-					passThrough=0.40000001;
-				};
-				class Neck
-				{
-					hitpointName="HitNeck";
-					armor=0;
-					passThrough=0.2;
-				};
-				class Arms
-				{
-					hitpointName="HitArms";
-					armor=5;
-					passThrough=0.2;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					passThrough=0.40000001;
-				};
-			};
-		};
-	};
-};
-class CfgGlasses
-{
-	class None;
-	class G_JMSLLTE_None: None
-	{
-		name="None";
-		model="";
-		identityTypes[]=
-		{
-			"NoGlasses",
-			1000,
-			"G_NATO_default",
-			300,
-			"G_NATO_casual",
-			550,
-			"G_NATO_pilot",
-			1000,
-			"G_NATO_recon",
-			595,
-			"G_NATO_SF",
-			300,
-			"G_NATO_sniper",
-			1000,
-			"G_NATO_diver",
-			0,
-			"G_IRAN_default",
-			1000,
-			"G_IRAN_diver",
-			0,
-			"G_GUERIL_default",
-			595,
-			"G_HAF_default",
-			595,
-			"G_CIVIL_female",
-			655,
-			"G_CIVIL_male",
-			670,
-			"g_Rangemaster",
-			0,
-			"G_IRAN_officer",
-			500,
-			"G_JMSLLTE_EmpTroopers",
-			1,
-			"G_JMSLLTE_guard",
-			10,
-			"G_JMSLLTE_civ",
-			500,
-			"G_JMSLLTE_Tur_guard",
-			100,
-			"G_JMSLLTE_Tur_police",
-			50,
-			"G_JMSLLTE_Tur_mil",
-			15,
-			"G_JMSLLTE_Tur_civ",
-			500
-		};
-		displayname="None";
-		picture="\A3\Characters_F\data\ui\icon_g_aviators_CA.paa";
-		mass=1;
-		scope=2;
-	};
-	class WS_GO8_TrooperMask_1: None
-	{
-		author="Raccoon";
-		identityTypes[]=
-		{
-			"NoGlasses",
-			0,
-			"G_NATO_default",
-			0,
-			"G_NATO_casual",
-			0,
-			"G_NATO_pilot",
-			0,
-			"G_NATO_recon",
-			0,
-			"G_NATO_SF",
-			0,
-			"G_NATO_sniper",
-			0,
-			"G_NATO_diver",
-			0,
-			"G_IRAN_default",
-			0,
-			"G_IRAN_diver",
-			0,
-			"G_GUERIL_default",
-			0,
-			"G_HAF_default",
-			0,
-			"G_CIVIL_female",
-			0,
-			"G_CIVIL_male",
-			0,
-			"G_Competitor",
-			0,
-			"G_JMSLLTE_EmpTroopers",
-			20,
-			"G_JMSLLTE_guard",
-			25,
-			"G_JMSLLTE_civ",
-			5
-		};
-		displayname="[GO8] Trooper mask";
-		picture="\JMSLLTE_empire\helmets\data\ico\ico_helm_storm.paa";
-		model="JMSLLTE_empire\helmets\Trooper_helmet_mask.p3d";
-		hiddenSelections[]=
-		{
-			"Camo2"
-		};
-		hiddenSelectionsTextures[]= 
-		{
-			"WS_A_FACTIONS\data\accessories\GO8_Mask.paa",
 		};
 	};
 };
@@ -1753,66 +999,6 @@ class CfgVehicles
 			};
 		};
 	};
-		class WS_GO8_Guild_Armor: JMSLLTE_ST_Soldier_Base
-	{
-		author="Raccoon";
-		scope=1;
-		modelSides[]={6};
-		model="\JMSLLTE_empire\scouttrooper.p3d";
-		nakedUniform="U_BasicBody";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\armor\GO8_Guild_Armor.paa"
-		};
-	};
-	class WS_GO8_Heavy_Uniform_F: JMSLLTE_ST_Soldier_Base
-	{
-		author="Raccoon";
-		scope=1;
-		modelSides[]={6};
-		model="\JMSLLTE_empire\snowtrooper.p3d";
-		nakedUniform="U_BasicBody";
-		hiddenSelections[]=
-		{
-			"camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\armor\GO8_Heavy_Uniform.paa"
-		};
-		class Wounds
-		{
-			tex[]={};
-			mat[]=
-			{
-				"JMSLLTE_empire\data\body\SnowtrooperBody.rvmat",
-				"JMSLLTE_empire\data\body\SnowtrooperBody_injury.rvmat",
-				"JMSLLTE_empire\data\body\SnowtrooperBody_injury.rvmat",
-				"JMSLLTE_empire\data\body\SnowtrooperBody_clo.rvmat",
-				"JMSLLTE_empire\data\body\SnowtrooperBody_clo_injury.rvmat",
-				"JMSLLTE_empire\data\body\SnowtrooperBody_clo_injury.rvmat",
-				"A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat",
-				"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
-				"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
-				"A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat",
-				"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
-				"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
-				"A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat",
-				"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
-				"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
-				"A3\Characters_F\Heads\Data\hl_white_old.rvmat",
-				"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
-				"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
-				"A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat",
-				"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat",
-				"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"
-			};
-		};
-	};
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> BACKPACKS 
 	class 51st_Clone_Backpack: SWLB_clone_backpack
 	{
@@ -1839,7 +1025,7 @@ class CfgVehicles
 		};
 	};
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ARMOR 
-		class 51st_Trooper: SWLB_clone_base_P2
+	class 51st_Trooper: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "51stDCA";
@@ -2009,7 +1195,7 @@ class CfgVehicles
 			"WS_A_FACTIONS\data\armor\Vehicle_Officer_Body.paa"
 		};
 	};
-		class WS_CompOfficer_F: O_Soldier_base_F
+	class WS_CompOfficer_F: O_Soldier_base_F
 	{
 		author="Raccoon";
 		scope=1;
@@ -2025,7 +1211,7 @@ class CfgVehicles
 			"WS_A_FACTIONS\data\armor\Company_Command_Officer_Body.paa"
 		};
 	};
-		class WS_74th_Trooper_F: JMSLLTE_ST_Soldier_Base
+	class WS_74th_Trooper_F: JMSLLTE_ST_Soldier_Base
 	{
 		author="Raccoon";
 		scope=1;
@@ -2043,7 +1229,7 @@ class CfgVehicles
 			"WS_A_FACTIONS\data\armor\74th_Trooper_Armor.paa"
 		};
 	};
-		class WS_74th_Medic_F: JMSLLTE_ST_Soldier_Base
+	class WS_74th_Medic_F: JMSLLTE_ST_Soldier_Base
 	{
 		author="Raccoon";
 		scope=1;
@@ -2079,7 +1265,7 @@ class CfgVehicles
 			"WS_A_FACTIONS\data\armor\74th_Brigov_Armor.paa"
 		};
 	};
-		class WS_GARNavyCrew_grey_F: O_Soldier_base_F
+	class WS_GARNavyCrew_grey_F: O_Soldier_base_F
 	{
 		author="Raccoon";
 		scope=1;
@@ -2093,38 +1279,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_FACTIONS\data\armor\Navy_Crewman_Uniform.paa"
-		};
-	};
-	class WS_G08_grey_F: O_Soldier_base_F
-	{
-		author="Raccoon";
-		scope=1;
-		modelSides[]={6};
-		model="\JMSLLTE_empire\navycrewman.p3d";
-		nakedUniform="U_BasicBody";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\armor\GO8_Trooper_Uniform.paa"
-		};
-	};
-	class WS_G08_Officer_grey_F: O_Soldier_base_F
-	{
-		author="Raccoon";
-		scope=1;
-		modelSides[]={6};
-		model="\JMSLLTE_empire\navycrewman.p3d";
-		nakedUniform="U_BasicBody";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\armor\GO8_Officer_Uniform.paa"
 		};
 	};
 	class WS_74th_Pilot_F: O_Soldier_base_F
@@ -2143,29 +1297,9 @@ class CfgVehicles
 			"WS_A_FACTIONS\data\armor\74th_Pilot_Uniform.paa"
 		};
 	};
-	class Sharky_fatigues: mgsr_fatigues
-	{
-		author="Facel";
-		scope=1;
-		displayName="Church of Sharky Fatigues";
-		nakedUniform="U_BasicBody";
-		uniformClass="Sharky_fatigues";
-		model="\mgsr_fatigues\mgsr_fatigues_02.p3d";
-		modelSides[]={0,1,2,3};
-		hiddenSelections[]=
-		{
-			"camo",
-			"insignia",
-			"clan"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_FACTIONS\data\armor\sharky_fatigues.paa"
-		};
-	};
 };
 class cfgMods
 {
-	author="Wyvern Studios";
+	author="Helix Studios";
 	timepacked="153727032022";
 };

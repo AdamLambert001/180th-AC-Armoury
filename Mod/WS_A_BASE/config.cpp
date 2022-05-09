@@ -46,6 +46,7 @@ class CfgEditorSubcategories
 class CfgWeapons
 {
 	class SWLB_clone_P2_helmet;
+	class SWLB_clone_P1_helmet;
 	class SWLB_clone_ab_helmet;
 	class SWLB_clone_P15_helmet;
 	class SWLB_clone_ARF_P1_helmet;
@@ -353,6 +354,60 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_AAT_Helmet.paa",
+		};
+	};
+	class 180th_P1_Trooper_Helmet: SWLB_clone_P1_helmet
+	{
+		displayName="[180th Base] P1 Clone trooper helmet";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+	    	"WS_A_BASE\data\helmets\180th_P1_Trooper_Helmet.paa",
+		};
+	};
+	class 180th_P1_SGT_Helmet: SWLB_clone_P1_helmet
+	{
+		displayName="[180th Base] P1 Clone sergeant helmet";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+	    	"WS_A_BASE\data\helmets\180th_P1_Sergeant_Helmet.paa",
+		};
+	};
+	class 180th_P1_LT_Helmet: SWLB_clone_P1_helmet
+	{
+		displayName="[180th Base] P1 Clone lieutenant helmet";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+	    	"WS_A_BASE\data\helmets\180th_P1_Lieutenant_Helmet.paa",
+		};
+	};
+	class 180th_P1_Trooper_Helmet_M: SWLB_clone_P1_helmet
+	{
+		displayName="[180th Base] P1 Clone trooper helmet (Dirty)";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+	    	"WS_A_BASE\data\helmets\180th_P1_Trooper_Helmet_M.paa",
+		};
+	};
+	class 180th_P1_SGT_Helmet_M: SWLB_clone_P1_helmet
+	{
+		displayName="[180th Base] P1 Clone sergeant helmet (Dirty)";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+	    	"WS_A_BASE\data\helmets\180th_P1_Sergeant_Helmet_M.paa",
+		};
+	};
+	class 180th_P1_LT_Helmet_M: SWLB_clone_P1_helmet
+	{
+		displayName="[180th Base] P1 Clone lieutenant helmet (Dirty)";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+	    	"WS_A_BASE\data\helmets\180th_P1_Lieutenant_Helmet_M.paa",
 		};
 	};
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DETACHMENT 
@@ -702,7 +757,31 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-	 class 180th_MTrooper_Uniform: SWLB_clone_uniform
+	class 180th_P1_Trooper_Uniform: SWLB_clone_uniform
+	{
+		displayName="[180th Base] P1 Clone trooper uniform";
+		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="180th_P1_Trooper";
+			containerClass="Supply140";
+			mass=40;
+		};
+	};
+	class 180th_P1_Trooper_Uniform_M: SWLB_clone_uniform
+	{
+		displayName="[180th Base] P1 Clone trooper uniform (Dirty)";
+		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="180th_P1_Trooper_M";
+			containerClass="Supply140";
+			mass=40;
+		};
+	};
+	class 180th_MTrooper_Uniform: SWLB_clone_uniform
 	{
 		displayName="[180th Base] Clone trooper uniform (Medusa Company)";
 		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
@@ -726,7 +805,7 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-	    class 180th_SCT_Uniform: SWLB_clone_uniform
+	class 180th_SCT_Uniform: SWLB_clone_uniform
 	{
 		displayName="[180th Base] Clone senior trooper uniform";
 		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
@@ -738,7 +817,31 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-	   class 180th_SGT_Uniform: SWLB_clone_uniform
+	class 180th_P1_SGT_Uniform: SWLB_clone_uniform
+	{
+		displayName="[180th Base] P1 Clone sergeant uniform";
+		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="180th_P1_SGT";
+			containerClass="Supply140";
+			mass=40;
+		};
+	};
+	class 180th_P1_SGT_Uniform_M: SWLB_clone_uniform
+	{
+		displayName="[180th Base] P1 Clone sergeant uniform (Dirty)";
+		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="180th_P1_SGT_M";
+			containerClass="Supply140";
+			mass=40;
+		};
+	};
+	class 180th_SGT_Uniform: SWLB_clone_uniform
 	{
 		displayName="[180th Base] Clone sergeant uniform";
 		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
@@ -746,6 +849,30 @@ class CfgWeapons
 		{
 			uniformModel="-";
 			uniformClass="180th_SGT";
+			containerClass="Supply140";
+			mass=40;
+		};
+	};
+	class 180th_P1_LT_Uniform: SWLB_clone_uniform
+	{
+		displayName="[180th Base] P1 Clone lieutenant uniform";
+		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="180th_P1_LT";
+			containerClass="Supply140";
+			mass=40;
+		};
+	};
+	class 180th_P1_LT_Uniform_M: SWLB_clone_uniform
+	{
+		displayName="[180th Base] P1 Clone lieutenant uniform (Dirty)";
+		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="180th_P1_LT_M";
 			containerClass="Supply140";
 			mass=40;
 		};
@@ -1254,6 +1381,66 @@ class CfgVehicles
 			"SWLB_comlink"
 		};
 	};
+	class 180th_P1_Trooper: SWLB_clone_base_P2
+	{
+		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
+        faction = "180thACA";
+		editorSubcategory="WS_180th_Armory_Base";
+		uniformclass="180th_P1_Trooper_Uniform";
+		hiddenSelectionsTextures[]=
+		{
+	        "WS_A_BASE\data\armor\180th_P1_Trooper_Armor1.paa",
+			"WS_A_BASE\data\armor\180th_P1_Armor2.paa",
+		};
+		linkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_P1_Trooper_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+		respawnLinkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_P1_Trooper_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+	};
+	class 180th_P1_Trooper_M: SWLB_clone_base_P2
+	{
+		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
+        faction = "180thACA";
+		editorSubcategory="WS_180th_Armory_Base";
+		uniformclass="180th_P1_Trooper_Uniform_M";
+		hiddenSelectionsTextures[]=
+		{
+	        "WS_A_BASE\data\armor\180th_P1_Trooper_Armor1_M.paa",
+			"WS_A_BASE\data\armor\180th_P1_Armor2_M.paa",
+		};
+		linkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_P1_Trooper_Helmet_M",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+		respawnLinkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_P1_Trooper_Helmet_M",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+	};
 		class 180th_MTrooper: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
@@ -1344,6 +1531,66 @@ class CfgVehicles
 			"SWLB_comlink"
 		};
 	};
+	class 180th_P1_SGT: SWLB_clone_base_P2
+	{
+		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
+        faction = "180thACA";
+		editorSubcategory="WS_180th_Armory_Base";
+		uniformclass="180th_P1_SGT_Uniform";
+		hiddenSelectionsTextures[]=
+		{
+	        "WS_A_BASE\data\armor\180th_P1_Sergeant_Armor1.paa",
+			"WS_A_BASE\data\armor\180th_P1_Armor2.paa",
+		};
+		linkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_P1_SGT_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+		respawnLinkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_P1_SGT_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+	};
+	class 180th_P1_SGT_M: SWLB_clone_base_P2
+	{
+		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
+        faction = "180thACA";
+		editorSubcategory="WS_180th_Armory_Base";
+		uniformclass="180th_P1_SGT_Uniform_M";
+		hiddenSelectionsTextures[]=
+		{
+	        "WS_A_BASE\data\armor\180th_P1_Sergeant_Armor1_M.paa",
+			"WS_A_BASE\data\armor\180th_P1_Armor2_M.paa",
+		};
+		linkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_P1_SGT_Helmet_M",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+		respawnLinkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_P1_SGT_Helmet_M",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+	};
 	class 180th_SGT: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
@@ -1374,7 +1621,67 @@ class CfgVehicles
 			"SWLB_comlink"
 		};
 	};
-		class 180th_LT: SWLB_clone_base_P2
+	class 180th_P1_LT: SWLB_clone_base_P2
+	{
+		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
+        faction = "180thACA";
+		editorSubcategory="WS_180th_Armory_Base";
+		uniformclass="180th_P1_LT_Uniform";
+		hiddenSelectionsTextures[]=
+		{
+	        "WS_A_BASE\data\armor\180th_P1_Lieutenant_Armor1.paa",
+			"WS_A_BASE\data\armor\180th_P1_Armor2.paa",
+		};
+		linkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_P1_LT_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+		respawnLinkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_P1_LT_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+	};
+		class 180th_P1_LT_M: SWLB_clone_base_P2
+	{
+		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
+        faction = "180thACA";
+		editorSubcategory="WS_180th_Armory_Base";
+		uniformclass="180th_P1_LT_Uniform_M";
+		hiddenSelectionsTextures[]=
+		{
+	        "WS_A_BASE\data\armor\180th_P1_Lieutenant_Armor1_M.paa",
+			"WS_A_BASE\data\armor\180th_P1_Armor2_M.paa",
+		};
+		linkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_P1_LT_Helmet_M",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+		respawnLinkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_P1_LT_Helmet_M",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+	};
+	class 180th_LT: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "180thACA";
@@ -1404,7 +1711,7 @@ class CfgVehicles
 			"SWLB_comlink"
 		};
 	};
-		class 180th_CC: SWLB_clone_base_P2
+	class 180th_CC: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "180thACA";

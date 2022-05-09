@@ -9,7 +9,8 @@ class CfgPatches
 			"A3_Weapons_F",
 			"SWLB_clones",
 			"SWLB_droids",
-			"SWLB_main"
+			"SWLB_main",
+			"SWLB_CEE"
 		};
 		requiredVersion=0.1;
 		units[]=
@@ -90,6 +91,8 @@ class CfgWeapons
 			};
 		};
 	};
+
+	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HELMETS
 	class 180th_Jerry_Helmet: SWLB_clone_P2_helmet
 	{
 		displayName="[180th Customs] Clone trooper helmet (Jerry)";
@@ -312,9 +315,6 @@ class CfgWeapons
 			"WS_A_CUSTOMS\data\helmets\180th_O_JTAC_Helmet.paa"
 		};//SWLB_P2_SpecOps_Helmet
 	};
-	
-	
-	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DETACHMENT 
 
     class SWLB_clone_basic_armor;
 	class SWLB_clone_kama_armor;
@@ -331,17 +331,27 @@ class CfgWeapons
 	class SWLB_clone_assault_armor;
 	class SWLB_clone_grenadier_armor;
 	class SWLB_clone_specialist_armor;
+	class SWLB_CEE_Force_Recon_NCO;
+	class ItemInfo;
 	class VestItem;
-	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Vests
-    class 180th_Jerry_Armor: SWLB_clone_commander_armor
-	{
+	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Vests
+    class 180th_Jerry_Vest: SWLB_clone_commander_armor {
 		displayName="[180th Customs] Clone trooper captain vest (Jerry)";
 		hiddenSelectionsTextures[]=
 		{
-			"\WS_A_BASE\data\vests\180th_Officer_ACC.paa"
+			"\WS_A_BASE\data\accessories\180th_Officer_ACC.paa"
 		};
 	};
-	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Uniform
+	class 180th_Roach_Vest: SWLB_CEE_Force_Recon_NCO {
+		displayName = "[180th Customs] Clone NCO Vest (Roach)";
+		hiddenSelectionsTextures[] = {
+			"\WS_A_CUSTOMS\data\accessories\180th_Roach_Heavy.paa", //I made named Light as Heavy and Viceversa like a dumbass
+			"\WS_A_CUSTOMS\data\accessories\180th_Roach_Officer.paa",
+			"\WS_A_CUSTOMS\data\accessories\180th_Roach_Light.paa"
+		};
+	};
+
+	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> UNIFORMS
     class SWLB_clone_uniform;
 	class UniformItem;
 	class 180th_Jerry_Uniform: SWLB_clone_uniform
@@ -353,7 +363,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Jerry";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Soviet_Uniform: SWLB_clone_uniform
@@ -365,7 +375,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Soviet";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Tom_Uniform: SWLB_clone_uniform
@@ -377,7 +387,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Tom";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Roach_Uniform: SWLB_clone_uniform
@@ -389,7 +399,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Roach";
 			containerClass="Supply180";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Wayne_Uniform: SWLB_clone_uniform
@@ -401,7 +411,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Wayne";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Icarus_Uniform: SWLB_clone_uniform
@@ -413,7 +423,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Icarus";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Frost_Uniform: SWLB_clone_uniform
@@ -425,7 +435,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Frost";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Raccoon_Uniform: SWLB_clone_uniform
@@ -437,7 +447,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Raccoon";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Kat_Uniform: SWLB_clone_uniform
@@ -449,7 +459,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Kat";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Wallace_Uniform: SWLB_clone_uniform
@@ -461,7 +471,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Wallace";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Jamison_Uniform: SWLB_clone_uniform
@@ -473,7 +483,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Jamison";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Grape_Uniform: SWLB_clone_uniform
@@ -485,7 +495,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Grape";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Zarush_Uniform: SWLB_clone_uniform
@@ -497,10 +507,10 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Zarush";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
-		class 180th_Green_Uniform: SWLB_clone_uniform
+	class 180th_Green_Uniform: SWLB_clone_uniform
 	{
 		displayName="[180th Customs] Clone trooper uniform (Green)";
 		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
@@ -509,7 +519,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Green";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Fire_Uniform: SWLB_clone_uniform
@@ -521,7 +531,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Fire";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Kreed_Uniform: SWLB_clone_uniform
@@ -533,7 +543,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Kreed";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Hoplite_Uniform: SWLB_clone_uniform
@@ -545,7 +555,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Hoplite";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Abor_Uniform: SWLB_clone_uniform
@@ -557,7 +567,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Abor";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Krieg_Uniform: SWLB_clone_uniform
@@ -569,7 +579,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Krieg";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 	class 180th_Sniper_Uniform: SWLB_clone_uniform
@@ -581,7 +591,7 @@ class CfgWeapons
 			uniformModel="-";
 			uniformClass="180th_Sniper";
 			containerClass="Supply140";
-			mass=40;
+			mass=20;
 		};
 	};
 };
@@ -616,12 +626,13 @@ class CfgVehicles
 	class SWLB_clone_backpack;
 	class SWLB_clone_backpack_heavy;
 	class SWLB_clone_backpack_medic;
+	class SWLB_clone_RTO_mini_backpack;
 
 
-	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Backpack
+	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> BACKPACKS
 	class 180th_Wallace_RTO_Backpack: SWLB_clone_backpack_RTO
 	{
-		displayName="[180th Customs] Clone trooper RTO backpack (Wallace)";
+		displayName="[180th Customs] Clone RTO backpack (Wallace)";
 		hiddenSelectionsTextures[]=
 		{
 			"\WS_A_CUSTOMS\data\accessories\180th_Wallace_RTO_Backpack.paa",
@@ -630,6 +641,28 @@ class CfgVehicles
 			"",
 			"\WS_A_CUSTOMS\data\accessories\180th_Wallace_RTO_Backpack.paa"
 		};
+	};
+	class 180th_Roach_RTO_Mini: SWLB_clone_RTO_mini_backpack {
+		maximumload=200;
+		displayName="[180th Customs] Clone RTO Mini (Roach)";
+		model="\SWLB_CEE\data\SWLB_CEE_Recon_RTO_Backpack.p3d";
+		hiddenSelections[]= {
+			"Accumulator",
+			"Camo1",
+			"Camo2",
+			"Camo3",
+			"Main"
+		};
+		hiddenSelectionsTextures[]= {
+			"\WS_A_CUSTOMS\data\accessories\180th_Roach_RTO_Mini_1.paa",
+			"\WS_A_CUSTOMS\data\accessories\180th_Roach_Bags.paa",
+			"\WS_A_CUSTOMS\data\accessories\180th_Roach_Bags.paa",
+			"\WS_A_CUSTOMS\data\accessories\180th_Roach_Light.paa",
+			"\WS_A_CUSTOMS\data\accessories\180th_Roach_RTO_Mini_0.paa"
+		};
+		tf_range = 80000;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_additional_channel = 1;
 	};
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ARMOR 
 	class 180th_Jerry: SWLB_clone_base_P2
@@ -998,24 +1031,23 @@ class CfgVehicles
         faction = "180thACA";
 		editorSubcategory="WS_180th_Armory_Customs";
 		uniformclass="180th_Roach_Uniform";
-		hiddenSelectionsTextures[]=
-		{
+		hiddenSelectionsTextures[]= {
 	        "WS_A_CUSTOMS\data\armor\180th_Roach_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Roach_Armor2.paa",
 		};
-		linkedItems[]=
-		{
-			"SWLB_clone_basic_armor",
+		linkedItems[]= {
 			"180th_Roach_Helmet",
+			"180th_Roach_RTO_Mini",
+			"180th_Roach_Vest",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"SWLB_comlink"
 		};
-		respawnLinkedItems[]=
-		{
-			"SWLB_clone_basic_armor",
+		respawnLinkedItems[]= {
 			"180th_Roach_Helmet",
+			"180th_Roach_RTO_Mini",
+			"180th_Roach_Vest",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",

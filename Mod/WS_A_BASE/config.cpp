@@ -17,13 +17,15 @@ class CfgPatches
 			"180th_Trooper",
 			"180th_Pilot",
 			"180th_Engineer",
-			"180th_BARC"
+			"180th_BARC",
+			"180th_Jedi"
 		};
 		weapons[]=
 		{
 			"180th_Trooper_Helmet",
 			"180th_Trooper_Uniform",
-			"180th_Officer_Armor"
+			"180th_Officer_Armor",
+			"180th_Jedi_uniform"
 		};
 	};
 };
@@ -43,8 +45,12 @@ class CfgEditorSubcategories
 	
 
 };
-class CfgWeapons
-{
+class CfgWeapons {
+	class ItemInfo;
+	class HeadgearItem;
+	class VestItem;
+	class UniformInfo;
+	class NVGoggles;
 	class SWLB_clone_P2_helmet;
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_ab_helmet;
@@ -56,9 +62,8 @@ class CfgWeapons
 	class SWLB_P1_Pilot_Helmet;
 	class SWLB_clone_pilot_P2_helmet;
 	class SWLB_clone_eng_helmet;
-	class NVGoggles;
 	class ls_blueforHelmet_base;
-	class HeadgearItem;
+	class lsd_blueforUniform_base;
 	class SWLB_clone_basic_armor;
 	class SWLB_clone_kama_armor;
 	class SWLB_clone_officer_armor;
@@ -74,7 +79,6 @@ class CfgWeapons
 	class SWLB_clone_assault_armor;
 	class SWLB_clone_grenadier_armor;
 	class SWLB_clone_specialist_armor;
-	class VestItem;
     class SWLB_clone_uniform;
 	class SWLB_CEE_Hazard_Vest;
 	class SWLB_CEE_Tactical_Commander;
@@ -85,7 +89,21 @@ class CfgWeapons
 	class SWLB_CEE_Force_Recon_Commander;
 	class SWLB_CEE_Heavy_Vest;
 
+	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Jedi
+	class 180th_Jedi_uniform: lsd_blueforUniform_base {
+		scope = 2;
+		displayName = "[180th Misc] Jedi commander Harkon uniform";
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "-";
+			uniformClass = "180th_Jedi";
+			containerClass = "Supply150";
+			mass = 40;
+		};
+	};
 
+
+	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>NVGS
 	class 180th_Clone_ccVisor: NVGoggles
 	{
 		author="Wyvern Studios";
@@ -194,6 +212,8 @@ class CfgWeapons
 			};
 		};
 	};
+
+	//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Helmets
 	class 180th_Recruit_Helmet: SWLB_clone_P2_helmet
 	{
 		displayName="[180th Base] Clone recruit helmet";
@@ -624,8 +644,6 @@ class CfgWeapons
 		};
 	};
 
-
-
 	class 180th_Heavy_Vest: SWLB_CEE_Heavy_Vest {
 		displayName = "[180th base] Clone trooper Heavy Vest";
 		hiddenSelectionsTextures[] = 
@@ -730,7 +748,6 @@ class CfgWeapons
 			"WS_A_BASE\data\accessories\180th_Officer_ACC.paa"
 		};
 	};
-
 
 	class UniformItem;
 	class 180th_Recruit_Uniform: SWLB_clone_uniform
@@ -1166,6 +1183,7 @@ class CfgVehicles
 	class SWLB_clone_RTO_mini_backpack;
 	class SWLB_clone_backpack_heavy;
 	class SWLB_clone_backpack_medic;
+	class lsd_gar_jediCommander_base;
 	
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> BACKPACKS 
 	class 180th_Clone_Backpack: SWLB_clone_backpack
@@ -1320,8 +1338,9 @@ class CfgVehicles
 		};
 		maximumload=50;
 	};
+
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ARMOR 
-		class 180th_Recruit: SWLB_clone_base_P2
+	class 180th_Recruit: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "180thACA";
@@ -2176,7 +2195,7 @@ class CfgVehicles
 			"SWLB_comlink"
 		};
 	}; 
-		class 180th_ArenaB: SWLB_clone_base_P2
+	class 180th_ArenaB: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "180thACA";
@@ -2236,7 +2255,7 @@ class CfgVehicles
 			"SWLB_comlink"
 		};
 	}; 
-		class 180th_ArenaR: SWLB_clone_base_P2
+	class 180th_ArenaR: SWLB_clone_base_P2
 	{
 		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "180thACA";
@@ -2325,7 +2344,21 @@ class CfgVehicles
 			"ItemWatch",
 			"SWLB_comlink"
 		};
-	}; 
+	};
+	class 180th_Jedi: lsd_gar_jediCommander_base {
+		faction = "180thACA";
+		editorSubcategory="WS_180th_Armory_Base";
+		uniformClass = "180th_Jedi_Uniform";
+		hiddenSelectionsTextures[] = {
+			"\WS_A_BASE\data\armor\Jedi_Armor_co.paa",
+			"\lsd_armor_bluefor\uniform\gar\jediCommander\data\robes_co.paa",
+			"\lsd_armor_bluefor\uniform\gar\jediCommander\data\belt_co.paa",
+			"\lsd_armor_bluefor\uniform\gar\jediCommander\data\undersuit_co.paa"
+		};
+		linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","SWLB_comlink"};
+		respawnlinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","SWLB_comlink"};
+
+	};
 };
 class cfgMods
 {

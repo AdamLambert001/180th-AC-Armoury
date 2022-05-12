@@ -3,4 +3,4 @@ name = "180th Assault Corps - Armory";
 picture = ""; 
 logo = "logo.paa";
 overview = "";
-version = 2.2;
+version = 2.25;

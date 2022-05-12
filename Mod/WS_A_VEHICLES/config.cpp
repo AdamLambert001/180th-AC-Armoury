@@ -7,14 +7,14 @@ class CfgPatches
 		{
 			"A3_Data_F",
 			"A3_Weapons_F",
-			"A3_Soft_F",
-			"A3_UI_F", 
-			"A3_Air_F",
-			"lsd_vehicles_heli", //remove when they change
+			"A3_Soft_F";
+			"A3_Characters_F",
 			"SWLW_main",
+			"SWLW_clones",
 			"SWLB_equipment",
 			"SWLB_main",
 			"SWLB_groundholders",
+			"A3_Characters_F_Proxies",
 			"3AS_LightVics",
 			"3AS_LAAT"
 		};

@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class WS_Armory_Base
+	class WV_Armory_Base
 	{
 		author="Wyvern Studios";
 		requiredAddons[]=

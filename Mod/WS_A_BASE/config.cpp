@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class WS_Armory_Base //Don't fucking rename or delete or change anything of this fucking classname you fucking cretin.
+	class WS_Armory_Base
 	{
 		author="Wyvern Studios";
 		requiredAddons[]=

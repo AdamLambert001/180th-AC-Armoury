@@ -6,7 +6,7 @@ class CfgMods
         author = "Rib/Roach";
         hideName = "false";
         hidePicture = "false";
-        timepacked = "143009042022"
+        timepacked = "160015052022"
     };
 };
 
@@ -398,15 +398,14 @@ class ACE_Medical_Treatment_Actions
         displayNameProgress = "Euthanising the Patient, please wait to 60s for full effect....";
         items[] = {"StimLatheniol"};
         allowedSelections[] = {"Body"};
-        treatmentTime = 6;
+        treatmentTime = 5;
     };
     class HSP_CSS: ElasticBandage
     {
         displayName = "Spray Cyano Silicate Bacta";
         displayNameProgress = "Cauterising wounds, disinfecting affected areas ";
         items[] = {"CyanoBacta"};
-        treatmentTime = 8;
-        //Look at "Uses"?
+        treatmentTime = 5;
     };
     class HSU_CSU: HSP_CRS
     {

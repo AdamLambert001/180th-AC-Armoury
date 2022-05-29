@@ -380,6 +380,24 @@ class CfgWeapons {
 	    	"WS_A_BASE\data\helmets\180th_AAT_Helmet.paa",
 		};
 	};
+	class 180th_P1_Pilot_Helmet: SWLB_P1_Pilot_Helmet
+	{
+		displayName = "[180th Base] P1 Clone pilot helmet";
+		picture = "\SWLB_clones\data\ui\icon_swlb_clone_pilot_p2_helmet_ca";
+		hiddenSelectionsTextures[]=
+		{
+			"WS_A_BASE\data\helmets\180th_P1_Pilot_Helmet.paa",
+			"WS_A_BASE\data\accessories\180th_Lifesupport.paa"
+		};
+	};
+	class 180th_P1_JTAC_Helmet: SWLB_P1_SpecOps_Helmet
+	{
+		displayName="[180th Base] P1 Clone RTO Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"WS_A_BASE\data\helmets\180th_P1_JTAC_Helmet.paa"
+		};
+	};
 	class 180th_P1_Trooper_Helmet: SWLB_clone_P1_helmet
 	{
 		displayName="[180th Base] P1 Clone trooper helmet";
@@ -471,16 +489,6 @@ class CfgWeapons {
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_BASE\data\helmets\180th_Pilot_Helmet.paa",
-		};
-	};
-	class 180th_P1_Pilot_Helmet: SWLB_P1_Pilot_Helmet
-	{
-		displayName = "[180th Base] Clone pilot helmet (P1)";
-		picture = "\SWLB_clones\data\ui\icon_swlb_clone_pilot_p2_helmet_ca";
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_BASE\data\helmets\180th_P1_Pilot_Helmet.paa",
-			"WS_A_BASE\data\accessories\180th_Lifesupport.paa"
 		};
 	};
     class 180th_Airborne_Helmet: SWLB_clone_ab_helmet
@@ -826,6 +834,18 @@ class CfgWeapons {
 		{
 			uniformModel="-";
 			uniformClass="180th_Trooper";
+			containerClass="Supply140";
+			mass=40;
+		};
+	};
+	class 180th_P1_Pilot_Uniform: SWLB_clone_uniform
+	{
+		displayName="[180th Base] P1 Clone pilot uniform";
+		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="180th_P1_Pilot";
 			containerClass="Supply140";
 			mass=40;
 		};
@@ -1450,6 +1470,36 @@ class CfgVehicles
 		{
 			"SWLB_clone_basic_armor",
 			"180th_Trooper_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+	};
+	class 180th_P1_Pilot: SWLB_clone_base_P2
+	{
+		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
+        faction = "180thACA";
+		editorSubcategory="WS_180th_Armory_Base";
+		uniformclass="180th_P1_Pilot_Uniform";
+		hiddenSelectionsTextures[]=
+		{
+	        "WS_A_BASE\data\armor\180th_P1_Pilot_Armor1.paa",
+			"WS_A_BASE\data\armor\180th_P1_Armor2.paa",
+		};
+		linkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_P1_Pilot_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"SWLB_comlink"
+		};
+		respawnLinkedItems[]=
+		{
+			"SWLB_clone_basic_armor",
+			"180th_P1_Pilot_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",

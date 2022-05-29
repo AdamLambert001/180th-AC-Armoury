@@ -307,13 +307,13 @@ class CfgWeapons
 			"WS_A_CUSTOMS\data\helmets\180th_Grape_Man_Helmet.paa"
 		};
 	};
-	class 180th_O_JTAC_Helmet: SWLB_clone_P2_helmet
+	class 180th_O_JTAC_Helmet: SWLB_P2_SpecOps_Helmet
 	{
 		displayName="[180th Customs] Clone trooper JTAC helmet (O)";
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_CUSTOMS\data\helmets\180th_O_JTAC_Helmet.paa"
-		};//SWLB_P2_SpecOps_Helmet
+		};
 	};
 	class 180th_Kloud_Helmet: SWLB_clone_P2_helmet
 	{
@@ -321,6 +321,14 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_CUSTOMS\data\helmets\180th_Kloud_Helmet.paa"
+		};
+	};
+	class 180th_Koppo_Helmet: SWLB_clone_P2_helmet
+	{
+		displayName="[180th Customs] Clone trooper helmet (Koppo)";
+		hiddenSelectionsTextures[]=
+		{
+			"WS_A_CUSTOMS\data\helmets\180th_Koppo_Helmet.paa"
 		};
 	};
 

@@ -92,6 +92,7 @@ class CfgWeapons {
 	class SWLB_CEE_Engineer_Vest;
 	class SWLB_CEE_Engineer_Vest_NCO;
 	class ls_gar_heavyAlt_Vest;
+	class SWLB_P1_SpecOps_Helmet;
 
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Jedi
 	class 180th_Jedi_uniform: lsd_blueforUniform_base {

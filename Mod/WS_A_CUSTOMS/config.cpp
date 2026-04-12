@@ -645,6 +645,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Jerry_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Jerry_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -675,6 +676,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Soviet_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Soviet_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -705,6 +707,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Wayne_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Wayne_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -735,6 +738,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Icarus_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Icarus_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -765,6 +769,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Tom_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Tom_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -795,6 +800,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Kat_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Kat_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -825,6 +831,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Raccoon_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Raccoon_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -855,6 +862,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Zarush_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Zarush_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -885,6 +893,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Jamison_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Jamison_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -914,6 +923,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Fire_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Fire_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -944,6 +954,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Grape_Man_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Grape_Man_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -974,6 +985,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Green_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Green_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -1003,6 +1015,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]= {
 	        "WS_A_CUSTOMS\data\armor\180th_Roach_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Roach_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]= {
 			"180th_Roach_Helmet",
@@ -1031,6 +1044,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Wallace_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Wallace_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -1060,6 +1074,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Frost_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Frost_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -1088,6 +1103,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Kreed_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Kreed_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -1116,6 +1132,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Abor_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Abor_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -1146,6 +1163,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Hoplite_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Hoplite_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -1176,6 +1194,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Krieg_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Krieg_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -1206,6 +1225,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Sniper_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Sniper_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{
@@ -1234,6 +1254,7 @@ class CfgVehicles
 		{
 	        "WS_A_CUSTOMS\data\armor\180th_Kloud_Armor1.paa",
 			"WS_A_CUSTOMS\data\armor\180th_Kloud_Armor2.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co"
 		};
 		linkedItems[]=
 		{

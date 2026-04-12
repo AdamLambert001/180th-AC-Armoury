@@ -9,10 +9,6 @@ class CfgPatches
 			"A3_Weapons_F",
 			"A3_Soft_F";
 			"A3_Characters_F",
-			"SWLW_main",
-			"SWLW_clones",
-			"SWLB_equipment",
-			"SWLB_main",
 			"SWLB_groundholders",
 			"A3_Characters_F_Proxies",
 			"3AS_LightVics",
@@ -175,7 +171,7 @@ class CfgVehicles {
 	class lsd_heli_laati_ab;
     class ls_laat;
 	class ls_laat_medevac;
-	class SWLG_tanks_tx130;
+	class ls_vehicle_tx130;
 	class lsd_heli_laati;
 	class 3as_ATTE_Base;
 	class 3as_BTLB_Bomber;
@@ -231,7 +227,7 @@ class CfgVehicles {
 	};
 	//--------------------------------------------------------Land Vehicles--------------------------------------------------------//
 
-	class 180th_TX130: SWLG_tanks_tx130
+	class 180th_TX130: ls_vehicle_tx130
 	{
 		displayName="[180th Minotaur] TX-130 'Mozzie' Hover Tank";
 		faction="b_wac";
@@ -285,22 +281,6 @@ class CfgVehicles {
         scopeCurator = 2;
 		editorSubcategory="WS_Categ_180thGTRS";
 		author="Wyvern Studios";
-		hiddenselections[] = 
-		{
-			"camo1", //Hull
-			"camo2", //Chasis
-			"camo3", //Cockpit
-			"camo4", //Turret
-			"camo5" //underpipe
-		};
-		hiddenselectionstextures[] = 
-		{
-			"WS_A_VEHICLES\Data\ATTE\180th_ATTE_Hull.paa", //Hull
-			"3as\3as_atte\data\atte_chasis_co.paa", //Chasis
-			"WS_A_VEHICLES\Data\ATTE\180th_ATTE_Cockpit.paa", //Cockpit
-			"WS_A_VEHICLES\Data\ATTE\180th_ATTE_Turrets.paa", //Turret
-			"3as\3as_atte\data\atte_underpiping_co.paa" //underpipe
-		};
 
 		armor = 3300;
 		crew = "180th_Engineer";

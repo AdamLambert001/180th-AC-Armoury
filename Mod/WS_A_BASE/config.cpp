@@ -93,6 +93,7 @@ class CfgWeapons {
 	class SWLB_CEE_Engineer_Vest_NCO;
 	class ls_gar_heavyAlt_Vest;
 	class SWLB_P1_SpecOps_Helmet;
+	class ls_gar_phase2_helmet;
 
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Jedi
 	class 180th_Jedi_uniform: lsd_blueforUniform_base {
@@ -219,19 +220,29 @@ class CfgWeapons {
 	};
 
 	//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Helmets
-	class 180th_Recruit_Helmet: SWLB_clone_P2_helmet
+	class 180th_base_Helmet: ls_gar_phase2_helmet
 	{
-		displayName="[180th Base] Clone recruit helmet";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
+		scope=2;
+		displayName="[180th Base] Clone Base helmet";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_Recruit_Helmet.paa",
+			"ls\core\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-	class 180th_Trooper_Helmet: SWLB_clone_P2_helmet
+	class 180th_Recruit_Helmet: 180th_base_Helmet
+	{
+		scope=2;
+		displayName="[180th Base] Clone recruit helmet";
+		hiddenSelectionsTextures[]=
+		{
+	    	"WS_A_BASE\data\helmets\180th_Recruit_Helmet.paa",
+			"ls\core\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+		};
+	};
+	class 180th_Trooper_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Base] Clone trooper helmet";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_Trooper_Helmet.paa",
@@ -240,7 +251,6 @@ class CfgWeapons {
 		class 180th_SCT_Helmet: SWLB_clone_P2_helmet
 	{
 		displayName="[180th Base] Senior clone trooper helmet";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_SCT_Helmet.paa",
@@ -249,7 +259,6 @@ class CfgWeapons {
 		class 180th_SGT_Helmet: SWLB_clone_P2_helmet
 	{
 		displayName="[180th Base] Clone sergeant helmet";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_SGT_Helmet.paa",

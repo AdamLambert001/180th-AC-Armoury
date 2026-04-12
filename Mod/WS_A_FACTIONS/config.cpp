@@ -43,48 +43,20 @@ class CfgWeapons
 {
 	class JMSLLTE_EmpTrooper_helmet;
 	class JMSLLTE_EmpOfficerCap_black_helmet;
-	class NVGoggles;
+	class 180th_Clone_NVVisor;
 	class ItemInfo;
 	class ItemCore;
 	class HeadgearItem;
-	//new
 	class 180th_P1_Trooper_Helmet;
 	class ls_gar_phase1Arf_helmet;
 	
-	class 51st_Clone_NVVisor: NVGoggles
+	class 51st_Clone_NVVisor: 180th_Clone_NVVisor
 	{
 		author="Helix Studios";
 		displayName="[51st] Clone NV Visor (Raised)";
-		modelOptics="\SWLB_clones\SWLB_clone_nvg_optic_dummy.p3d";
-		model="\SWLB_clones\swlb_clone_nvg_off.p3d";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2"
-		};
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_FACTIONS\data\accessories\51st_NVG.paa" 
-		};
-		picture="\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-		thermalMode[]={2,3};
-		class ItemInfo
-		{
-			type=616;
-			uniformModel="\SWLB_clones\swlb_clone_nvg_on.p3d";
-			modelOff="\SWLB_clones\swlb_clone_nvg_off.p3d";
-			mass=20;
-			hiddenSelections[]=
-			{
-				"camo1",
-				"camo2"
-			};
 		};
 	};
 	class 51st_Trooper_Helmet: 180th_P1_Trooper_Helmet

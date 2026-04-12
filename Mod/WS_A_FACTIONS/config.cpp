@@ -41,24 +41,16 @@ class CfgEditorSubcategories
 };
 class CfgWeapons
 {
-	class SWLB_clone_P2_helmet;
-	class SWLB_clone_ab_helmet;
-	class SWLB_clone_P1_helmet;
-	class SWLB_clone_P15_helmet;
-	class SWLB_clone_ARF_P1_helmet;
-	class SWLB_clone_ARF_P2_helmet;
-	class ls_redforHelmet_base;
-	class SWLB_clone_barc_helmet;
-	class SWLB_P2_SpecOps_Helmet;
-	class SWLB_clone_pilot_P2_helmet;
-	class SWLB_clone_eng_helmet;
 	class JMSLLTE_EmpTrooper_helmet;
 	class JMSLLTE_EmpOfficerCap_black_helmet;
 	class NVGoggles;
 	class ItemInfo;
-	class ls_blueforHelmet_base;
 	class ItemCore;
 	class HeadgearItem;
+	//new
+	class 180th_P1_Trooper_Helmet;
+	class ls_gar_phase1Arf_helmet;
+	
 	class 51st_Clone_NVVisor: NVGoggles
 	{
 		author="Helix Studios";
@@ -95,231 +87,97 @@ class CfgWeapons
 			};
 		};
 	};
-	class 51st_Trooper_Helmet: SWLB_clone_P1_helmet
+	class 51st_Trooper_Helmet: 180th_P1_Trooper_Helmet
 	{
 		displayName="[51st] Clone trooper helmet";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_FACTIONS\data\helmets\51st_Trooper_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa",
 		};
 	};
-	class 51st_Medic_Helmet: SWLB_clone_P1_helmet
+	class 51st_Medic_Helmet: 180th_P1_Trooper_Helmet
 	{
 		displayName="[51st] Clone trooper medic helmet";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_FACTIONS\data\helmets\51st_Medic_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa",
 		};
 	};
-	class 51st_Cordo_Helmet: SWLB_clone_P1_helmet
+	class 51st_Cordo_Helmet: 180th_P1_Trooper_Helmet
 	{
 		displayName="[51st] Clone trooper helmet (Cordo)";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_FACTIONS\data\helmets\51st_Cordo_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa",
 		};
 	};
-	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DETACHMENT 
-	class 51st_ARF_Helmet: SWLB_clone_ARF_P1_helmet
+	class 51st_ARF_Helmet: ls_gar_phase1Arf_helmet
 	{
 		displayName="[51st] Clone arf trooper helmet";
-      	picture="\SWLB_clones\data\ui\icon_SWLB_clone_helmet_arf_p1_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 		    "WS_A_FACTIONS\data\helmets\51st_ARF_Helmet.paa",
+			"",
+			"\ls\core\addons\characters_clone_legacy\helmets\arf\data\visor_co.paa",
 		};
 	};
 	class WS_74th_Trooper_helmet: JMSLLTE_EmpTrooper_helmet
 	{
 		scope=2;
 		author="Raccoon";
-		weaponPoolAvailable=1;
 		displayName="[CIS] 74th Trooper helmet";
-		picture="\JMSLLTE_empire\helmets\data\ico\ico_helm_storm.paa";
-		model="JMSLLTE_empire\helmets\Trooper_helmet.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_FACTIONS\data\helmets\74th_Trooper_Helmet.paa"
-		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=30;
-			uniformmodel="JMSLLTE_empire\helmets\Trooper_helmet.p3d";
-			modelSides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1"
-			};
-			material=-1;
-			explosionShielding=1.2;
-			minimalHit=0.0099999998;
-			passThrough=0.0099999998;
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=40;
-					passThrough=0.1;
-				};
-			};
 		};
 	};
 	class WS_74th_Medic_helmet: JMSLLTE_EmpTrooper_helmet
 	{
 		scope=2;
 		author="Raccoon";
-		weaponPoolAvailable=1;
 		displayName="[CIS] 74th Trooper helmet";
-		picture="\JMSLLTE_empire\helmets\data\ico\ico_helm_storm.paa";
-		model="JMSLLTE_empire\helmets\Trooper_helmet.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_FACTIONS\data\helmets\74th_Medic_Helmet.paa"
-		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=30;
-			uniformmodel="JMSLLTE_empire\helmets\Trooper_helmet.p3d";
-			modelSides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1"
-			};
-			material=-1;
-			explosionShielding=1.2;
-			minimalHit=0.0099999998;
-			passThrough=0.0099999998;
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=40;
-					passThrough=0.1;
-				};
-			};
 		};
 	};
 	class Medical_Officer_Cap: JMSLLTE_EmpOfficerCap_black_helmet
 	{
 		scope=2;
 		author="Raccoon";
-		weaponPoolAvailable=1;
 		displayName="[GAR] Medical Officer cap";
-		picture="\JMSLLTE_empire\helmets\data\ico\ico_cap_bl.paa";
-		model="JMSLLTE_empire\helmets\Officer_cap.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
 		hiddenSelectionsTextures[]=
 		{
 			 "WS_A_FACTIONS\data\helmets\Medical_Officer_Cap.paa",
-		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=3;
-			uniformmodel="JMSLLTE_empire\helmets\Officer_cap.p3d";
-			modelSides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1"
-			};
-			material=-1;
-			explosionShielding=0;
-			minimalHit=0.0099999998;
-			passThrough=0.0099999998;
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=5;
-					passThrough=0.1;
-				};
-			};
 		};
 	};
 	class Naval_Officer_Cap: JMSLLTE_EmpOfficerCap_black_helmet
 	{
 		scope=2;
 		author="Raccoon";
-		weaponPoolAvailable=1;
 		displayName="[GAR] Naval Officer cap";
-		picture="\JMSLLTE_empire\helmets\data\ico\ico_cap_bl.paa";
-		model="JMSLLTE_empire\helmets\Officer_cap.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1"
-		};
 		hiddenSelectionsTextures[]=
 		{
 			 "WS_A_FACTIONS\data\helmets\Naval_Officer_Cap.paa",
 		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=3;
-			uniformmodel="JMSLLTE_empire\helmets\Officer_cap.p3d";
-			modelSides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1"
-			};
-			material=-1;
-			explosionShielding=0;
-			minimalHit=0.0099999998;
-			passThrough=0.0099999998;
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=5;
-					passThrough=0.1;
-				};
-			};
-		};
 	};
-    class SWLB_clone_basic_armor;
-	class SWLB_clone_kama_armor;
-	class SWLB_clone_officer_armor;
-	class SWLB_clone_commander_armor;
-	class SWLB_clone_airborne_armor;
-	class SWLB_clone_airborne_nco_armor;
-	class SWLB_clone_medic_armor;
-	class SWLB_clone_cfr_armor;
-	class SWLB_clone_recon_armor;
-	class SWLB_clone_recon_nco_armor;
-	class SWLB_clone_recon_officer_armor;
-	class SWLB_clone_arc_armor;
-	class Vest_Camo_Base;
-	class JMSLLTE_EmpNavyCrew_grey_F;
-	class SWLB_clone_assault_armor;
-	class SWLB_clone_grenadier_armor;
-	class SWLB_clone_specialist_armor;
-	class VestItem;
-	class Uniform_Base;
-	class JMSLLTE_ST_Soldier_Base;
-	class U_C_Poloshirt_blue;
+
+	//new
+    class 180th_Recruit_Uniform;
 	class JMSLLTE_EmpOfficer_black_F_CombatUniform;
-    class SWLB_clone_uniform;
+	class Uniform_Base;
+	class Vest_Camo_Base;
 	class UniformItem;
-	class 51st_Trooper_Uniform: SWLB_clone_uniform
+
+	class 51st_Trooper_Uniform: 180th_Recruit_Uniform
 	{
 		displayName="[51st] Clone trooper uniform";
-		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -328,10 +186,9 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-	class 51st_Medic_Uniform: SWLB_clone_uniform
+	class 51st_Medic_Uniform: 180th_Recruit_Uniform
 	{
 		displayName="[51st] Clone medic uniform";
-		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -340,10 +197,9 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-	class 51st_Cordo_Uniform: SWLB_clone_uniform
+	class 51st_Cordo_Uniform: 180th_Recruit_Uniform
 	{
 		displayName="[51st] Clone trooper uniform (Cordo)";
-		picture="\SWLB_units\data\ui\icon_SWLB_clone_5thTrooper_uniform_ca.paa";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -352,32 +208,11 @@ class CfgWeapons
 			mass=40;
 		};
 	};
-	class Medical_Officer_Uniform: JMSLLTE_EmpOfficer_black_F_CombatUniform
-	{
-		author="Raccoon";
-		scope=2;
-		displayName="[GAR] Medical Officer uniform";
-		picture="\JMSLLTE_empire\data\ico\ico_officer.paa";
-		nakedUniform="U_BasicBody";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="WS_MedOfficer_F";
-			Armor=10;
-			modelSides[]={6};
-			containerClass="Supply50";
-			mass=10;
-		};
-	};
 	class Naval_Officer_Uniform: JMSLLTE_EmpOfficer_black_F_CombatUniform
 	{
 		author="Raccoon";
 		scope=2;
 		displayName="[GAR] Naval Officer uniform";
-		picture="\JMSLLTE_empire\data\ico\ico_officer.paa";
-		nakedUniform="U_BasicBody";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -388,14 +223,22 @@ class CfgWeapons
 			mass=10;
 		};
 	};
-	class Army_Officer_Uniform: JMSLLTE_EmpOfficer_black_F_CombatUniform
+	class Medical_Officer_Uniform: Naval_Officer_Uniform
 	{
-		author="Raccoon";
-		scope=2;
+		displayName="[GAR] Medical Officer uniform";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="WS_MedOfficer_F";
+			Armor=10;
+			modelSides[]={6};
+			containerClass="Supply50";
+			mass=10;
+		};
+	};
+	class Army_Officer_Uniform: Naval_Officer_Uniform
+	{
 		displayName="[GAR] Trooper uniform";
-		picture="\JMSLLTE_empire\data\ico\ico_officer.paa";
-		nakedUniform="U_BasicBody";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -406,14 +249,9 @@ class CfgWeapons
 			mass=10;
 		};
 	};
-	class Spec_Officer_Uniform: JMSLLTE_EmpOfficer_black_F_CombatUniform
+	class Spec_Officer_Uniform: Naval_Officer_Uniform
 	{
-		author="Raccoon";
-		scope=2;
 		displayName="[GAR] Special operations officer uniform";
-		picture="\JMSLLTE_empire\data\ico\ico_officer.paa";
-		nakedUniform="U_BasicBody";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -424,14 +262,9 @@ class CfgWeapons
 			mass=10;
 		};
 	};
-	class Vic_Officer_Uniform: JMSLLTE_EmpOfficer_black_F_CombatUniform
+	class Vic_Officer_Uniform: Naval_Officer_Uniform
 	{
-		author="Raccoon";
-		scope=2;
 		displayName="[GAR] Vehicle operations officer uniform";
-		picture="\JMSLLTE_empire\data\ico\ico_officer.paa";
-		nakedUniform="U_BasicBody";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -442,14 +275,9 @@ class CfgWeapons
 			mass=10;
 		};
 	};
-		class Comp_Officer_Uniform: JMSLLTE_EmpOfficer_black_F_CombatUniform
+	class Comp_Officer_Uniform: Naval_Officer_Uniform
 	{
-		author="Raccoon";
-		scope=2;
 		displayName="[GAR] Officer uniform";
-		picture="\JMSLLTE_empire\data\ico\ico_officer.paa";
-		nakedUniform="U_BasicBody";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -466,8 +294,6 @@ class CfgWeapons
 		scope=2;
 		displayName="[CIS] 74th trooper suit";
 		picture="\JMSLLTE_empire\data\ico\ico_officer.paa";
-		nakedUniform="U_BasicBody";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -478,14 +304,9 @@ class CfgWeapons
 			mass=30;
 		};
 	};
-	class WS_74th_Medic_F_CombatUniform: Uniform_Base
+	class WS_74th_Medic_F_CombatUniform: WS_74th_Trooper_F_CombatUniform
 	{
-		author="Raccoon";
-		scope=2;
 		displayName="[CIS] 74th medic suit";
-		picture="\JMSLLTE_empire\data\ico\ico_officer.paa";
-		nakedUniform="U_BasicBody";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -496,14 +317,9 @@ class CfgWeapons
 			mass=30;
 		};
 	};
-	class WS_74th_Brigov_F_CombatUniform: Uniform_Base
+	class WS_74th_Brigov_F_CombatUniform: WS_74th_Trooper_F_CombatUniform
 	{
-		author="Raccoon";
-		scope=2;
 		displayName="[CIS] 74th Lieutenant Brigov suit";
-		picture="\JMSLLTE_empire\data\ico\ico_officer.paa";
-		nakedUniform="U_BasicBody";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
@@ -514,36 +330,29 @@ class CfgWeapons
 			mass=30;
 		};
 	};
-	class WS_GARNavyCrew_grey_F_CombatUniform: Uniform_Base
+	class WS_74th_Pilot_CombatUniform: WS_74th_Trooper_F_CombatUniform
 	{
-		author="Raccoon";
-		scope=2;
-		displayName="[GAR] Navy crewman uniform";
-		picture="\JMSLLTE_empire\data\ico\ico_officer.paa";
-		nakedUniform="U_BasicBody";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		displayName="[CIS] 74th pilot uniform";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
-			uniformClass="WS_GARNavyCrew_grey_F";
+			uniformClass="WS_74th_Pilot_F";
 			Armor=10;
 			modelSides[]={6};
 			containerClass="Supply50";
 			mass=10;
 		};
 	};
-	class WS_74th_Pilot_CombatUniform: Uniform_Base
+	class WS_GARNavyCrew_grey_F_CombatUniform: Uniform_Base
 	{
 		author="Raccoon";
 		scope=2;
-		displayName="[CIS] 74th pilot uniform";
+		displayName="[GAR] Navy crewman uniform";
 		picture="\JMSLLTE_empire\data\ico\ico_officer.paa";
-		nakedUniform="U_BasicBody";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
-			uniformClass="WS_74th_Pilot_F";
+			uniformClass="WS_GARNavyCrew_grey_F";
 			Armor=10;
 			modelSides[]={6};
 			containerClass="Supply50";
@@ -775,232 +584,17 @@ class CfgWeapons
 };
 class CfgVehicles
 {
-	class SWLB_clone_base_P2;
-	class SWLB_clone_assault_base_P2;
-	class SWLB_clone_cfr_base_P2;
-	class SWLB_clone_medic_base_P2;
-	class SWLB_clone_RTO_base_P2;
-	class SWLB_clone_recon_base_P2;
-	class SWLB_clone_bag;
-	class SWLB_clone_recon_nco_base_P2;
-	class SWLB_clone_recon_officer_base_P2;
-	class SWLB_clone_airborne_base_P2;
-	class SWLB_clone_airborne_nco_base_P2;
-	class SWLB_clone_lieutenant_base_P2;
-	class SWLB_clone_captain_base_P2;
-	class SWLB_clone_commander_base_P2;
-	class SWLB_clone_marshal_commander_base_P2;
-	class SWLB_clone_arc_base_P2;
-	class SWLB_clone_pilot_base_P2;
-	class SWLB_clone_sniper_base_P2;
-	class SWLB_clone_sg_base_P2;
-	class SWLB_clone_at_base_P2;
-	class SWLB_clone_engineer_base_P2;
-	class SWLB_clone_eod_base_P2;
-	class SWLB_clone_backpack_predef_light;
-	class SWLB_clone_backpack_predef_heavy;
-	class SWLB_clone_backpack_predef_medic;
-	class SWLB_clone_backpack_predef_sg;
-	class SWLB_clone_backpack_RTO;
-	class SWLB_clone_backpack;
+	//new
+	class 180th_Clone_Backpack;
+	class 180th_Clone_RTO_Backpack;
+	class JMSLLTE_ST_Soldier_Base;
 	class B_Kitbag_rgr;
 	class mgsr_fatigues;
-	class SWLB_clone_RTO_mini_backpack;
-	class SWLB_clone_backpack_heavy;
-	class SWLB_clone_backpack_medic;
-	class Land;
-	class Man: Land
-	{
-		class EventHandlers;
-	};
-	class CAManBase: Man
-	{
-		class HitPoints;
-	};
-	class SoldierEB: CAManBase
-	{
-		class HitPoints: HitPoints
-		{
-			class HitFace;
-			class HitNeck;
-			class HitHead;
-			class HitPelvis;
-			class HitAbdomen;
-			class HitDiaphragm;
-			class HitChest;
-			class HitBody;
-			class HitArms;
-			class HitHands;
-			class HitLegs;
-		};
-	};
-	class O_Soldier_base_F: SoldierEB
-	{
-		class EventHandlers;
-	};
-	class JMSLLTE_ST_Soldier_Base: O_Soldier_base_F
-	{
-		modelSides[]={0,1,2,3};
-		ACE_GForceCoef=0;
-		class HitPoints: HitPoints
-		{
-			class HitFace
-			{
-				armor=1;
-				material=-1;
-				name="face_hub";
-				passThrough=0.1;
-				radius=0.079999998;
-				explosionShielding=0.1;
-				minimalHit=0.0099999998;
-			};
-			class HitNeck: HitFace
-			{
-				armor=4;
-				material=-1;
-				name="neck";
-				passThrough=0.1;
-				radius=0.1;
-				explosionShielding=0.1;
-				minimalHit=0.0099999998;
-			};
-			class HitHead: HitNeck
-			{
-				armor=1;
-				material=-1;
-				name="head";
-				passThrough=0.1;
-				radius=0.2;
-				explosionShielding=0.1;
-				minimalHit=0.0099999998;
-				depends="HitFace max HitNeck";
-			};
-			class HitPelvis
-			{
-				armor=4;
-				material=-1;
-				name="pelvis";
-				passThrough=0.1;
-				radius=0.2;
-				explosionShielding=0.25;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-			};
-			class HitAbdomen: HitPelvis
-			{
-				armor=4;
-				material=-1;
-				name="spine1";
-				passThrough=0.1;
-				radius=0.15000001;
-				explosionShielding=0.25;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-			};
-			class HitDiaphragm: HitAbdomen
-			{
-				armor=4;
-				material=-1;
-				name="spine2";
-				passThrough=0.1;
-				radius=0.15000001;
-				explosionShielding=2;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-			};
-			class HitChest: HitDiaphragm
-			{
-				armor=4;
-				material=-1;
-				name="spine3";
-				passThrough=0.1;
-				radius=0.15000001;
-				explosionShielding=2;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-			};
-			class HitBody: HitChest
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=0.1;
-				radius=0.16;
-				explosionShielding=2;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-				depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
-			};
-			class HitArms
-			{
-				armor=10;
-				material=-1;
-				name="arms";
-				passThrough=0.1;
-				radius=0.1;
-				explosionShielding=0.25;
-				visual="injury_hands";
-				minimalHit=0.0099999998;
-			};
-			class HitHands: HitArms
-			{
-				armor=10;
-				material=-1;
-				name="hands";
-				passThrough=0.1;
-				radius=0.1;
-				explosionShielding=0.25;
-				visual="injury_hands";
-				minimalHit=0.0099999998;
-				depends="HitArms";
-			};
-			class HitLegs
-			{
-				armor=10;
-				material=-1;
-				name="legs";
-				passThrough=0.1;
-				radius=0.12;
-				explosionShielding=0.25;
-				visual="injury_legs";
-				minimalHit=0.0099999998;
-			};
-			class HitLeftArm
-			{
-				armor=10;
-				material=-1;
-				name="hand_l";
-				passThrough=0.1;
-				radius=0.1;
-				explosionShielding=0.25;
-				visual="injury_hands";
-				minimalHit=0.0099999998;
-			};
-			class HitRightArm: HitLeftArm
-			{
-				armor=10;
-				name="hand_r";
-			};
-			class HitLeftLeg
-			{
-				armor=10;
-				material=-1;
-				name="leg_l";
-				passThrough=0.1;
-				radius=0.1;
-				explosionShielding=0.25;
-				visual="injury_hands";
-				minimalHit=0.0099999998;
-			};
-			class HitRightLeg: HitLeftLeg
-			{
-				armor=10;
-				name="leg_r";
-			};
-		};
-	};
+	class 180th_Recruit;
+	class O_Soldier_base_F;
+
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> BACKPACKS 
-	class 51st_Clone_Backpack: SWLB_clone_backpack
+	class 51st_Clone_Backpack: 180th_Clone_Backpack
 	{
 		displayName="[51st] Clone trooper backpack";
 		hiddenSelectionsTextures[]=
@@ -1012,7 +606,7 @@ class CfgVehicles
 			""
 		};
 	};
-	class 51st_Clone_RTO_Backpack: SWLB_clone_backpack_RTO
+	class 51st_Clone_RTO_Backpack: 180th_Clone_RTO_Backpack
 	{
 		displayName="[51st] Clone trooper rto backpack";
 		hiddenSelectionsTextures[]=
@@ -1025,9 +619,8 @@ class CfgVehicles
 		};
 	};
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ARMOR 
-	class 51st_Trooper: SWLB_clone_base_P2
+	class 51st_Trooper: 180th_Recruit
 	{
-		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "51stDCA";
 		editorSubcategory="WS_180th_Armory_Factions";
 		uniformclass="51st_Trooper_Uniform";
@@ -1038,26 +631,23 @@ class CfgVehicles
 		};
 		linkedItems[]=
 		{
-			"SWLB_clone_basic_armor",
+			"180th_Trooper_Vest",
 			"51st_Trooper_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
 		};
 		respawnLinkedItems[]=
 		{
-			"SWLB_clone_basic_armor",
+			"180th_Trooper_Vest",
 			"51st_Trooper_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
 		};
 	};
-	class 51st_Medic: SWLB_clone_base_P2
+	class 51st_Medic: 180th_Recruit
 	{
-		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "51stDCA";
 		editorSubcategory="WS_180th_Armory_Factions";
 		uniformclass="51st_Medic_Uniform";
@@ -1068,26 +658,23 @@ class CfgVehicles
 		};
 		linkedItems[]=
 		{
-			"SWLB_clone_basic_armor",
+			"180th_Trooper_Vest",
 			"51st_Medic_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
 		};
 		respawnLinkedItems[]=
 		{
-			"SWLB_clone_basic_armor",
+			"180th_Trooper_Vest",
 			"51st_Medic_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
 		};
 	};
-	class 51st_Cordo: SWLB_clone_base_P2
+	class 51st_Cordo: 180th_Recruit
 	{
-		editorPreview="\SWLB_units\data\ui\editorPreviews\SWLB_clone_212thTrooper.jpg";
         faction = "51stDCA";
 		editorSubcategory="WS_180th_Armory_Factions";
 		uniformclass="51st_Cordo_Uniform";
@@ -1098,21 +685,19 @@ class CfgVehicles
 		};
 		linkedItems[]=
 		{
-			"SWLB_clone_basic_armor",
+			"180th_Trooper_Vest",
 			"51st_Cordo_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
 		};
 		respawnLinkedItems[]=
 		{
-			"SWLB_clone_basic_armor",
+			"180th_Trooper_Vest",
 			"51st_Cordo_Helmet",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"SWLB_comlink"
 		};
 	};
 	class WS_MedOfficer_F: O_Soldier_base_F

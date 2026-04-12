@@ -51,7 +51,6 @@ class CfgWeapons {
 	class VestItem;
 	class UniformInfo;
 	class NVGoggles;
-	class SWLB_clone_P2_helmet;
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_ab_helmet;
 	class SWLB_clone_P15_helmet;
@@ -227,7 +226,7 @@ class CfgWeapons {
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_Recruit_Helmet.paa",
-			"ls\core\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
 	class 180th_Recruit_Helmet: 180th_base_Helmet
@@ -237,7 +236,7 @@ class CfgWeapons {
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_Recruit_Helmet.paa",
-			"ls\core\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
 	class 180th_Trooper_Helmet: 180th_base_Helmet
@@ -246,148 +245,165 @@ class CfgWeapons {
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_Trooper_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-		class 180th_SCT_Helmet: SWLB_clone_P2_helmet
+	class 180th_SCT_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Base] Senior clone trooper helmet";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_SCT_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-		class 180th_SGT_Helmet: SWLB_clone_P2_helmet
+	class 180th_SGT_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Base] Clone sergeant helmet";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_SGT_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-	class 180th_LT_Helmet: SWLB_clone_P2_helmet
+	class 180th_LT_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Base] Clone lieutenant helmet";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_LT_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-	class 180th_CC_Helmet: SWLB_clone_P2_helmet
+	class 180th_CC_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Base] Clone captain helmet";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_CC_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-	class 180th_Arena_B_Helmet: SWLB_clone_P2_helmet
+	class 180th_Arena_B_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Misc] Clone Arena Helmet (Blue)";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\Blue_Team_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-	class 180th_Arena_Y_Helmet: SWLB_clone_P2_helmet
+	class 180th_Arena_Y_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Misc] Clone Arena Helmet (Yellow)";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\Yellow_Team_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-	class 180th_Arena_R_Helmet: SWLB_clone_P2_helmet
+	class 180th_Arena_R_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Misc] Clone Arena Helmet (Red)";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\Red_Team_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-	class 180th_Arena_G_Helmet: SWLB_clone_P2_helmet
+	class 180th_Arena_G_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Misc] Clone Arena Helmet (Green)";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\Green_Team_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-	class 180th_Arena_GM_Helmet: SWLB_clone_P2_helmet
+	class 180th_Arena_GM_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Misc] Clone Arena Helmet (Master)";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\Game_Master_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MOS 
-	class 180th_Medic_Helmet: SWLB_clone_P2_helmet
+	class 180th_Medic_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Base] Clone trooper medic helmet";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_Medic_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-	class 180th_Marksman_Helmet: SWLB_clone_P2_helmet
+	class 180th_Marksman_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Base] Clone marksman helmet";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_Marksman_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-	class 180th_EOD_Helmet: SWLB_clone_P2_helmet
+	class 180th_EOD_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Base] Clone eod trooper helmet";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_EOD_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-	class 180th_Heavy_Gunner_Helmet: SWLB_clone_P2_helmet
+	class 180th_Heavy_Gunner_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Base] Clone heavy gunner helmet";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_HG_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-	class 180th_JTAC_Helmet: SWLB_P2_SpecOps_Helmet
+	class 180th_JTAC_Helmet: ls_sob_phase2SpecOp_helmet
 	{
 		displayName="[180th Base] Clone RTO Helmet";
 		hiddenSelectionsTextures[]=
 		{
-			"WS_A_BASE\data\helmets\180th_JTAC_Helmet.paa"
+			"WS_A_BASE\data\helmets\180th_JTAC_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2SpecOp\data\visor_co.paa"
 		};
 	};
-	class 180th_Riot_Helmet: SWLB_clone_P2_helmet 
+	class 180th_Riot_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Base] Clone riot trooper helmet (WIP)";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_Riot_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-	class 180th_AAT_Helmet: SWLB_clone_P2_helmet 
+	class 180th_AAT_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Base] Clone advanced rocket trooper helmet (WIP)";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_AAT_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
 	class 180th_P1_Pilot_Helmet: SWLB_P1_Pilot_Helmet
@@ -492,13 +508,13 @@ class CfgWeapons {
 		    "WS_A_BASE\data\helmets\180th_ARC_Helmet.paa",
 		};
 	};
-    class 180th_Pilot_Helmet: SWLB_clone_pilot_P2_helmet
+    class 180th_Pilot_Helmet: ls_gar_phase2Pilot_helmet
 	{
 		displayName="[180th Base] Clone pilot helmet (P2)";
-		picture = "\SWLB_clones\data\ui\icon_swlb_clone_pilot_p2_helmet_ca";
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_BASE\data\helmets\180th_Pilot_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"
 		};
 	};
     class 180th_Airborne_Helmet: SWLB_clone_ab_helmet

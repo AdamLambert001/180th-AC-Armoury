@@ -7,7 +7,7 @@ class cfgpatches
 		author=AUTHOR;
 		requiredAddons[]=
 		{
-			"kobra_core"
+			"ls_core"
 		};
 		requiredVersion=0.1;
 		units[]=
@@ -72,10 +72,10 @@ class CfgEditorSubcategories
 
 class cfgvehicles
 {
-	class 442_venator_zeus;
-	class 442_venator_base;
+	class ls_staticShip_venator_open_hollow;
+	class ls_staticShip_venator_open_hollow;
 
-	class 180_venator_zeus: 442_venator_zeus {
+	class 180_venator_zeus: ls_staticShip_venator_open_hollow {
 		author=AUTHOR;
 		scope=2;
 		scopecurator=2;
@@ -134,7 +134,7 @@ class cfgvehicles
 	};
 
 	/*modded versions from k*/
-	class 180_venator_base: 442_venator_base {
+	class 180_venator_base: ls_staticShip_venator_open_hollow {
 		author=AUTHOR;
 		reversed = 0;
 		scope = 1;

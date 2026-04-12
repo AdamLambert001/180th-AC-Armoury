@@ -183,6 +183,7 @@ class CfgVehicles {
 	class B_Truck_01_transport_F;
 	class B_Truck_01_covered_F;
 	class B_Truck_01_fuel_F;
+	class ls_vehicle_laati;
 
 
 	class Car_F: Car {
@@ -677,7 +678,7 @@ class CfgVehicles {
 
 	//--------------------------------------------------------Laat/i (the LAAT's)--------------------------------------------------------//
 
-	class 180th_Pegasus_LAAT: lsd_heli_laati {
+	class 180th_Pegasus_LAAT: ls_vehicle_laati {
 		displayname="[180th Pegasus] LAAT/I Gunship";
 		faction="b_wac";
 		author="Wyvern Studios";
@@ -757,7 +758,7 @@ class CfgVehicles {
 		};
     };
 
-	class 180th_Huebert_LAAT: lsd_heli_laati {
+	class 180th_Huebert_LAAT: ls_vehicle_laati {
 		displayname="LAAT/I Gunship (Huebert)";
 		faction="b_wac";
 		author="Wyvern Studios";
@@ -836,7 +837,7 @@ class CfgVehicles {
 		};
 	};
 
-	class 180th_Melisande_LAAT: lsd_heli_laati {
+	class 180th_Melisande_LAAT: ls_vehicle_laati {
 		displayname="LAAT/I Gunship (Melisande)";
 		faction="b_wac";
 		author="Wyvern Studios";
@@ -915,7 +916,7 @@ class CfgVehicles {
 		};
 	};
 
-	class 180th_laat_medevac: lsd_heli_laati {
+	class 180th_laat_medevac: ls_vehicle_laati {
 		displayName="LAAT/i Gunship (MedEvac)";
 		ls_hasTraumaCenter=1;
 		attendant=1;

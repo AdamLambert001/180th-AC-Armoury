@@ -109,27 +109,27 @@ class cfgvehicles
 			"bridge"
 		};
 		hiddenselectionstextures[]= {
-			"180th_ST\venator\body1_co.paa",
-			"180th_ST\venator\body2_co.paa",
-			"180th_ST\venator\body3_co.paa",
-			"180th_ST\venator\body4_co.paa",
-			"180th_ST\venator\body5_co.paa",
-			"180th_ST\venator\body6_co.paa",
-			"180th_ST\venator\body7_co.paa",
-			"180th_ST\venator\body8_co.paa",
-			"180th_ST\venator\body9_co.paa",
-			"180th_ST\venator\body10_co.paa",
-			"180th_ST\venator\door_co.paa",
-			"180th_ST\venator\engine_co.paa",
-			"180th_ST\venator\interior1_co.paa",
-			"180th_ST\venator\interior2_co.paa",
-			"180th_ST\venator\interior3_co.paa",
-			"180th_ST\venator\interior4_co.paa",
-			"180th_ST\venator\interior5_co.paa",
-			"180th_ST\venator\interior6_co.paa",
-			"180th_ST\venator\interior7_co.paa",
-			"180th_ST\venator\interior8_co.paa",
-			"180th_ST\venator\bridge_co.paa"
+			"WS_S_STATICS\venator\body1_co.paa",
+			"WS_S_STATICS\venator\body2_co.paa",
+			"WS_S_STATICS\venator\body3_co.paa",
+			"WS_S_STATICS\venator\body4_co.paa",
+			"WS_S_STATICS\venator\body5_co.paa",
+			"WS_S_STATICS\venator\body6_co.paa",
+			"WS_S_STATICS\venator\body7_co.paa",
+			"WS_S_STATICS\venator\body8_co.paa",
+			"WS_S_STATICS\venator\body9_co.paa",
+			"WS_S_STATICS\venator\body10_co.paa",
+			"WS_S_STATICS\venator\door_co.paa",
+			"WS_S_STATICS\venator\engine_co.paa",
+			"WS_S_STATICS\venator\interior1_co.paa",
+			"WS_S_STATICS\venator\interior2_co.paa",
+			"WS_S_STATICS\venator\interior3_co.paa",
+			"WS_S_STATICS\venator\interior4_co.paa",
+			"WS_S_STATICS\venator\interior5_co.paa",
+			"WS_S_STATICS\venator\interior6_co.paa",
+			"WS_S_STATICS\venator\interior7_co.paa",
+			"WS_S_STATICS\venator\interior8_co.paa",
+			"WS_S_STATICS\venator\bridge_co.paa"
 		};
 	};
 

@@ -110,8 +110,8 @@ class CfgWeapons {
 	{
 		author="Wyvern Studios";
 		displayName="[180th Base] Clone commander visor";
-		modelOptics="\SWLB_clones\SWLB_clone_nvg_optic_dummy.p3d";
-		model="\SWLB_clones\SWLB_clone_ccVisor.p3d";
+		modelOptics="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_nvg_optic.p3d";
+		model="\ls\core\core\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p2Commander_nvg.p3d";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -121,7 +121,7 @@ class CfgWeapons {
 		{
 			"WS_A_BASE\data\accessories\180th_Commander_Visor.paa" 
 		};
-		picture="\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
+		picture="\ls\core\core\characters_clone_legacy\_ui\icon_cloneVisor_cc_ca.paa";
 		visionMode[]=
 		{
 			"Normal",
@@ -132,8 +132,8 @@ class CfgWeapons {
 		class ItemInfo
 		{
 			type=616;
-			uniformModel="\SWLB_clones\SWLB_clone_ccVisor.p3d";
-			modelOff="\SWLB_clones\SWLB_clone_ccVisor.p3d";
+			uniformModel="\ls\core\core\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p2Commander_nvg.p3d";
+			modelOff="\ls\core\core\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p2Commander_nvg.p3d";
 			mass=20;
 			hiddenSelections[]=
 			{
@@ -146,8 +146,8 @@ class CfgWeapons {
 	{
 		author="Wyvern Studios";
 		displayName="[180th Base] Clone NV Visor (Lower)";
-		modelOptics="\SWLB_clones\SWLB_clone_nvg_optic_dummy.p3d";
-		model="\SWLB_clones\swlb_clone_nvg_on.p3d";
+		modelOptics="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_nvg_optic.p3d";
+		model="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -157,7 +157,7 @@ class CfgWeapons {
 		{
 			"WS_A_BASE\data\accessories\180th_NVG.paa" 
 		};
-		picture="\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
+		picture="\ls\core\core\characters_clone_legacy\_ui\icon_cloneVisor_ca";
 		visionMode[]=
 		{
 			"Normal",
@@ -168,8 +168,8 @@ class CfgWeapons {
 		class ItemInfo
 		{
 			type=616;
-			uniformModel="\SWLB_clones\swlb_clone_nvg_on.p3d";
-			modelOff="\SWLB_clones\swlb_clone_nvg_on.p3d";
+			uniformModel="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
+			modelOff="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
 			mass=20;
 			hiddenSelections[]=
 			{
@@ -182,8 +182,8 @@ class CfgWeapons {
 	{
 		author="Wyvern Studios";
 		displayName="[180th Base] Clone NV Visor (Raised)";
-		modelOptics="\SWLB_clones\SWLB_clone_nvg_optic_dummy.p3d";
-		model="\SWLB_clones\swlb_clone_nvg_off.p3d";
+		modelOptics="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_nvg_optic.p3d";
+		model="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_off.p3d";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -193,7 +193,7 @@ class CfgWeapons {
 		{
 			"WS_A_BASE\data\accessories\180th_NVG.paa" 
 		};
-		picture="\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
+		picture="\ls\core\core\characters_clone_legacy\_ui\icon_cloneVisor_ca";
 		visionMode[]=
 		{
 			"Normal",
@@ -204,8 +204,8 @@ class CfgWeapons {
 		class ItemInfo
 		{
 			type=616;
-			uniformModel="\SWLB_clones\swlb_clone_nvg_on.p3d";
-			modelOff="\SWLB_clones\swlb_clone_nvg_off.p3d";
+			uniformModel="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
+			modelOff="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_off.p3d";
 			mass=20;
 			hiddenSelections[]=
 			{

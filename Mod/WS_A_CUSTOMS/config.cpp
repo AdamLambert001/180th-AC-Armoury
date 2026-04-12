@@ -52,12 +52,10 @@ class CfgWeapons
 	class 180th_Pilot_Helmet;
 	class 180th_BARC_Helmet;
 
-    class 180th_Roach_NVVisor: NVGoggles
+    class 180th_Roach_NVVisor: 180th_Clone_NVVisor
 	{
 		author="Wyvern Studios";
 		displayName="[180th Customs] Clone NV Visor (Roach)";
-		modelOptics="\SWLB_clones\SWLB_clone_nvg_optic_dummy.p3d";
-		model="\SWLB_clones\swlb_clone_nvg_off.p3d";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -66,25 +64,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_CUSTOMS\data\accessories\180th_Roach_NVG.paa" 
-		};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-		thermalMode[]={2,3};
-		class ItemInfo
-		{
-			type=616;
-			uniformModel="\SWLB_clones\swlb_clone_nvg_on.p3d";
-			modelOff="\SWLB_clones\swlb_clone_nvg_off.p3d";
-			mass=1;
-			hiddenSelections[]=
-			{
-				"camo1",
-				"camo2"
-			};
 		};
 	};
 

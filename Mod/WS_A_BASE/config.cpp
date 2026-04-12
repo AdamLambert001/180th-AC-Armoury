@@ -51,7 +51,6 @@ class CfgWeapons {
 	class VestItem;
 	class UniformInfo;
 	class NVGoggles;
-	class SWLB_clone_P1_helmet;
 	class SWLB_clone_ab_helmet;
 	class SWLB_clone_P15_helmet;
 	class SWLB_clone_ARF_P1_helmet;
@@ -389,7 +388,6 @@ class CfgWeapons {
 	class 180th_Riot_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Base] Clone riot trooper helmet (WIP)";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_Riot_Helmet.paa",
@@ -399,113 +397,122 @@ class CfgWeapons {
 	class 180th_AAT_Helmet: 180th_base_Helmet
 	{
 		displayName="[180th Base] Clone advanced rocket trooper helmet (WIP)";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_AAT_Helmet.paa",
 			"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
 		};
 	};
-	class 180th_P1_Pilot_Helmet: SWLB_P1_Pilot_Helmet
+	class 180th_P1_Pilot_Helmet: ls_gar_phase1Pilot_helmet
 	{
 		displayName = "[180th Base] P1 Clone pilot helmet";
-		picture = "\SWLB_clones\data\ui\icon_swlb_clone_pilot_p2_helmet_ca";
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_BASE\data\helmets\180th_P1_Pilot_Helmet.paa",
 			"WS_A_BASE\data\accessories\180th_Lifesupport.paa"
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa",
 		};
 	};
-	class 180th_P1_JTAC_Helmet: SWLB_P1_SpecOps_Helmet
+	class 180th_P1_JTAC_Helmet: ls_sob_phase1SpecOp_helmet
 	{
 		displayName="[180th Base] P1 Clone RTO Helmet";
 		hiddenSelectionsTextures[]=
 		{
-			"WS_A_BASE\data\helmets\180th_P1_JTAC_Helmet.paa"
+			"WS_A_BASE\data\helmets\180th_P1_JTAC_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa",
 		};
 	};
-	class 180th_P1_Trooper_Helmet: SWLB_clone_P1_helmet
+	class 180th_P1_Trooper_Helmet: ls_gar_phase1_helmet
 	{
 		displayName="[180th Base] P1 Clone trooper helmet";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_P1_Trooper_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa",
 		};
 	};
-	class 180th_P1_SGT_Helmet: SWLB_clone_P1_helmet
+	class 180th_P1_SGT_Helmet: 180th_P1_Trooper_Helmet
 	{
 		displayName="[180th Base] P1 Clone sergeant helmet";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_P1_Sergeant_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa",
 		};
 	};
-	class 180th_P1_LT_Helmet: SWLB_clone_P1_helmet
+	class 180th_P1_LT_Helmet: 180th_P1_Trooper_Helmet
 	{
 		displayName="[180th Base] P1 Clone lieutenant helmet";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_P1_Lieutenant_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa",
 		};
 	};
-	class 180th_P1_Trooper_Helmet_M: SWLB_clone_P1_helmet
+	class 180th_P1_Trooper_Helmet_M: 180th_P1_Trooper_Helmet
 	{
 		displayName="[180th Base] P1 Clone trooper helmet (Dirty)";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_P1_Trooper_Helmet_M.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa",
 		};
 	};
-	class 180th_P1_SGT_Helmet_M: SWLB_clone_P1_helmet
+	class 180th_P1_SGT_Helmet_M: 180th_P1_Trooper_Helmet
 	{
 		displayName="[180th Base] P1 Clone sergeant helmet (Dirty)";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_P1_Sergeant_Helmet_M.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa",
 		};
 	};
-	class 180th_P1_LT_Helmet_M: SWLB_clone_P1_helmet
+	class 180th_P1_LT_Helmet_M: 180th_P1_Trooper_Helmet
 	{
 		displayName="[180th Base] P1 Clone lieutenant helmet (Dirty)";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 	    	"WS_A_BASE\data\helmets\180th_P1_Lieutenant_Helmet_M.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa",
 		};
 	};
 	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DETACHMENT 
-	class 180th_ARF_Helmet: SWLB_clone_ARF_P1_helmet
+	class 180th_ARF_Helmet: ls_gar_phase1Arf_helmet
 	{
 		displayName="[180th Base] Clone arf trooper helmet";
-      	picture="\SWLB_clones\data\ui\icon_SWLB_clone_helmet_arf_p1_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 		    "WS_A_BASE\data\helmets\180th_ARF_Helmet.paa",
+			"",
+			"\ls\core\addons\characters_clone_legacy\helmets\arf\data\visor_co.paa",
 		};
 	};
-	class 180th_ARFM_Helmet: SWLB_clone_ARF_P1_helmet
+	class 180th_ARFM_Helmet: 180th_ARF_Helmet
 	{
 		displayName="[180th Base] Clone arf medic helmet";
-		picture="\SWLB_clones\data\ui\icon_SWLB_clone_helmet_arf_p2_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_BASE\data\helmets\180th_ARF_Medic_Helmet.paa",
-			"",
-			"WS_A_BASE\data\accessories\180th_ARF_Medic_Flaps.paa"
+			"WS_A_BASE\data\accessories\180th_ARF_Medic_Flaps.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\arf\data\visor_co.paa",
+			
 		};
 	};
-    class 180th_ARC_Helmet: SWLB_clone_P15_helmet
+    class 180th_ARC_Helmet: ls_gar_arc_helmet
 	{
 		displayName="[180th Base] Clone arc trooper helmet";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 		    "WS_A_BASE\data\helmets\180th_ARC_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa",
+			"WS_A_BASE\data\helmets\180th_ARC_Helmet.paa",
 		};
 	};
     class 180th_Pilot_Helmet: ls_gar_phase2Pilot_helmet
@@ -517,68 +524,32 @@ class CfgWeapons {
 			"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"
 		};
 	};
-    class 180th_Airborne_Helmet: SWLB_clone_ab_helmet
+    class 180th_Airborne_Helmet: ls_gar_airborne_helmet
 	{
 		displayName="[180th Base] Clone trooper airborne helmet";
-		picture="\SWLB_clones\data\ui\icon_SWLB_clone_ab_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_BASE\data\helmets\180th_Airborne_Helmet.paa",
+			"WS_A_BASE\data\helmets\180th_Airborne_Helmet.paa",
 		};
 	};
-    class 180th_Engineer_Helmet: SWLB_clone_eng_helmet
+    class 180th_Engineer_Helmet: ls_gar_engineer_helmet
 	{
-		displayName="[180th Base] Clone trooper engineer helmet";
-        picture="\SWLB_clones\data\ui\icon_SWLB_clone_eng_helmet_ca.paa";
+		displayName="[180th Base] Clone trooper engineer helmet"; //helmets\engineer\data\light_co
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_BASE\data\helmets\180th_Engineer_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\engineer\data\light_co.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\engineer\data\visor_co.paa"
 		};
 	};
-	class 180th_BARC_Helmet: SWLB_clone_barc_helmet
+	class 180th_BARC_Helmet: ls_gar_barc_helmet
 	{
 		displayName="[180th Base] Clone barc trooper helmet";
-        picture="\SWLB_clones\data\ui\icon_SWLB_clone_eng_helmet_ca.paa";
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_BASE\data\helmets\180th_BARC_Helmet.paa",
-		};
-	};
-	class 180th_Hazard_Helmet: ls_blueforHelmet_base
-	{
-		scope=2;
-		displayName="[180th Base] Clone hazard trooper helmet";
-		model="ls_armor_bluefor\helmet\gar\desert\ls_gar_desert_helmet.p3d";
-		hiddenSelections[]=
-		{
-			"Camo1",
-			"visor"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"WS_A_BASE\data\helmets\180th_Hazard_Trooper_Helmet.paa",
-			"ls_armor_bluefor\helmet\gar\desert\data\visor_co.paa"
-		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=10;
-			uniformModel="ls_armor_bluefor\helmet\gar\desert\ls_gar_desert_helmet.p3d";
-			allowedSlots[]={801,901,701,605};
-			modelSides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"visor"
-			};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=50;
-					passThrough=0.5;
-				};
-			};
+			"\ls\core\addons\characters_clone_legacy\helmets\barc\data\visor_co.paa"
 		};
 	};
 

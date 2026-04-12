@@ -167,12 +167,9 @@ class CfgVehicles {
 	};
     class 3AS_Patrol_LAAT_Base;
 	class ls_laat_ab;
-	class lsd_laat_base;
-	class lsd_heli_laati_ab;
     class ls_laat;
 	class ls_laat_medevac;
 	class ls_vehicle_tx130;
-	class lsd_heli_laati;
 	class 3as_ATTE_Base;
 	class 3as_BTLB_Bomber;
 	class B_Truck_01_ammo_F;
@@ -180,7 +177,6 @@ class CfgVehicles {
 	class B_Truck_01_covered_F;
 	class B_Truck_01_fuel_F;
 	class ls_vehicle_laati;
-
 
 	class Car_F: Car {
 
@@ -342,7 +338,6 @@ class CfgVehicles {
 			};
 		};		
     };
-
 	class 180th_Pandur_APC_Whl: I_APC_Wheeled_03_cannon_F 
     {
         side = 1;
@@ -380,7 +375,6 @@ class CfgVehicles {
 			};
 		};
     };
-
 	class 180th_Hemtt_ammo_Whl: B_Truck_01_ammo_F
     {
         side = 1;
@@ -409,7 +403,6 @@ class CfgVehicles {
 			};
 		};
     };
-
 	class 180th_Hemtt_fuel_Whl: B_Truck_01_fuel_F
     {
         side = 1;
@@ -438,7 +431,6 @@ class CfgVehicles {
 			};
 		};
     };
-
 	class 180th_Hemtt_transport_Whl: B_Truck_01_transport_F 
     {
         side = 1;
@@ -467,7 +459,6 @@ class CfgVehicles {
 			};
 		};
     };
-
 	class 180th_Hemtt_covered_Whl: B_Truck_01_covered_F
     {
         side = 1;
@@ -683,17 +674,16 @@ class CfgVehicles {
 		hiddenselectionstextures[]=
 		{
 				"WS_A_VEHICLES\Data\LAAT\180th_Pegasus_body1.paa", 
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\body2_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door1_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door2_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door3_co.paa",
 				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"lsd_vehicles_heli\laati\data\missiles_co.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\missiles_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa",
 				"WS_A_VEHICLES\Data\glass_ca.paa"
 				
 		};
-
 		class TextureSources
         {
             class base
@@ -703,13 +693,13 @@ class CfgVehicles {
                 textures[]=
                 {
 				"WS_A_VEHICLES\Data\LAAT\180th_Pegasus_body1.paa", //0
-				"lsd_vehicles_heli\laati\data\body2_co.paa", //1
-				"lsd_vehicles_heli\laati\data\door1_co.paa", //2
-				"lsd_vehicles_heli\laati\data\door2_co.paa", //3
-				"lsd_vehicles_heli\laati\data\door3_co.paa", //4
+				"\ls\core\addons\vehicles_laati\\data\body2_co.paa", //1
+				"\ls\core\addons\vehicles_laati\\data\door1_co.paa", //2
+				"\ls\core\addons\vehicles_laati\\data\door2_co.paa", //3
+				"\ls\core\addons\vehicles_laati\\data\door3_co.paa", //4
 				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", //5
-				"lsd_vehicles_heli\laati\data\missiles_co.paa", //6
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa", //7
+				"\ls\core\addons\vehicles_laati\\data\missiles_co.paa", //6
+				"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa", //7
 				"WS_A_VEHICLES\Data\glass_ca.paa" //8
                 };
                 factions[]=
@@ -717,8 +707,6 @@ class CfgVehicles {
                     "MA_Categ_Vic"
                 };
             };
-
-
         };
         textureList[]=
         {
@@ -737,7 +725,6 @@ class CfgVehicles {
 			};
 		};
     };
-
 	class 180th_Huebert_LAAT: ls_vehicle_laati {
 		displayname="LAAT/I Gunship (Huebert)";
 		faction="b_wac";
@@ -763,14 +750,14 @@ class CfgVehicles {
 		hiddenselectionstextures[]=
 		{
 				"WS_A_VEHICLES\Data\LAAT\180_HubL_body1.paa", 
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\body2_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door1_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door2_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door3_co.paa",
 				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"lsd_vehicles_heli\laati\data\missiles_co.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"
+				"\ls\core\addons\vehicles_laati\\data\missiles_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\glass_ca.paa"
 				
 		};
 
@@ -783,14 +770,14 @@ class CfgVehicles {
                 textures[]=
                 {
 				"WS_A_VEHICLES\Data\LAAT\180_HubL_body1.paa", 
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\body2_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door1_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door2_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door3_co.paa",
 				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"lsd_vehicles_heli\laati\data\missiles_co.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"
+				"\ls\core\addons\vehicles_laati\\data\missiles_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\glass_ca.paa"
                 };
                 factions[]=
                 {
@@ -816,7 +803,6 @@ class CfgVehicles {
 			};
 		};
 	};
-
 	class 180th_Melisande_LAAT: ls_vehicle_laati {
 		displayname="LAAT/I Gunship (Melisande)";
 		faction="b_wac";
@@ -842,14 +828,14 @@ class CfgVehicles {
 		hiddenselectionstextures[]=
 		{
 				"WS_A_VEHICLES\Data\LAAT\180_MelL_body1.paa", 
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\body2_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door1_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door2_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door3_co.paa",
 				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"lsd_vehicles_heli\laati\data\missiles_co.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"
+				"\ls\core\addons\vehicles_laati\\data\missiles_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\glass_ca.paa"
 				
 		};
 
@@ -862,14 +848,14 @@ class CfgVehicles {
                 textures[]=
                 {
                 "WS_A_VEHICLES\Data\LAAT\180_MelL_body1.paa", 
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\body2_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door1_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door2_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door3_co.paa",
 				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"lsd_vehicles_heli\laati\data\missiles_co.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"
+				"\ls\core\addons\vehicles_laati\\data\missiles_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\glass_ca.paa"
                 };
                 factions[]=
                 {
@@ -895,7 +881,6 @@ class CfgVehicles {
 			};
 		};
 	};
-
 	class 180th_laat_medevac: ls_vehicle_laati {
 		displayName="LAAT/i Gunship (MedEvac)";
 		ls_hasTraumaCenter=1;
@@ -903,14 +888,14 @@ class CfgVehicles {
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_VEHICLES\Data\LAAT\180th_PegasusM_body1.paa", 
-			"lsd_vehicles_heli\laati\data\body2_co.paa",
-			"lsd_vehicles_heli\laati\data\door1_co.paa",
-			"lsd_vehicles_heli\laati\data\door2_co.paa",
-			"lsd_vehicles_heli\laati\data\door3_co.paa",
+			"\ls\core\addons\vehicles_laati\\data\body2_co.paa",
+			"\ls\core\addons\vehicles_laati\\data\door1_co.paa",
+			"\ls\core\addons\vehicles_laati\\data\door2_co.paa",
+			"\ls\core\addons\vehicles_laati\\data\door3_co.paa",
 			"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-			"lsd_vehicles_heli\laati\data\missiles_co.paa",
-			"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-			"lsd_vehicles_heli\laati\data\glass_ca.paa"
+			"\ls\core\addons\vehicles_laati\\data\missiles_co.paa",
+			"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa",
+			"\ls\core\addons\vehicles_laati\\data\glass_ca.paa"
 		};
 
 		class TextureSources
@@ -922,14 +907,14 @@ class CfgVehicles {
                 textures[]=
                 {
 				"WS_A_VEHICLES\Data\LAAT\180th_PegasusM_body1.paa", 
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\body2_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door1_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door2_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\door3_co.paa",
 				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"lsd_vehicles_heli\laati\data\missiles_co.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"
+				"\ls\core\addons\vehicles_laati\\data\missiles_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\\data\glass_ca.paa"
                 };
                 factions[]=
                 {
@@ -1050,10 +1035,8 @@ class CfgVehicles {
 		};
 	};
 
-
 	//--------------------------------------------------------BARC Speeders--------------------------------------------------------//
 	// goodbye legion
-
 	class 180th_3as_BARC_Base: Car_F {
 		model = "3AS\3AS_LightVics\3AS_BARC\model\Barc_Speeder.p3d";
         scope = 1;
@@ -1442,7 +1425,6 @@ class CfgVehicles {
 		};
 		aggregateReflectors[] = {{"LightCarHeadL01"}, {}};
 	};
-
 	class 180th_3as_barc: 180th_3as_BARC_base {
 		scope=2;
 		side=1;
@@ -1451,7 +1433,6 @@ class CfgVehicles {
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\WS_A_Vehicles\data\barc\180th_barc2.paa"};
 	};
-
 	class 180th_3as_barc_side: 180th_3as_BARC_base {
 		author = "Wyvern Studios x 3AS";
 		displayName = "[180th Basilisk] BARC Speeder SC Variant [3AS]";

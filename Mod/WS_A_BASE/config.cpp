@@ -110,8 +110,8 @@ class CfgWeapons {
 	{
 		author="Wyvern Studios";
 		displayName="[180th Base] Clone commander visor";
-		modelOptics="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_nvg_optic.p3d";
-		model="\ls\core\core\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p2Commander_nvg.p3d";
+		modelOptics="\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_nvg_optic.p3d";
+		model="\ls\core\addons\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p2Commander_nvg.p3d";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -121,7 +121,7 @@ class CfgWeapons {
 		{
 			"WS_A_BASE\data\accessories\180th_Commander_Visor.paa" 
 		};
-		picture="\ls\core\core\characters_clone_legacy\_ui\icon_cloneVisor_cc_ca.paa";
+		picture="\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVisor_cc_ca.paa";
 		visionMode[]=
 		{
 			"Normal",
@@ -132,8 +132,8 @@ class CfgWeapons {
 		class ItemInfo
 		{
 			type=616;
-			uniformModel="\ls\core\core\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p2Commander_nvg.p3d";
-			modelOff="\ls\core\core\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p2Commander_nvg.p3d";
+			uniformModel="\ls\core\addons\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p2Commander_nvg.p3d";
+			modelOff="\ls\core\addons\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p2Commander_nvg.p3d";
 			mass=20;
 			hiddenSelections[]=
 			{
@@ -146,8 +146,8 @@ class CfgWeapons {
 	{
 		author="Wyvern Studios";
 		displayName="[180th Base] Clone NV Visor (Lower)";
-		modelOptics="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_nvg_optic.p3d";
-		model="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
+		modelOptics="\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_nvg_optic.p3d";
+		model="\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -157,7 +157,7 @@ class CfgWeapons {
 		{
 			"WS_A_BASE\data\accessories\180th_NVG.paa" 
 		};
-		picture="\ls\core\core\characters_clone_legacy\_ui\icon_cloneVisor_ca";
+		picture="\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVisor_ca";
 		visionMode[]=
 		{
 			"Normal",
@@ -168,8 +168,8 @@ class CfgWeapons {
 		class ItemInfo
 		{
 			type=616;
-			uniformModel="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
-			modelOff="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
+			uniformModel="\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
+			modelOff="\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
 			mass=20;
 			hiddenSelections[]=
 			{
@@ -182,8 +182,8 @@ class CfgWeapons {
 	{
 		author="Wyvern Studios";
 		displayName="[180th Base] Clone NV Visor (Raised)";
-		modelOptics="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_nvg_optic.p3d";
-		model="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_off.p3d";
+		modelOptics="\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_nvg_optic.p3d";
+		model="\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_off.p3d";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -193,7 +193,7 @@ class CfgWeapons {
 		{
 			"WS_A_BASE\data\accessories\180th_NVG.paa" 
 		};
-		picture="\ls\core\core\characters_clone_legacy\_ui\icon_cloneVisor_ca";
+		picture="\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVisor_ca";
 		visionMode[]=
 		{
 			"Normal",
@@ -204,8 +204,8 @@ class CfgWeapons {
 		class ItemInfo
 		{
 			type=616;
-			uniformModel="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
-			modelOff="\ls\core\core\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_off.p3d";
+			uniformModel="\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
+			modelOff="\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_off.p3d";
 			mass=20;
 			hiddenSelections[]=
 			{
@@ -407,7 +407,7 @@ class CfgWeapons {
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_BASE\data\helmets\180th_P1_Pilot_Helmet.paa",
-			"WS_A_BASE\data\accessories\180th_Lifesupport.paa"
+			"WS_A_BASE\data\accessories\180th_Lifesupport.paa",
 			"\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa",
 		};
 	};

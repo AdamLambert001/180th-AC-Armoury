@@ -11,7 +11,7 @@ class CfgPatches
 			"SWLB_droids",
 			"SWLB_main",
 			"SWLB_CEE",
-			"WS_A_BASE"
+			"WS_Armory_Base"
 		};
 		requiredVersion=0.1;
 		units[]=
@@ -51,6 +51,7 @@ class CfgWeapons
 	class 180th_JTAC_Helmet;
 	class 180th_Pilot_Helmet;
 	class 180th_BARC_Helmet;
+	class 180th_Clone_NVVisor;
 
     class 180th_Roach_NVVisor: 180th_Clone_NVVisor
 	{

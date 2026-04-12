@@ -347,67 +347,6 @@ class CfgWeapons
 		{
 			"JMSLLTE_empire\vests\data\stormcape_dirty_co.paa"
 		};
-		class ItemInfo: VestItem
-		{
-			uniformModel="\JMSLLTE_empire\vests\StormtroperBandCape.p3d";
-			containerClass="Supply110";
-			mass=20;
-			modelsides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1"
-			};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=5;
-					passThrough=0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName="HitDiaphragm";
-					armor=10;
-					passThrough=0.40000001;
-				};
-				class Chest
-				{
-					hitpointName="HitChest";
-					armor=15;
-					passThrough=0.40000001;
-				};
-				class Abdomen
-				{
-					hitpointName="HitAbdomen";
-					armor=10;
-					passThrough=0.40000001;
-				};
-				class Pelvis
-				{
-					hitpointName="HitPelvis";
-					armor=10;
-					passThrough=0.40000001;
-				};
-				class Neck
-				{
-					hitpointName="HitNeck";
-					armor=5;
-					passThrough=0.2;
-				};
-				class Arms
-				{
-					hitpointName="HitArms";
-					armor=15;
-					passThrough=0.2;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					passThrough=0.40000001;
-				};
-			};
-		};
 	};
 	class WS_OfficerChest_armor: Vest_Camo_Base
 	{
@@ -417,63 +356,6 @@ class CfgWeapons
 		displayName="Officer chest armor";
 		picture="\JMSLLTE_empire\vests\data\ico\ico_storm.paa";
 		model="\JMSLLTE_empire\vests\of_chestArmor.p3d";
-		class ItemInfo: VestItem
-		{
-			uniformModel="\JMSLLTE_empire\vests\of_chestArmor.p3d";
-			containerClass="Supply80";
-			mass=15;
-			modelsides[]={6};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=5;
-					passThrough=0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName="HitDiaphragm";
-					armor=10;
-					passThrough=0.40000001;
-				};
-				class Chest
-				{
-					hitpointName="HitChest";
-					armor=15;
-					passThrough=0.40000001;
-				};
-				class Abdomen
-				{
-					hitpointName="HitAbdomen";
-					armor=10;
-					passThrough=0.40000001;
-				};
-				class Pelvis
-				{
-					hitpointName="HitPelvis";
-					armor=5;
-					passThrough=0.40000001;
-				};
-				class Neck
-				{
-					hitpointName="HitNeck";
-					armor=2;
-					passThrough=0.2;
-				};
-				class Arms
-				{
-					hitpointName="HitArms";
-					armor=3;
-					passThrough=0.2;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					passThrough=0.40000001;
-				};
-			};
-		};
 	};
 	class WS_TrooperCapeBelt_armor: Vest_Camo_Base
 	{
@@ -490,67 +372,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"JMSLLTE_empire\vests\data\stormcape_dirty_co.paa"
-		};
-		class ItemInfo: VestItem
-		{
-			uniformModel="\JMSLLTE_empire\vests\TrooperCapeBelt.p3d";
-			containerClass="Supply90";
-			mass=15;
-			modelsides[]={6};
-			hiddenSelections[]=
-			{
-				"Camo1"
-			};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=5;
-					passThrough=0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName="HitDiaphragm";
-					armor=10;
-					passThrough=0.40000001;
-				};
-				class Chest
-				{
-					hitpointName="HitChest";
-					armor=15;
-					passThrough=0.40000001;
-				};
-				class Abdomen
-				{
-					hitpointName="HitAbdomen";
-					armor=10;
-					passThrough=0.40000001;
-				};
-				class Pelvis
-				{
-					hitpointName="HitPelvis";
-					armor=5;
-					passThrough=0.40000001;
-				};
-				class Neck
-				{
-					hitpointName="HitNeck";
-					armor=2;
-					passThrough=0.2;
-				};
-				class Arms
-				{
-					hitpointName="HitArms";
-					armor=5;
-					passThrough=0.2;
-				};
-				class Body
-				{
-					hitpointName="HitBody";
-					passThrough=0.40000001;
-				};
-			};
 		};
 	};
 };

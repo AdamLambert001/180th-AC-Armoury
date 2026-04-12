@@ -674,13 +674,13 @@ class CfgVehicles {
 		hiddenselectionstextures[]=
 		{
 				"WS_A_VEHICLES\Data\LAAT\180th_Pegasus_body1.paa", 
-				"\ls\core\addons\vehicles_laati\\data\body2_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door1_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door2_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door3_co.paa",
+				"\ls\core\addons\vehicles_laati\data\body2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door1_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door3_co.paa",
 				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"\ls\core\addons\vehicles_laati\\data\missiles_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\data\missiles_co.paa",
+				"\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
 				"WS_A_VEHICLES\Data\glass_ca.paa"
 				
 		};
@@ -693,13 +693,13 @@ class CfgVehicles {
                 textures[]=
                 {
 				"WS_A_VEHICLES\Data\LAAT\180th_Pegasus_body1.paa", //0
-				"\ls\core\addons\vehicles_laati\\data\body2_co.paa", //1
-				"\ls\core\addons\vehicles_laati\\data\door1_co.paa", //2
-				"\ls\core\addons\vehicles_laati\\data\door2_co.paa", //3
-				"\ls\core\addons\vehicles_laati\\data\door3_co.paa", //4
+				"\ls\core\addons\vehicles_laati\data\body2_co.paa", //1
+				"\ls\core\addons\vehicles_laati\data\door1_co.paa", //2
+				"\ls\core\addons\vehicles_laati\data\door2_co.paa", //3
+				"\ls\core\addons\vehicles_laati\data\door3_co.paa", //4
 				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", //5
-				"\ls\core\addons\vehicles_laati\\data\missiles_co.paa", //6
-				"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa", //7
+				"\ls\core\addons\vehicles_laati\data\missiles_co.paa", //6
+				"\ls\core\addons\vehicles_laati\data\cockpits_co.paa", //7
 				"WS_A_VEHICLES\Data\glass_ca.paa" //8
                 };
                 factions[]=
@@ -750,14 +750,14 @@ class CfgVehicles {
 		hiddenselectionstextures[]=
 		{
 				"WS_A_VEHICLES\Data\LAAT\180_HubL_body1.paa", 
-				"\ls\core\addons\vehicles_laati\\data\body2_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door1_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door2_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door3_co.paa",
+				"\ls\core\addons\vehicles_laati\data\body2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door1_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door3_co.paa",
 				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"\ls\core\addons\vehicles_laati\\data\missiles_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\glass_ca.paa"
+				"\ls\core\addons\vehicles_laati\data\missiles_co.paa",
+				"\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\data\glass_ca.paa"
 				
 		};
 
@@ -770,14 +770,14 @@ class CfgVehicles {
                 textures[]=
                 {
 				"WS_A_VEHICLES\Data\LAAT\180_HubL_body1.paa", 
-				"\ls\core\addons\vehicles_laati\\data\body2_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door1_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door2_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door3_co.paa",
+				"\ls\core\addons\vehicles_laati\data\body2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door1_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door3_co.paa",
 				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"\ls\core\addons\vehicles_laati\\data\missiles_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\glass_ca.paa"
+				"\ls\core\addons\vehicles_laati\data\missiles_co.paa",
+				"\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\data\glass_ca.paa"
                 };
                 factions[]=
                 {
@@ -828,14 +828,14 @@ class CfgVehicles {
 		hiddenselectionstextures[]=
 		{
 				"WS_A_VEHICLES\Data\LAAT\180_MelL_body1.paa", 
-				"\ls\core\addons\vehicles_laati\\data\body2_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door1_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door2_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door3_co.paa",
+				"\ls\core\addons\vehicles_laati\data\body2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door1_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door3_co.paa",
 				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"\ls\core\addons\vehicles_laati\\data\missiles_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\glass_ca.paa"
+				"\ls\core\addons\vehicles_laati\data\missiles_co.paa",
+				"\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\data\glass_ca.paa"
 				
 		};
 
@@ -848,14 +848,14 @@ class CfgVehicles {
                 textures[]=
                 {
                 "WS_A_VEHICLES\Data\LAAT\180_MelL_body1.paa", 
-				"\ls\core\addons\vehicles_laati\\data\body2_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door1_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door2_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door3_co.paa",
+				"\ls\core\addons\vehicles_laati\data\body2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door1_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door3_co.paa",
 				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"\ls\core\addons\vehicles_laati\\data\missiles_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\glass_ca.paa"
+				"\ls\core\addons\vehicles_laati\data\missiles_co.paa",
+				"\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\data\glass_ca.paa"
                 };
                 factions[]=
                 {
@@ -888,14 +888,14 @@ class CfgVehicles {
 		hiddenSelectionsTextures[]=
 		{
 			"WS_A_VEHICLES\Data\LAAT\180th_PegasusM_body1.paa", 
-			"\ls\core\addons\vehicles_laati\\data\body2_co.paa",
-			"\ls\core\addons\vehicles_laati\\data\door1_co.paa",
-			"\ls\core\addons\vehicles_laati\\data\door2_co.paa",
-			"\ls\core\addons\vehicles_laati\\data\door3_co.paa",
+			"\ls\core\addons\vehicles_laati\data\body2_co.paa",
+			"\ls\core\addons\vehicles_laati\data\door1_co.paa",
+			"\ls\core\addons\vehicles_laati\data\door2_co.paa",
+			"\ls\core\addons\vehicles_laati\data\door3_co.paa",
 			"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-			"\ls\core\addons\vehicles_laati\\data\missiles_co.paa",
-			"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa",
-			"\ls\core\addons\vehicles_laati\\data\glass_ca.paa"
+			"\ls\core\addons\vehicles_laati\data\missiles_co.paa",
+			"\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+			"\ls\core\addons\vehicles_laati\data\glass_ca.paa"
 		};
 
 		class TextureSources
@@ -907,14 +907,14 @@ class CfgVehicles {
                 textures[]=
                 {
 				"WS_A_VEHICLES\Data\LAAT\180th_PegasusM_body1.paa", 
-				"\ls\core\addons\vehicles_laati\\data\body2_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door1_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door2_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\door3_co.paa",
+				"\ls\core\addons\vehicles_laati\data\body2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door1_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door3_co.paa",
 				"WS_A_VEHICLES\Data\LAAT\180_WyvernL_wings_co.paa", 
-				"\ls\core\addons\vehicles_laati\\data\missiles_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\cockpits_co.paa",
-				"\ls\core\addons\vehicles_laati\\data\glass_ca.paa"
+				"\ls\core\addons\vehicles_laati\data\missiles_co.paa",
+				"\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\data\glass_ca.paa"
                 };
                 factions[]=
                 {
